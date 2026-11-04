@@ -1,0 +1,18 @@
+{
+  "label": "Anteprima di {{name}}",
+  "close": "Chiudi",
+  "copyLink": "Copia link",
+  "download": "Scarica",
+  "previous": "File precedente",
+  "next": "File successivo",
+  "notFound": {
+    "title": "Questo file non esiste più o è stato spostato",
+    "body": "Potrebbe essere stato rinominato, spostato o eliminato."
+  },
+  "tooLarge": "Questo file è troppo grande per l’anteprima",
+  "unavailable": "Anteprima non disponibile",
+  "unavailableBody": "Scarica il file per aprirlo sul tuo dispositivo.",
+  "loadError": "Impossibile caricare il file per l’anteprima.",
+  "loading": "Caricamento dell’anteprima…",
+  "position": "{{index}} di {{total}}"
+}

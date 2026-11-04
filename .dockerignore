@@ -1,0 +1,21 @@
+# Contexte de construction de l'image (Dockerfile) : sources seulement, jamais de secret ni de donnée.
+.git
+.claude
+.tanstack
+**/node_modules
+**/dist
+**/dev-dist
+**/coverage
+**/.vite
+**/*.tsbuildinfo
+data
+.env
+.env.*
+**/*.sqlite
+**/*.sqlite-*
+secret.key
+*.log
+specs
+tests
+dev
+compose.dev.yaml

@@ -1,0 +1,94 @@
+{
+  "app": {
+    "name": "Universal Drive",
+    "tagline": "ملفاتك على أي تخزين S3."
+  },
+  "placeholder": {
+    "params": "المعلمات",
+    "views": {
+      "index": "إعادة توجيه الصفحة الرئيسية",
+      "connect": "ربط تخزين",
+      "connectDevice": "ربط هذا الجهاز",
+      "accounts": "اختيار تخزين",
+      "home": "الصفحة الرئيسية للتخزين",
+      "explorer": {
+        "root": "جذر الحاوية",
+        "folder": "مجلد",
+        "file": "ملف"
+      },
+      "recent": "الأخيرة",
+      "starred": "المميّزة بنجمة",
+      "shared": "المشتركة",
+      "trash": "المهملات",
+      "storage": "التخزين",
+      "search": "البحث",
+      "admin": "إدارة الحاوية",
+      "access": "الوصول",
+      "jobs": "العمليات",
+      "oauthConsent": "موافقة تطبيق",
+      "shareTarget": "الملفات المشتركة",
+      "receive": "الملفات المستلمة",
+      "receiveOpen": "فتح باستخدام Universal Drive",
+      "shortLink": "رابط مختصر",
+      "malformed": "عنوان غير صالح",
+      "notFound": "الصفحة غير موجودة"
+    }
+  },
+  "actions": {
+    "retry": "إعادة المحاولة",
+    "cancel": "إلغاء",
+    "continue": "متابعة",
+    "reconnect": "تسجيل الدخول مجددًا",
+    "loadMore": "عرض المزيد",
+    "copyLink": "نسخ الرابط",
+    "linkCopied": "تم نسخ الرابط"
+  },
+  "states": {
+    "loading": "جارٍ التحميل…",
+    "errorTitle": "حدث خطأ ما"
+  },
+  "errors": {
+    "generic": "حدث خطأ غير متوقع. أعد المحاولة بعد قليل.",
+    "clipboard": "تعذّر نسخ الرابط.",
+    "local": {
+      "gate_expired": "انتهت صلاحية جلستك",
+      "network": "تعذّر الوصول إلى الخادم. تحقّق من اتصالك.",
+      "invalid_response": "أرسل الخادم استجابة غير متوقعة."
+    },
+    "api": {
+      "unauthorized": "انتهت جلستك. سجّل الدخول مجددًا.",
+      "forbidden": "ليس لديك وصول إلى هذه الصفحة.",
+      "not_found": "هذه الصفحة غير موجودة.",
+      "rate_limited": "طلبات كثيرة جدًا. انتظر قليلًا ثم أعد المحاولة.",
+      "internal": "واجه الخادم مشكلة.",
+      "upstream_error": "لم يستجب التخزين كما هو متوقع.",
+      "validation": "الطلب غير صالح.",
+      "conflict": "تغيّرت البيانات في هذه الأثناء. أعد التحميل ثم حاول مجددًا."
+    }
+  },
+  "shell": {
+    "skipToContent": "الانتقال إلى المحتوى",
+    "navigation": "التنقّل",
+    "openMenu": "فتح القائمة",
+    "closeMenu": "إغلاق القائمة",
+    "collapseSidebar": "طيّ الشريط الجانبي",
+    "expandSidebar": "توسيع الشريط الجانبي"
+  },
+  "appearance": {
+    "title": "المظهر",
+    "light": "فاتح",
+    "dark": "داكن",
+    "system": "حسب النظام"
+  },
+  "language": {
+    "title": "اللغة",
+    "choose": "اللغة: {{language}}"
+  },
+  "rail": {
+    "label": "وحدات التخزين",
+    "add": "إضافة وحدة تخزين",
+    "settings": "الإعدادات",
+    "lightTheme": "التبديل إلى السمة الفاتحة",
+    "darkTheme": "التبديل إلى السمة الداكنة"
+  }
+}

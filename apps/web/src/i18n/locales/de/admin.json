@@ -1,0 +1,81 @@
+{
+  "title": "Verwaltung",
+  "forbidden": {
+    "title": "Eingeschränkter Zugriff",
+    "body": "Deine Rolle erlaubt es nicht, die Verwaltung dieser Ablage anzuzeigen."
+  },
+  "users": {
+    "title": "Personen",
+    "search": "Nach Name oder E-Mail suchen",
+    "caption": "Personen mit Zugriff auf diese Ablage",
+    "empty": "Noch hat sich niemand angemeldet",
+    "emptySearch": "Niemand entspricht dieser Suche",
+    "never": "Nie",
+    "columns": {
+      "name": "Name",
+      "email": "E-Mail",
+      "roles": "Rollen",
+      "usage": "Belegter Speicher",
+      "lastLogin": "Letzte Anmeldung",
+      "status": "Status"
+    }
+  },
+  "status": {
+    "active": "Aktiv",
+    "suspended": "Gesperrt"
+  },
+  "units": {
+    "MB": "MB",
+    "GB": "GB",
+    "TB": "TB"
+  },
+  "user": {
+    "back": "Alle Personen",
+    "notFound": "Diese Person existiert nicht",
+    "created": "Erste Anmeldung",
+    "lastLogin": "Letzte Anmeldung",
+    "terms": "Nutzungsbedingungen",
+    "termsAccepted": "Akzeptiert (Version {{version}})",
+    "termsNone": "Noch nicht akzeptiert",
+    "rolesTitle": "Drive-Rollen",
+    "rolesHint": "Die Rollen stammen vom Identitätsanbieter und lassen sich nur dort ändern.",
+    "usageTitle": "Belegter Speicher",
+    "objects": "Objekte: {{count}}",
+    "recount": "Belegung neu berechnen",
+    "recounted": "Belegung neu berechnet",
+    "quotaTitle": "Speicherkontingent",
+    "quotaFromRoles": "Das Kontingent ergibt sich aus den Rollen dieser Person.",
+    "quotaCustom": "Ein eigenes Kontingent ersetzt das der Rollen.",
+    "quotaEffective": "Aktuelles Kontingent: {{value}}",
+    "quotaValue": "Eigenes Kontingent",
+    "quotaUnit": "Einheit",
+    "quotaSave": "Kontingent speichern",
+    "quotaSaved": "Kontingent aktualisiert",
+    "quotaReset": "Kontingent der Rollen wiederhergestellt",
+    "quotaUseRoles": "Kontingent der Rollen verwenden",
+    "quotaInvalid": "Gib eine Zahl größer als null ein.",
+    "unlimited": "Unbegrenzt",
+    "accessTitle": "Zugriff",
+    "suspendHint": "Eine gesperrte Person wird sofort abgemeldet und kann sich nicht mehr anmelden.",
+    "reactivateHint": "Diese Person ist gesperrt und kann sich nicht anmelden.",
+    "suspend": "Sperren",
+    "reactivate": "Reaktivieren",
+    "suspendTitle": "{{name}} sperren?",
+    "suspendBody": "Die Sitzungen enden sofort, eine Anmeldung ist bis zur Reaktivierung nicht mehr möglich. Die Dateien bleiben erhalten.",
+    "suspendConfirm": "Sperren",
+    "reactivateTitle": "{{name}} reaktivieren?",
+    "reactivateBody": "Die Person kann sich mit ihren aktuellen Rollen wieder anmelden.",
+    "reactivateConfirm": "Reaktivieren",
+    "suspended": "Zugriff von {{name}} gesperrt",
+    "reactivated": "Zugriff von {{name}} reaktiviert"
+  },
+  "errors": {
+    "self": "Du kannst deinen eigenen Status nicht ändern.",
+    "superAdmin": "Nur ein Super-Admin kann einen Super-Admin ändern.",
+    "permission": "Dir fehlt die Berechtigung für diese Aktion.",
+    "notFound": "Diese Person existiert nicht.",
+    "validation": "Dieser Wert wird nicht akzeptiert.",
+    "network": "Server nicht erreichbar. Prüfe deine Verbindung.",
+    "generic": "Die Aktion ist fehlgeschlagen. Versuche es erneut."
+  }
+}

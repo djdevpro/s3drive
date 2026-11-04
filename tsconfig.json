@@ -1,0 +1,10 @@
+{
+  "files": [],
+  "references": [
+    { "path": "packages/contracts" },
+    { "path": "packages/s3" },
+    { "path": "packages/sdk" },
+    { "path": "packages/ui" },
+    { "path": "apps/server" }
+  ]
+}

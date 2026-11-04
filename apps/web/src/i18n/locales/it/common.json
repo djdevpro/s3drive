@@ -1,0 +1,94 @@
+{
+  "app": {
+    "name": "Universal Drive",
+    "tagline": "I tuoi file, su qualsiasi archivio S3."
+  },
+  "placeholder": {
+    "params": "Parametri",
+    "views": {
+      "index": "Reindirizzamento iniziale",
+      "connect": "Collega un archivio",
+      "connectDevice": "Collega questo dispositivo",
+      "accounts": "Scegli un archivio",
+      "home": "Home dell’archivio",
+      "explorer": {
+        "root": "Radice del bucket",
+        "folder": "Cartella",
+        "file": "File"
+      },
+      "recent": "Recenti",
+      "starred": "Speciali",
+      "shared": "Condivisi",
+      "trash": "Cestino",
+      "storage": "Spazio di archiviazione",
+      "search": "Ricerca",
+      "admin": "Amministrazione del bucket",
+      "access": "Accesso",
+      "jobs": "Operazioni",
+      "oauthConsent": "Consenso di un’applicazione",
+      "shareTarget": "File condivisi",
+      "receive": "File ricevuti",
+      "receiveOpen": "Apri con Universal Drive",
+      "shortLink": "Link breve",
+      "malformed": "Indirizzo non valido",
+      "notFound": "Pagina non trovata"
+    }
+  },
+  "actions": {
+    "retry": "Riprova",
+    "cancel": "Annulla",
+    "continue": "Continua",
+    "reconnect": "Accedi di nuovo",
+    "loadMore": "Mostra altro",
+    "copyLink": "Copia link",
+    "linkCopied": "Link copiato"
+  },
+  "states": {
+    "loading": "Caricamento…",
+    "errorTitle": "Si è verificato un problema"
+  },
+  "errors": {
+    "generic": "Si è verificato un errore imprevisto. Riprova tra un momento.",
+    "clipboard": "Impossibile copiare il link.",
+    "local": {
+      "gate_expired": "La sessione è scaduta",
+      "network": "Server non raggiungibile. Controlla la connessione.",
+      "invalid_response": "Il server ha inviato una risposta inattesa."
+    },
+    "api": {
+      "unauthorized": "La sessione è terminata. Accedi di nuovo.",
+      "forbidden": "Non hai accesso a questa pagina.",
+      "not_found": "Questa pagina non esiste.",
+      "rate_limited": "Troppe richieste. Attendi un momento e riprova.",
+      "internal": "Il server ha riscontrato un problema.",
+      "upstream_error": "L’archivio non ha risposto come previsto.",
+      "validation": "La richiesta non è valida.",
+      "conflict": "I dati sono cambiati nel frattempo. Ricarica e riprova."
+    }
+  },
+  "shell": {
+    "skipToContent": "Vai al contenuto",
+    "navigation": "Navigazione",
+    "openMenu": "Apri il menu",
+    "closeMenu": "Chiudi il menu",
+    "collapseSidebar": "Comprimi la barra laterale",
+    "expandSidebar": "Espandi la barra laterale"
+  },
+  "appearance": {
+    "title": "Tema",
+    "light": "Chiaro",
+    "dark": "Scuro",
+    "system": "Sistema"
+  },
+  "language": {
+    "title": "Lingua",
+    "choose": "Lingua: {{language}}"
+  },
+  "rail": {
+    "label": "Archivi",
+    "add": "Aggiungi un archivio",
+    "settings": "Impostazioni",
+    "lightTheme": "Passa al tema chiaro",
+    "darkTheme": "Passa al tema scuro"
+  }
+}

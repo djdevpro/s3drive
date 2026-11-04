@@ -1,0 +1,18 @@
+{
+  "label": "Vista previa de {{name}}",
+  "close": "Cerrar",
+  "copyLink": "Copiar enlace",
+  "download": "Descargar",
+  "previous": "Archivo anterior",
+  "next": "Archivo siguiente",
+  "notFound": {
+    "title": "Este archivo ya no existe o se ha movido",
+    "body": "Puede que se haya renombrado, movido o eliminado."
+  },
+  "tooLarge": "Este archivo es demasiado grande para la vista previa",
+  "unavailable": "Vista previa no disponible",
+  "unavailableBody": "Descarga el archivo para abrirlo en tu dispositivo.",
+  "loadError": "No se pudo cargar el archivo para la vista previa.",
+  "loading": "Cargando vista previa…",
+  "position": "{{index}} de {{total}}"
+}

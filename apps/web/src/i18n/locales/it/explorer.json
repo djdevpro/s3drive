@@ -1,0 +1,242 @@
+{
+  "permissions": {
+    "denied": "Il tuo ruolo non consente questa azione in questo spazio",
+    "readOnly": "Sola lettura"
+  },
+  "menu": {
+    "open": "Apri",
+    "preview": "Anteprima",
+    "openNewTab": "Apri in una nuova scheda",
+    "download": "Scarica",
+    "folderDownloadUnavailable": "Non è ancora possibile scaricare le cartelle",
+    "rename": "Rinomina",
+    "moveTo": "Sposta in…",
+    "copyTo": "Copia in…",
+    "copyLink": "Copia link",
+    "copyLinks": "Copia link",
+    "cut": "Taglia",
+    "copy": "Copia",
+    "deletePermanently": "Elimina definitivamente",
+    "paste": "Incolla qui",
+    "selectAll": "Seleziona tutto",
+    "refresh": "Aggiorna",
+    "copyFolderLink": "Copia il link di questa cartella",
+    "moreFor": "Altre azioni per {{name}}",
+    "more": "Altre azioni"
+  },
+  "keys": {
+    "enter": "Invio",
+    "delete": "Canc"
+  },
+  "new": {
+    "label": "Nuovo",
+    "folder": "Nuova cartella",
+    "uploadFiles": "Carica file",
+    "uploadFolder": "Carica cartella"
+  },
+  "columns": {
+    "name": "Nome",
+    "modified": "Modificato",
+    "size": "Dimensione",
+    "type": "Tipo",
+    "actions": "Azioni"
+  },
+  "list": {
+    "label": "File"
+  },
+  "grid": {
+    "label": "File",
+    "folders": "Cartelle",
+    "files": "File"
+  },
+  "types": {
+    "folder": "Cartella",
+    "bucket": "Spazio",
+    "image": "Immagine",
+    "video": "Video",
+    "audio": "Audio",
+    "pdf": "PDF",
+    "text": "Testo",
+    "code": "Codice",
+    "sheet": "Foglio di calcolo",
+    "slides": "Presentazione",
+    "doc": "Documento",
+    "archive": "Archivio",
+    "font": "Carattere",
+    "3d": "Modello 3D",
+    "exec": "Programma",
+    "unknown": "File"
+  },
+  "rename": {
+    "title": "Rinomina",
+    "description": "Inserisci un nuovo nome.",
+    "descriptionFolder": "Inserisci un nuovo nome per questa cartella e tutto il suo contenuto.",
+    "label": "Nuovo nome",
+    "submit": "Rinomina",
+    "conflict": "«{{name}}» esiste già in questa cartella.",
+    "empty": "Inserisci un nome.",
+    "slash": "Usa Sposta in… per cambiare cartella.",
+    "dots": "«.» e «..» non sono nomi validi.",
+    "tooLong_one": "Questo nome supera di {{count}} byte il limite.",
+    "tooLong_other": "Questo nome supera di {{count}} byte il limite.",
+    "control": "Questo nome contiene un carattere di controllo.",
+    "trailing": "Questo nome inizia o finisce con uno spazio, o finisce con un punto.",
+    "bidi": "Questo nome contiene caratteri invisibili che possono mascherarne l’estensione."
+  },
+  "newFolder": {
+    "title": "Nuova cartella",
+    "description": "Nome della nuova cartella",
+    "label": "Nome della cartella",
+    "submit": "Crea",
+    "defaultName": "Cartella senza titolo",
+    "nested_one": "Creerà {{count}} cartella.",
+    "nested_other": "Creerà {{count}} cartelle annidate."
+  },
+  "conflict": {
+    "keepBoth": "Mantieni entrambi",
+    "replace": "Sostituisci",
+    "legend": "Se un nome esiste già:",
+    "fail": "Chiedimelo",
+    "rename": "Mantieni entrambi",
+    "overwrite": "Sostituisci",
+    "skip": "Salta"
+  },
+  "actions": {
+    "cancel": "Annulla",
+    "up": "Sali di un livello",
+    "goHome": "Torna a Il mio drive",
+    "retry": "Riprova"
+  },
+  "delete": {
+    "titleFile": "Eliminare definitivamente «{{name}}»?",
+    "titleFolder": "Eliminare definitivamente la cartella «{{name}}»?",
+    "titleMany_one": "Eliminare definitivamente {{count}} elemento?",
+    "titleMany_other": "Eliminare definitivamente {{count}} elementi?",
+    "body": "L’azione è irreversibile: non c’è ancora un cestino.",
+    "bodyFolder_one": "La cartella e tutto il suo contenuto verranno eliminati. L’azione è irreversibile.",
+    "bodyFolder_other": "Queste cartelle e tutto il loro contenuto verranno eliminati. L’azione è irreversibile.",
+    "size": "File: {{size}}.",
+    "confirm": "Elimina definitivamente"
+  },
+  "picker": {
+    "moveTitle_one": "Sposta «{{name}}»",
+    "moveTitle_other": "Sposta {{count}} elementi",
+    "copyTitle_one": "Copia «{{name}}»",
+    "copyTitle_other": "Copia {{count}} elementi",
+    "description": "Scegli la cartella di destinazione.",
+    "spaces": "Spazi",
+    "up": "Cartella superiore",
+    "folders": "Cartelle",
+    "noFolders": "Nessuna cartella qui",
+    "blocked": "Una cartella non può andare dentro sé stessa",
+    "more": "Carica altro",
+    "moveHere": "Sposta qui",
+    "copyHere": "Copia qui"
+  },
+  "sort": {
+    "label": "Ordina",
+    "asc": "Crescente",
+    "desc": "Decrescente"
+  },
+  "view": {
+    "label": "Visualizzazione",
+    "list": "Elenco",
+    "grid": "Griglia"
+  },
+  "selection": {
+    "toolbar": "Azioni sulla selezione",
+    "clear": "Annulla selezione",
+    "count_one": "{{count}} selezionato",
+    "count_other": "{{count}} selezionati"
+  },
+  "breadcrumbs": {
+    "label": "Percorso della cartella",
+    "up": "Torna a {{name}}",
+    "more": "Mostra le cartelle nascoste del percorso"
+  },
+  "unnamed": "(senza nome)",
+  "states": {
+    "loading": "Caricamento…",
+    "offlineBanner": "Sei offline. Viene mostrata l’ultima versione caricata.",
+    "malformed": "Questo indirizzo non è un link valido a un file o a una cartella.",
+    "offline": {
+      "title": "Sei offline",
+      "body": "Riconnettiti per vedere questa cartella."
+    },
+    "notFound": {
+      "title": "Questo spazio non esiste o non è più disponibile",
+      "body": "Potrebbe essere stato rimosso, o potresti non avere più accesso."
+    },
+    "denied": {
+      "title": "Non puoi aprire questa cartella",
+      "body": "Il tuo ruolo non dà accesso a questo spazio."
+    },
+    "error": {
+      "title": "Impossibile caricare questa cartella",
+      "body": "Qualcosa è andato storto. Riprova."
+    }
+  },
+  "empty": {
+    "title": "Trascina qui i file",
+    "folderTitle": "Questa cartella è vuota",
+    "dropHere": "Oppure usa il pulsante Nuovo.",
+    "readOnly": "Ancora niente qui."
+  },
+  "errors": {
+    "network": "Impossibile raggiungere il server. Controlla la connessione.",
+    "unauthorized": "La sessione è terminata. Accedi di nuovo.",
+    "forbidden": "Questa azione non è consentita.",
+    "scope_denied": "Il tuo ruolo non lo consente in questo spazio.",
+    "access_denied": "Accesso negato dallo storage.",
+    "bucket_not_found": "Questo spazio non esiste più.",
+    "key_not_found": "Questo elemento non esiste più o è stato spostato.",
+    "already_exists": "Esiste già un elemento con questo nome.",
+    "validation": "Questo nome o percorso non è valido.",
+    "quota_exceeded": "Spazio di archiviazione insufficiente.",
+    "rate_limited": "Troppe richieste. Attendi un momento e riprova.",
+    "slow_down": "Lo storage è occupato. Riprova tra poco.",
+    "upstream_error": "Lo storage ha restituito un errore.",
+    "endpoint_unreachable": "Impossibile raggiungere lo storage.",
+    "not_implemented": "Questa azione non è ancora disponibile.",
+    "internal": "Si è verificato un errore sul server.",
+    "unknown": "Qualcosa è andato storto.",
+    "batch_too_large": "Questa cartella contiene troppi elementi per un’unica operazione (massimo 1000).",
+    "folder_exists": "Questa cartella esiste già."
+  },
+  "toast": {
+    "moved_one": "{{count}} elemento spostato",
+    "moved_other": "{{count}} elementi spostati",
+    "copied_one": "{{count}} elemento copiato",
+    "copied_other": "{{count}} elementi copiati",
+    "conflicts_one": "{{count}} elemento esiste già nella destinazione",
+    "conflicts_other": "{{count}} elementi esistono già nella destinazione",
+    "conflictsHint": "Scegli «Mantieni entrambi» o «Sostituisci» per continuare.",
+    "linkCopied_one": "Link copiato",
+    "linkCopied_other": "{{count}} link copiati",
+    "copyFailed": "Impossibile copiare negli appunti",
+    "cut_one": "{{count}} elemento tagliato: incollalo in un’altra cartella",
+    "cut_other": "{{count}} elementi tagliati: incollali in un’altra cartella",
+    "copiedToClipboard_one": "{{count}} elemento copiato: incollalo in una cartella",
+    "copiedToClipboard_other": "{{count}} elementi copiati: incollali in una cartella",
+    "renamed": "Rinominato",
+    "deleted_one": "{{count}} elemento eliminato",
+    "deleted_other": "{{count}} elementi eliminati"
+  },
+  "upload": {
+    "quota": "Il tuo drive è pieno",
+    "spaceQuota": "Questo spazio condiviso è pieno",
+    "remaining": "Restano {{size}}. Libera spazio o carica file più piccoli.",
+    "freeUp": "Libera spazio o carica file più piccoli."
+  },
+  "drop": {
+    "here": "Rilascia per caricare in {{folder}}",
+    "denied": "Non puoi caricare file in questo spazio"
+  },
+  "status": {
+    "items_one": "{{count}} elemento",
+    "items_other": "{{count}} elementi",
+    "atLeast_one": "Almeno {{count}} elemento",
+    "atLeast_other": "Almeno {{count}} elementi",
+    "loadingMore": "Caricamento di altri elementi…"
+  }
+}

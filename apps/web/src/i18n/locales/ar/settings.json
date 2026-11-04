@@ -1,0 +1,71 @@
+{
+  "title": "الإعدادات",
+  "description": "إعدادات التطبيق",
+  "sections": "الأقسام",
+  "close": "إغلاق",
+  "tabs": {
+    "appearance": "المظهر",
+    "language": "اللغة",
+    "account": "الحساب",
+    "shortcuts": "الاختصارات"
+  },
+  "language": {
+    "title": "اللغة",
+    "description": "لغة الواجهة والتواريخ والأرقام. يُحفظ اختيارك على هذا الجهاز."
+  },
+  "account": {
+    "profile": "الملف الشخصي",
+    "profileDescription": "يأتي اسمك وبريدك الإلكتروني من تسجيل الدخول لدى مؤسستك.",
+    "noEmail": "لا يوجد بريد إلكتروني",
+    "roles": "الأدوار",
+    "rolesDescription": "أدوارك في هذه المساحة، يحددها أحد المسؤولين.",
+    "noRoles": "لا يوجد دور",
+    "storage": "التخزين",
+    "storageDescription": "تُحتسب النسخ وسلة المهملات ضمن مساحة التخزين.",
+    "myDrive": "مساحتي",
+    "sharedSpaces": "المساحات المشتركة",
+    "spaceUsage": "{{used}} مستخدمة",
+    "signOut": "تسجيل الخروج",
+    "signOutDescription": "يُنهي جلستك على هذا الجهاز."
+  },
+  "shortcuts": {
+    "hint": "تعمل هذه الاختصارات في قائمة الملفات عندما تكون في موضع التركيز.",
+    "groups": {
+      "navigation": "التنقل",
+      "selection": "التحديد",
+      "actions": "الإجراءات",
+      "preview": "المعاينة"
+    },
+    "items": {
+      "move": "التنقل بين العناصر",
+      "firstLast": "العنصر الأول أو الأخير",
+      "page": "صفحة لأعلى أو لأسفل",
+      "open": "فتح",
+      "openNewTab": "فتح في علامة تبويب جديدة",
+      "toggle": "تحديد مجلد أو فتح ملف",
+      "extend": "توسيع التحديد",
+      "selectAll": "تحديد الكل",
+      "clear": "إلغاء التحديد",
+      "rename": "إعادة التسمية",
+      "delete": "حذف",
+      "copy": "نسخ",
+      "cut": "قص",
+      "paste": "لصق",
+      "menu": "فتح القائمة السياقية",
+      "previewNav": "الملف السابق أو التالي",
+      "previewClose": "إغلاق المعاينة"
+    },
+    "keys": {
+      "space": "مسافة",
+      "enter": "Enter",
+      "esc": "Esc",
+      "home": "Home",
+      "end": "End",
+      "pageUp": "Page Up",
+      "pageDown": "Page Down",
+      "delete": "Delete",
+      "menu": "Menu",
+      "shift": "Shift"
+    }
+  }
+}

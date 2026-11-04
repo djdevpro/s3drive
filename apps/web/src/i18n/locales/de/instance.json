@@ -1,0 +1,65 @@
+{
+  "roles": {
+    "super_admin": "Super-Admin",
+    "admin": "Administrator",
+    "user": "Benutzer"
+  },
+  "nav": {
+    "myDrive": "Meine Ablage",
+    "sharedSpaces": "Geteilte Bereiche",
+    "administration": "Verwaltung",
+    "readOnly": "schreibgeschützt"
+  },
+  "quota": {
+    "title": "Speicher",
+    "help": "Versionen und Papierkorb zählen zu deinem Speicher.",
+    "exceeded": "Nicht genug Speicher: noch {{remaining}} frei. Gib Speicher frei oder bitte einen Administrator um mehr.",
+    "exceededNoValue": "Nicht genug Speicher. Gib Speicher frei oder bitte einen Administrator um mehr.",
+    "spaceExceeded": "Dieser geteilte Bereich ist voll: noch {{remaining}} frei. Bitte einen Administrator um mehr Speicher.",
+    "spaceExceededNoValue": "Dieser geteilte Bereich ist voll. Bitte einen Administrator um mehr Speicher."
+  },
+  "account": {
+    "signOutFailed": "Abmelden fehlgeschlagen",
+    "settings": "Einstellungen"
+  },
+  "login": {
+    "description": "Melde dich an, um auf deine Dateien zuzugreifen.",
+    "signInWith": "Mit {{label}} anmelden",
+    "personal": "Eigene S3-Zugangsdaten verwenden",
+    "noProvider": {
+      "title": "Anmeldung nicht verfügbar",
+      "body": "Auf dieser Instanz ist kein Identitätsanbieter eingerichtet. Wende dich an den Administrator."
+    },
+    "errors": {
+      "no_role": {
+        "title": "Kein Zugriff auf diese Ablage",
+        "body": "Dein Konto hat keine Rolle in dieser Ablage. Bitte einen Administrator um Zugriff."
+      },
+      "suspended": {
+        "title": "Konto gesperrt",
+        "body": "Dein Konto wurde gesperrt. Wende dich an einen Administrator."
+      },
+      "session_ended": {
+        "title": "Deine Sitzung ist beendet",
+        "body": "Deine Zugriffsrechte haben sich geändert oder deine Sitzung wurde geschlossen. Melde dich erneut an, um fortzufahren."
+      },
+      "idp_unreachable": {
+        "title": "Anmeldedienst nicht verfügbar",
+        "body": "Der Identitätsanbieter ist gerade nicht erreichbar. Versuche es in ein paar Minuten erneut."
+      },
+      "oidc_error": {
+        "title": "Anmeldung fehlgeschlagen",
+        "body": "Die Anmeldung konnte nicht abgeschlossen werden. Versuche es erneut."
+      }
+    }
+  },
+  "terms": {
+    "title": "Nutzungsbedingungen",
+    "description": "Version {{version}} · Lies und akzeptiere die Bedingungen, um fortzufahren.",
+    "textLabel": "Text der Nutzungsbedingungen",
+    "openExternal": "Nutzungsbedingungen lesen",
+    "accept": "Ich habe die Nutzungsbedingungen gelesen und akzeptiere sie",
+    "acceptFailed": "Deine Zustimmung konnte nicht gespeichert werden",
+    "versionChanged": "Die Bedingungen haben sich gerade geändert. Lies die neue Version und akzeptiere sie."
+  }
+}

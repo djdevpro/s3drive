@@ -1,0 +1,29 @@
+{
+  "name": "universal-drive",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -n server,web -c blue,magenta \"npm run dev -w @ud/server\" \"npm run dev -w @ud/web\"",
+    "build": "tsc -b && npm run build -w @ud/web",
+    "typecheck": "tsc -b && npm run typecheck -w @ud/web",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "10.4.2",
+    "@testing-library/react": "16.3.3",
+    "@types/node": "26.6.5",
+    "concurrently": "10.0.6",
+    "fake-indexeddb": "6.2.6",
+    "jsdom": "29.1.1",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "vitest": "5.0.5"
+  }
+}

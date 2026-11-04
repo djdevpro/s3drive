@@ -1,0 +1,242 @@
+{
+  "permissions": {
+    "denied": "Ihre Rolle erlaubt diese Aktion in diesem Bereich nicht",
+    "readOnly": "Schreibgeschützt"
+  },
+  "menu": {
+    "open": "Öffnen",
+    "preview": "Vorschau",
+    "openNewTab": "In neuem Tab öffnen",
+    "download": "Herunterladen",
+    "folderDownloadUnavailable": "Ordner können noch nicht heruntergeladen werden",
+    "rename": "Umbenennen",
+    "moveTo": "Verschieben nach…",
+    "copyTo": "Kopieren nach…",
+    "copyLink": "Link kopieren",
+    "copyLinks": "Links kopieren",
+    "cut": "Ausschneiden",
+    "copy": "Kopieren",
+    "deletePermanently": "Endgültig löschen",
+    "paste": "Hier einfügen",
+    "selectAll": "Alle auswählen",
+    "refresh": "Aktualisieren",
+    "copyFolderLink": "Link zu diesem Ordner kopieren",
+    "moreFor": "Weitere Aktionen für {{name}}",
+    "more": "Weitere Aktionen"
+  },
+  "keys": {
+    "enter": "Eingabe",
+    "delete": "Entf"
+  },
+  "new": {
+    "label": "Neu",
+    "folder": "Neuer Ordner",
+    "uploadFiles": "Dateien hochladen",
+    "uploadFolder": "Ordner hochladen"
+  },
+  "columns": {
+    "name": "Name",
+    "modified": "Geändert",
+    "size": "Größe",
+    "type": "Typ",
+    "actions": "Aktionen"
+  },
+  "list": {
+    "label": "Dateien"
+  },
+  "grid": {
+    "label": "Dateien",
+    "folders": "Ordner",
+    "files": "Dateien"
+  },
+  "types": {
+    "folder": "Ordner",
+    "bucket": "Bereich",
+    "image": "Bild",
+    "video": "Video",
+    "audio": "Audio",
+    "pdf": "PDF",
+    "text": "Text",
+    "code": "Code",
+    "sheet": "Tabelle",
+    "slides": "Präsentation",
+    "doc": "Dokument",
+    "archive": "Archiv",
+    "font": "Schriftart",
+    "3d": "3D-Modell",
+    "exec": "Programm",
+    "unknown": "Datei"
+  },
+  "rename": {
+    "title": "Umbenennen",
+    "description": "Geben Sie einen neuen Namen ein.",
+    "descriptionFolder": "Geben Sie einen neuen Namen für diesen Ordner und seinen gesamten Inhalt ein.",
+    "label": "Neuer Name",
+    "submit": "Umbenennen",
+    "conflict": "„{{name}}“ existiert in diesem Ordner bereits.",
+    "empty": "Geben Sie einen Namen ein.",
+    "slash": "Verwenden Sie „Verschieben nach…“, um den Ordner zu wechseln.",
+    "dots": "„.“ und „..“ sind keine gültigen Namen.",
+    "tooLong_one": "Dieser Name ist {{count}} Byte zu lang.",
+    "tooLong_other": "Dieser Name ist {{count}} Byte zu lang.",
+    "control": "Dieser Name enthält ein Steuerzeichen.",
+    "trailing": "Dieser Name beginnt oder endet mit einem Leerzeichen oder endet mit einem Punkt.",
+    "bidi": "Dieser Name enthält unsichtbare Zeichen, die die Dateiendung verschleiern können."
+  },
+  "newFolder": {
+    "title": "Neuer Ordner",
+    "description": "Name des neuen Ordners",
+    "label": "Ordnername",
+    "submit": "Erstellen",
+    "defaultName": "Unbenannter Ordner",
+    "nested_one": "Erstellt {{count}} Ordner.",
+    "nested_other": "Erstellt {{count}} verschachtelte Ordner."
+  },
+  "conflict": {
+    "keepBoth": "Beide behalten",
+    "replace": "Ersetzen",
+    "legend": "Wenn ein Name bereits existiert:",
+    "fail": "Nachfragen",
+    "rename": "Beide behalten",
+    "overwrite": "Ersetzen",
+    "skip": "Überspringen"
+  },
+  "actions": {
+    "cancel": "Abbrechen",
+    "up": "Eine Ebene nach oben",
+    "goHome": "Zurück zu Meine Ablage",
+    "retry": "Erneut versuchen"
+  },
+  "delete": {
+    "titleFile": "„{{name}}“ endgültig löschen?",
+    "titleFolder": "Ordner „{{name}}“ endgültig löschen?",
+    "titleMany_one": "{{count}} Element endgültig löschen?",
+    "titleMany_other": "{{count}} Elemente endgültig löschen?",
+    "body": "Dies kann nicht rückgängig gemacht werden: Es gibt noch keinen Papierkorb.",
+    "bodyFolder_one": "Der Ordner und sein gesamter Inhalt werden gelöscht. Dies kann nicht rückgängig gemacht werden.",
+    "bodyFolder_other": "Diese Ordner und ihr gesamter Inhalt werden gelöscht. Dies kann nicht rückgängig gemacht werden.",
+    "size": "Dateien: {{size}}.",
+    "confirm": "Endgültig löschen"
+  },
+  "picker": {
+    "moveTitle_one": "„{{name}}“ verschieben",
+    "moveTitle_other": "{{count}} Elemente verschieben",
+    "copyTitle_one": "„{{name}}“ kopieren",
+    "copyTitle_other": "{{count}} Elemente kopieren",
+    "description": "Wählen Sie den Zielordner.",
+    "spaces": "Bereiche",
+    "up": "Übergeordneter Ordner",
+    "folders": "Ordner",
+    "noFolders": "Hier gibt es keine Ordner",
+    "blocked": "Ein Ordner kann nicht in sich selbst verschoben werden",
+    "more": "Mehr laden",
+    "moveHere": "Hierher verschieben",
+    "copyHere": "Hierher kopieren"
+  },
+  "sort": {
+    "label": "Sortieren",
+    "asc": "Aufsteigend",
+    "desc": "Absteigend"
+  },
+  "view": {
+    "label": "Ansicht",
+    "list": "Liste",
+    "grid": "Raster"
+  },
+  "selection": {
+    "toolbar": "Aktionen für die Auswahl",
+    "clear": "Auswahl aufheben",
+    "count_one": "{{count}} ausgewählt",
+    "count_other": "{{count}} ausgewählt"
+  },
+  "breadcrumbs": {
+    "label": "Ordnerpfad",
+    "up": "Zurück zu {{name}}",
+    "more": "Ausgeblendete Ordner im Pfad anzeigen"
+  },
+  "unnamed": "(ohne Namen)",
+  "states": {
+    "loading": "Wird geladen…",
+    "offlineBanner": "Sie sind offline. Die zuletzt geladene Version wird angezeigt.",
+    "malformed": "Diese Adresse ist kein gültiger Datei- oder Ordnerlink.",
+    "offline": {
+      "title": "Sie sind offline",
+      "body": "Stellen Sie die Verbindung wieder her, um diesen Ordner zu sehen."
+    },
+    "notFound": {
+      "title": "Dieser Bereich existiert nicht oder ist nicht mehr verfügbar",
+      "body": "Er wurde möglicherweise entfernt, oder Sie haben keinen Zugriff mehr."
+    },
+    "denied": {
+      "title": "Sie können diesen Ordner nicht öffnen",
+      "body": "Ihre Rolle gewährt keinen Zugriff auf diesen Bereich."
+    },
+    "error": {
+      "title": "Dieser Ordner konnte nicht geladen werden",
+      "body": "Etwas ist schiefgelaufen. Versuchen Sie es erneut."
+    }
+  },
+  "empty": {
+    "title": "Dateien hier ablegen",
+    "folderTitle": "Dieser Ordner ist leer",
+    "dropHere": "Oder verwenden Sie die Schaltfläche „Neu“.",
+    "readOnly": "Noch nichts vorhanden."
+  },
+  "errors": {
+    "network": "Der Server ist nicht erreichbar. Prüfen Sie Ihre Verbindung.",
+    "unauthorized": "Ihre Sitzung ist beendet. Melden Sie sich erneut an.",
+    "forbidden": "Diese Aktion ist nicht erlaubt.",
+    "scope_denied": "Ihre Rolle erlaubt dies in diesem Bereich nicht.",
+    "access_denied": "Der Speicher hat den Zugriff verweigert.",
+    "bucket_not_found": "Dieser Bereich existiert nicht mehr.",
+    "key_not_found": "Dieses Element existiert nicht mehr oder wurde verschoben.",
+    "already_exists": "Ein Element mit diesem Namen existiert bereits.",
+    "validation": "Dieser Name oder Pfad ist ungültig.",
+    "quota_exceeded": "Nicht genügend Speicherplatz.",
+    "rate_limited": "Zu viele Anfragen. Warten Sie einen Moment und versuchen Sie es erneut.",
+    "slow_down": "Der Speicher ist ausgelastet. Versuchen Sie es gleich noch einmal.",
+    "upstream_error": "Der Speicher hat einen Fehler gemeldet.",
+    "endpoint_unreachable": "Der Speicher ist nicht erreichbar.",
+    "not_implemented": "Diese Aktion ist noch nicht verfügbar.",
+    "internal": "Auf dem Server ist ein Fehler aufgetreten.",
+    "unknown": "Etwas ist schiefgelaufen.",
+    "batch_too_large": "Dieser Ordner enthält zu viele Elemente für einen Vorgang (höchstens 1.000).",
+    "folder_exists": "Dieser Ordner existiert bereits."
+  },
+  "toast": {
+    "moved_one": "{{count}} Element verschoben",
+    "moved_other": "{{count}} Elemente verschoben",
+    "copied_one": "{{count}} Element kopiert",
+    "copied_other": "{{count}} Elemente kopiert",
+    "conflicts_one": "{{count}} Element existiert am Ziel bereits",
+    "conflicts_other": "{{count}} Elemente existieren am Ziel bereits",
+    "conflictsHint": "Wählen Sie „Beide behalten“ oder „Ersetzen“, um fortzufahren.",
+    "linkCopied_one": "Link kopiert",
+    "linkCopied_other": "{{count}} Links kopiert",
+    "copyFailed": "Kopieren in die Zwischenablage fehlgeschlagen",
+    "cut_one": "{{count}} Element ausgeschnitten – in einen anderen Ordner einfügen",
+    "cut_other": "{{count}} Elemente ausgeschnitten – in einen anderen Ordner einfügen",
+    "copiedToClipboard_one": "{{count}} Element kopiert – in einen Ordner einfügen",
+    "copiedToClipboard_other": "{{count}} Elemente kopiert – in einen Ordner einfügen",
+    "renamed": "Umbenannt",
+    "deleted_one": "{{count}} Element gelöscht",
+    "deleted_other": "{{count}} Elemente gelöscht"
+  },
+  "upload": {
+    "quota": "Ihre Ablage ist voll",
+    "spaceQuota": "Dieser geteilte Bereich ist voll",
+    "remaining": "Noch {{size}} frei. Geben Sie Speicher frei oder laden Sie kleinere Dateien hoch.",
+    "freeUp": "Geben Sie Speicher frei oder laden Sie kleinere Dateien hoch."
+  },
+  "drop": {
+    "here": "Ablegen, um in {{folder}} hochzuladen",
+    "denied": "Sie können in diesen Bereich nichts hochladen"
+  },
+  "status": {
+    "items_one": "{{count}} Element",
+    "items_other": "{{count}} Elemente",
+    "atLeast_one": "Mindestens {{count}} Element",
+    "atLeast_other": "Mindestens {{count}} Elemente",
+    "loadingMore": "Weitere werden geladen…"
+  }
+}

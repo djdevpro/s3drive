@@ -1,0 +1,71 @@
+{
+  "title": "Settings",
+  "description": "App settings",
+  "sections": "Sections",
+  "close": "Close",
+  "tabs": {
+    "appearance": "Appearance",
+    "language": "Language",
+    "account": "Account",
+    "shortcuts": "Shortcuts"
+  },
+  "language": {
+    "title": "Language",
+    "description": "Language of the interface, dates and numbers. Your choice is kept on this device."
+  },
+  "account": {
+    "profile": "Profile",
+    "profileDescription": "Your name and e-mail come from your organization’s sign-in.",
+    "noEmail": "No e-mail address",
+    "roles": "Roles",
+    "rolesDescription": "Your roles on this drive, set by an administrator.",
+    "noRoles": "No role",
+    "storage": "Storage",
+    "storageDescription": "Versions and trash count toward your storage.",
+    "myDrive": "My Drive",
+    "sharedSpaces": "Shared spaces",
+    "spaceUsage": "{{used}} used",
+    "signOut": "Sign out",
+    "signOutDescription": "Ends your session on this device."
+  },
+  "shortcuts": {
+    "hint": "These shortcuts work in the file list once it has focus.",
+    "groups": {
+      "navigation": "Navigation",
+      "selection": "Selection",
+      "actions": "Actions",
+      "preview": "Preview"
+    },
+    "items": {
+      "move": "Move between items",
+      "firstLast": "First or last item",
+      "page": "Page up or down",
+      "open": "Open",
+      "openNewTab": "Open in a new tab",
+      "toggle": "Select a folder or open a file",
+      "extend": "Extend the selection",
+      "selectAll": "Select all",
+      "clear": "Clear the selection",
+      "rename": "Rename",
+      "delete": "Delete",
+      "copy": "Copy",
+      "cut": "Cut",
+      "paste": "Paste",
+      "menu": "Open the context menu",
+      "previewNav": "Previous or next file",
+      "previewClose": "Close the preview"
+    },
+    "keys": {
+      "space": "Space",
+      "enter": "Enter",
+      "esc": "Esc",
+      "home": "Home",
+      "end": "End",
+      "pageUp": "Page Up",
+      "pageDown": "Page Down",
+      "delete": "Delete",
+      "menu": "Menu",
+      "shift": "Shift"
+    }
+  }
+}

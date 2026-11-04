@@ -1,0 +1,41 @@
+{
+  "name": "@ud/web",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@tanstack/react-form": "1.33.5",
+    "@tanstack/react-pacer": "0.24.1",
+    "@tanstack/react-query": "5.104.5",
+    "@tanstack/react-router": "1.170.45",
+    "@tanstack/react-table": "9.3.1",
+    "@tanstack/react-virtual": "3.14.21",
+    "@ud/contracts": "*",
+    "@ud/sdk": "*",
+    "@ud/ui": "*",
+    "dexie": "4.4.7",
+    "i18next": "26.5.3",
+    "lucide-react": "1.59.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "react-i18next": "17.1.0",
+    "zod": "4.6.7",
+    "zustand": "5.0.15"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "4.3.3",
+    "@tanstack/router-plugin": "1.168.47",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "tailwindcss": "4.3.3",
+    "vite": "8.3.4",
+    "vite-plugin-pwa": "2.0.0"
+  }
+}

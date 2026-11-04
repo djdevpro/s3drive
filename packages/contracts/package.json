@@ -1,0 +1,20 @@
+{
+  "name": "@ud/contracts",
+  "version": "0.0.0",
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "src"
+  ],
+  "exports": {
+    ".": {
+      "@ud/source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "dependencies": {
+    "zod": "4.6.7"
+  }
+}

@@ -1,0 +1,25 @@
+/* ==========================================================================
+   @ud/ui — point d'entrée des styles du Drive.
+   L'hôte importe d'abord Tailwind, puis ce fichier :
+     @import 'tailwindcss';
+     @import '@ud/ui/styles/index.css';
+   Universal Email importe à la place ./bridges/universal-email.css.
+   ========================================================================== */
+
+@import 'tw-animate-css';
+@import './fonts.css';
+
+@import './themes/porcelain.css';
+@import './themes/graphite.css';
+@import './themes/nord.css';
+@import './themes/rose-pine.css';
+@import './themes/catppuccin.css';
+@import './themes/solarized.css';
+@import './themes/sepia.css';
+@import './themes/forest.css';
+@import './themes/ocean.css';
+@import './themes/midnight.css';
+
+@import './tokens.css';
+@import './utilities.css';
+@import './base.css';

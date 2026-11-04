@@ -1,0 +1,134 @@
+{
+  "realm": "ud-dev",
+  "displayName": "Universal Drive (dev)",
+  "enabled": true,
+  "sslRequired": "external",
+  "registrationAllowed": false,
+  "resetPasswordAllowed": false,
+  "rememberMe": false,
+  "verifyEmail": false,
+  "loginWithEmailAllowed": true,
+  "duplicateEmailsAllowed": false,
+  "editUsernameAllowed": false,
+  "bruteForceProtected": true,
+  "permanentLockout": false,
+  "failureFactor": 10,
+  "maxFailureWaitSeconds": 900,
+  "waitIncrementSeconds": 60,
+  "minimumQuickLoginWaitSeconds": 60,
+  "quickLoginCheckMilliSeconds": 1000,
+  "maxDeltaTimeSeconds": 43200,
+  "internationalizationEnabled": true,
+  "supportedLocales": ["fr", "en"],
+  "defaultLocale": "fr",
+  "accessTokenLifespan": 300,
+  "ssoSessionIdleTimeout": 43200,
+  "ssoSessionMaxLifespan": 86400,
+  "revokeRefreshToken": false,
+  "roles": {
+    "client": {
+      "drive": [
+        { "name": "super-admin", "description": "Universal Drive : super admin", "composite": false, "clientRole": true },
+        { "name": "admin", "description": "Universal Drive : administrateur", "composite": false, "clientRole": true },
+        { "name": "user", "description": "Universal Drive : utilisateur", "composite": false, "clientRole": true }
+      ]
+    }
+  },
+  "clients": [
+    {
+      "clientId": "drive",
+      "name": "Universal Drive (dev)",
+      "enabled": true,
+      "protocol": "openid-connect",
+      "publicClient": false,
+      "bearerOnly": false,
+      "clientAuthenticatorType": "client-secret",
+      "secret": "dev-client-secret",
+      "standardFlowEnabled": true,
+      "implicitFlowEnabled": false,
+      "directAccessGrantsEnabled": false,
+      "serviceAccountsEnabled": false,
+      "frontchannelLogout": false,
+      "consentRequired": false,
+      "fullScopeAllowed": true,
+      "rootUrl": "",
+      "baseUrl": "",
+      "redirectUris": [
+        "http://localhost:8080/api/v1/auth/oidc/callback",
+        "http://localhost:5173/api/v1/auth/oidc/callback",
+        "http://localhost:5290/api/v1/auth/oidc/callback"
+      ],
+      "webOrigins": ["http://localhost:8080", "http://localhost:5173", "http://localhost:5290"],
+      "attributes": {
+        "pkce.code.challenge.method": "S256",
+        "post.logout.redirect.uris": "http://localhost:8080/login##http://localhost:5173/login##http://localhost:5290/login",
+        "oauth2.device.authorization.grant.enabled": "false",
+        "oidc.ciba.grant.enabled": "false",
+        "backchannel.logout.session.required": "true"
+      },
+      "protocolMappers": [
+        {
+          "name": "drive client roles",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-client-role-mapper",
+          "consentRequired": false,
+          "config": {
+            "usermodel.clientRoleMapping.clientId": "drive",
+            "claim.name": "resource_access.${client_id}.roles",
+            "jsonType.label": "String",
+            "multivalued": "true",
+            "id.token.claim": "true",
+            "access.token.claim": "true",
+            "userinfo.token.claim": "true",
+            "introspection.token.claim": "true"
+          }
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "username": "alice",
+      "email": "alice@ud-dev.test",
+      "emailVerified": true,
+      "firstName": "Alice",
+      "lastName": "Martin",
+      "enabled": true,
+      "requiredActions": [],
+      "credentials": [{ "type": "password", "value": "krOEb9TeQuJz", "temporary": false }],
+      "clientRoles": { "drive": ["user"] }
+    },
+    {
+      "username": "bruno",
+      "email": "bruno@ud-dev.test",
+      "emailVerified": true,
+      "firstName": "Bruno",
+      "lastName": "Petit",
+      "enabled": true,
+      "requiredActions": [],
+      "credentials": [{ "type": "password", "value": "m8YaP3NXTyvi", "temporary": false }],
+      "clientRoles": { "drive": ["admin"] }
+    },
+    {
+      "username": "chloe",
+      "email": "chloe@ud-dev.test",
+      "emailVerified": true,
+      "firstName": "Chloé",
+      "lastName": "Durand",
+      "enabled": true,
+      "requiredActions": [],
+      "credentials": [{ "type": "password", "value": "9Tna1ETjIDl4", "temporary": false }],
+      "clientRoles": { "drive": ["super-admin"] }
+    },
+    {
+      "username": "damien",
+      "email": "damien@ud-dev.test",
+      "emailVerified": true,
+      "firstName": "Damien",
+      "lastName": "Leroy",
+      "enabled": true,
+      "requiredActions": [],
+      "credentials": [{ "type": "password", "value": "ptOQrPacJ_Vl", "temporary": false }]
+    }
+  ]
+}

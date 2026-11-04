@@ -1,0 +1,25 @@
+{
+  "name": "@ud/sdk",
+  "version": "0.0.0",
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "src"
+  ],
+  "exports": {
+    ".": {
+      "@ud/source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./upload": {
+      "@ud/source": "./src/upload.ts",
+      "types": "./dist/upload.d.ts",
+      "import": "./dist/upload.js"
+    }
+  },
+  "dependencies": {
+    "@ud/contracts": "*"
+  }
+}

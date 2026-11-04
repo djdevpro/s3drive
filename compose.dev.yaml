@@ -1,0 +1,55 @@
+# S3 local de dev : RustFS, image officielle épinglée (jamais latest).
+# Démarrage : docker compose -f compose.dev.yaml up -d
+# Keycloak local de test (profil iam) : docker compose -f compose.dev.yaml --profile iam up -d
+name: universal-drive-dev
+
+services:
+  s3:
+    image: rustfs/rustfs:1.0.4
+    environment:
+      RUSTFS_ACCESS_KEY: ${UD_DEV_S3_ACCESS_KEY:-udadmin}
+      RUSTFS_SECRET_KEY: ${UD_DEV_S3_SECRET_KEY:-udadmin-dev-secret}
+      RUSTFS_VOLUMES: /data
+      RUSTFS_ADDRESS: ":9000"
+      RUSTFS_CONSOLE_ENABLE: "true"
+      RUSTFS_CONSOLE_ADDRESS: ":9001"
+    ports:
+      - "127.0.0.1:9000:9000"
+      - "127.0.0.1:9001:9001"
+    volumes:
+      # Volume nommé : évite les droits UID 10001 d'un montage lié sous Docker Desktop pour Windows.
+      - ud-dev-s3:/data
+    healthcheck:
+      test: ["CMD", "sh", "-c", "curl -fsS http://localhost:9000/health || wget -qO- http://localhost:9000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 6
+      start_period: 10s
+    restart: unless-stopped
+
+  # Fournisseur OIDC de développement (realm ud-dev importé de dev/keycloak) ; même version que la production.
+  # Données en mémoire (H2 du mode dev) : le realm est réimporté à chaque recréation du conteneur.
+  keycloak:
+    image: quay.io/keycloak/keycloak:26.8.1
+    profiles: [iam]
+    command: ["start-dev", "--import-realm", "--http-port", "8180"]
+    environment:
+      # Admin d'amorçage du realm master : valeurs de test seulement.
+      KC_BOOTSTRAP_ADMIN_USERNAME: ${UD_DEV_KC_ADMIN:-admin}
+      KC_BOOTSTRAP_ADMIN_PASSWORD: ${UD_DEV_KC_ADMIN_PASSWORD:-ud-dev-kc-admin}
+      KC_HEALTH_ENABLED: "true"
+    ports:
+      - "127.0.0.1:8180:8180"
+    volumes:
+      - ./dev/keycloak:/opt/keycloak/data/import:ro
+    healthcheck:
+      # Pas de curl dans l'image : requête HTTP à la main par bash sur le port de gestion.
+      test: ["CMD-SHELL", "exec 3<>/dev/tcp/127.0.0.1/9000 && printf 'GET /health/ready HTTP/1.0\r\n\r\n' >&3 && grep -q UP <&3"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 30s
+    restart: unless-stopped
+
+volumes:
+  ud-dev-s3:

@@ -1,0 +1,81 @@
+{
+  "title": "Administration",
+  "forbidden": {
+    "title": "Accès restreint",
+    "body": "Votre rôle ne permet pas de consulter l’administration de ce drive."
+  },
+  "users": {
+    "title": "Personnes",
+    "search": "Rechercher par nom ou e-mail",
+    "caption": "Personnes ayant accès à ce drive",
+    "empty": "Personne ne s’est encore connecté",
+    "emptySearch": "Personne ne correspond à cette recherche",
+    "never": "Jamais",
+    "columns": {
+      "name": "Nom",
+      "email": "E-mail",
+      "roles": "Rôles",
+      "usage": "Stockage utilisé",
+      "lastLogin": "Dernière connexion",
+      "status": "État"
+    }
+  },
+  "status": {
+    "active": "Actif",
+    "suspended": "Suspendu"
+  },
+  "units": {
+    "MB": "Mo",
+    "GB": "Go",
+    "TB": "To"
+  },
+  "user": {
+    "back": "Toutes les personnes",
+    "notFound": "Cette personne n’existe pas",
+    "created": "Première connexion",
+    "lastLogin": "Dernière connexion",
+    "terms": "Conditions d’utilisation",
+    "termsAccepted": "Acceptées (version {{version}})",
+    "termsNone": "Pas encore acceptées",
+    "rolesTitle": "Rôles Drive",
+    "rolesHint": "Les rôles viennent du fournisseur d’identité et ne se modifient que chez lui.",
+    "usageTitle": "Stockage utilisé",
+    "objects": "Objets : {{count}}",
+    "recount": "Recalculer l’usage",
+    "recounted": "Usage recalculé",
+    "quotaTitle": "Quota de stockage",
+    "quotaFromRoles": "Le quota vient des rôles de cette personne.",
+    "quotaCustom": "Un quota personnalisé remplace celui des rôles.",
+    "quotaEffective": "Quota actuel : {{value}}",
+    "quotaValue": "Quota personnalisé",
+    "quotaUnit": "Unité",
+    "quotaSave": "Enregistrer le quota",
+    "quotaSaved": "Quota mis à jour",
+    "quotaReset": "Quota des rôles rétabli",
+    "quotaUseRoles": "Utiliser le quota des rôles",
+    "quotaInvalid": "Saisissez un nombre supérieur à zéro.",
+    "unlimited": "Illimité",
+    "accessTitle": "Accès",
+    "suspendHint": "Une personne suspendue est déconnectée aussitôt et ne peut plus se connecter.",
+    "reactivateHint": "Cette personne est suspendue et ne peut pas se connecter.",
+    "suspend": "Suspendre",
+    "reactivate": "Réactiver",
+    "suspendTitle": "Suspendre {{name}} ?",
+    "suspendBody": "Ses sessions prennent fin immédiatement et elle ne peut plus se connecter jusqu’à sa réactivation. Ses fichiers sont conservés.",
+    "suspendConfirm": "Suspendre",
+    "reactivateTitle": "Réactiver {{name}} ?",
+    "reactivateBody": "Cette personne pourra de nouveau se connecter avec ses rôles actuels.",
+    "reactivateConfirm": "Réactiver",
+    "suspended": "Accès de {{name}} suspendu",
+    "reactivated": "Accès de {{name}} réactivé"
+  },
+  "errors": {
+    "self": "Vous ne pouvez pas changer votre propre état.",
+    "superAdmin": "Seul un super admin peut modifier un super admin.",
+    "permission": "Vous n’avez pas le droit de faire cette action.",
+    "notFound": "Cette personne n’existe pas.",
+    "validation": "Cette valeur n’est pas acceptée.",
+    "network": "Serveur injoignable. Vérifiez votre connexion.",
+    "generic": "L’action a échoué. Réessayez."
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "roles": {
+    "super_admin": "Super amministratore",
+    "admin": "Amministratore",
+    "user": "Utente"
+  },
+  "nav": {
+    "myDrive": "Il mio Drive",
+    "sharedSpaces": "Spazi condivisi",
+    "administration": "Amministrazione",
+    "readOnly": "sola lettura"
+  },
+  "quota": {
+    "title": "Spazio di archiviazione",
+    "help": "Le versioni e il cestino occupano spazio di archiviazione.",
+    "exceeded": "Spazio insufficiente: restano {{remaining}}. Libera spazio o chiedine altro a un amministratore.",
+    "exceededNoValue": "Spazio insufficiente. Libera spazio o chiedine altro a un amministratore.",
+    "spaceExceeded": "Questo spazio condiviso è pieno: restano {{remaining}}. Chiedi più spazio a un amministratore.",
+    "spaceExceededNoValue": "Questo spazio condiviso è pieno. Chiedi più spazio a un amministratore."
+  },
+  "account": {
+    "signOutFailed": "Disconnessione non riuscita",
+    "settings": "Impostazioni"
+  },
+  "login": {
+    "description": "Accedi per raggiungere i tuoi file.",
+    "signInWith": "Accedi con {{label}}",
+    "personal": "Usa le mie credenziali S3",
+    "noProvider": {
+      "title": "Accesso non disponibile",
+      "body": "Su questa istanza non è configurato alcun provider di identità. Contatta l’amministratore."
+    },
+    "errors": {
+      "no_role": {
+        "title": "Nessun accesso a questo Drive",
+        "body": "Il tuo account non ha alcun ruolo su questo Drive. Chiedi l’accesso a un amministratore."
+      },
+      "suspended": {
+        "title": "Account sospeso",
+        "body": "Il tuo account è stato sospeso. Contatta un amministratore."
+      },
+      "session_ended": {
+        "title": "La sessione è terminata",
+        "body": "I tuoi accessi sono cambiati o la sessione è stata chiusa. Accedi di nuovo per continuare."
+      },
+      "idp_unreachable": {
+        "title": "Servizio di accesso non disponibile",
+        "body": "Il provider di identità non è raggiungibile al momento. Riprova tra qualche minuto."
+      },
+      "oidc_error": {
+        "title": "Accesso non riuscito",
+        "body": "Non è stato possibile completare l’accesso. Riprova."
+      }
+    }
+  },
+  "terms": {
+    "title": "Condizioni d’uso",
+    "description": "Versione {{version}} · Leggi e accetta le condizioni per continuare.",
+    "textLabel": "Testo delle condizioni d’uso",
+    "openExternal": "Leggi le condizioni d’uso",
+    "accept": "Ho letto e accetto le condizioni d’uso",
+    "acceptFailed": "Impossibile salvare la tua accettazione",
+    "versionChanged": "Le condizioni sono appena cambiate. Leggi la nuova versione e accettala."
+  }
+}

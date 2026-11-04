@@ -1,0 +1,24 @@
+{
+  "name": "@ud/s3",
+  "version": "0.0.0",
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "src"
+  ],
+  "exports": {
+    ".": {
+      "@ud/source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "3.1153.0",
+    "@aws-sdk/s3-presigned-post": "3.1153.0",
+    "@aws-sdk/s3-request-presigner": "3.1153.0",
+    "@smithy/node-http-handler": "4.12.1",
+    "@ud/contracts": "*"
+  }
+}

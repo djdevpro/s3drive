@@ -1,0 +1,5 @@
+@import "tailwindcss";
+@import "@ud/ui/styles/index.css";
+
+/* Classes utilisées par les composants de @ud/ui (lus depuis leurs sources dans l'espace de travail). */
+@source "../../../packages/ui/src";

@@ -1,0 +1,306 @@
+{
+  "permissions": {
+    "denied": "لا يسمح لك دورك بهذا الإجراء في هذه المساحة",
+    "readOnly": "للقراءة فقط"
+  },
+  "menu": {
+    "open": "فتح",
+    "preview": "معاينة",
+    "openNewTab": "فتح في علامة تبويب جديدة",
+    "download": "تنزيل",
+    "folderDownloadUnavailable": "تنزيل المجلدات غير متاح بعد",
+    "rename": "إعادة التسمية",
+    "moveTo": "نقل إلى…",
+    "copyTo": "نسخ إلى…",
+    "copyLink": "نسخ الرابط",
+    "copyLinks": "نسخ الروابط",
+    "cut": "قص",
+    "copy": "نسخ",
+    "deletePermanently": "حذف نهائي",
+    "paste": "لصق هنا",
+    "selectAll": "تحديد الكل",
+    "refresh": "تحديث",
+    "copyFolderLink": "نسخ رابط هذا المجلد",
+    "moreFor": "إجراءات أخرى لـ {{name}}",
+    "more": "إجراءات أخرى"
+  },
+  "keys": {
+    "enter": "Enter",
+    "delete": "Del"
+  },
+  "new": {
+    "label": "جديد",
+    "folder": "مجلد جديد",
+    "uploadFiles": "رفع ملفات",
+    "uploadFolder": "رفع مجلد"
+  },
+  "columns": {
+    "name": "الاسم",
+    "modified": "آخر تعديل",
+    "size": "الحجم",
+    "type": "النوع",
+    "actions": "الإجراءات"
+  },
+  "list": {
+    "label": "الملفات"
+  },
+  "grid": {
+    "label": "الملفات",
+    "folders": "المجلدات",
+    "files": "الملفات"
+  },
+  "types": {
+    "folder": "مجلد",
+    "bucket": "مساحة",
+    "image": "صورة",
+    "video": "فيديو",
+    "audio": "صوت",
+    "pdf": "PDF",
+    "text": "نص",
+    "code": "شيفرة",
+    "sheet": "جدول بيانات",
+    "slides": "عرض تقديمي",
+    "doc": "مستند",
+    "archive": "أرشيف",
+    "font": "خط",
+    "3d": "نموذج ثلاثي الأبعاد",
+    "exec": "برنامج",
+    "unknown": "ملف"
+  },
+  "rename": {
+    "title": "إعادة التسمية",
+    "description": "أدخل اسمًا جديدًا.",
+    "descriptionFolder": "أدخل اسمًا جديدًا لهذا المجلد وكل محتواه.",
+    "label": "الاسم الجديد",
+    "submit": "إعادة التسمية",
+    "conflict": "«{{name}}» موجود بالفعل في هذا المجلد.",
+    "empty": "أدخل اسمًا.",
+    "slash": "استخدم «نقل إلى…» لتغيير المجلد.",
+    "dots": "«.» و«..» ليسا اسمين صالحين.",
+    "tooLong_zero": "هذا الاسم أطول من المسموح.",
+    "tooLong_one": "هذا الاسم أطول من المسموح ببايت واحد.",
+    "tooLong_two": "هذا الاسم أطول من المسموح ببايتين.",
+    "tooLong_few": "هذا الاسم أطول من المسموح بـ {{count}} بايتات.",
+    "tooLong_many": "هذا الاسم أطول من المسموح بـ {{count}} بايتًا.",
+    "tooLong_other": "هذا الاسم أطول من المسموح بـ {{count}} بايت.",
+    "control": "يحتوي هذا الاسم على حرف تحكم.",
+    "trailing": "يبدأ هذا الاسم أو ينتهي بمسافة، أو ينتهي بنقطة.",
+    "bidi": "يحتوي هذا الاسم على أحرف غير مرئية قد تخفي امتداده."
+  },
+  "newFolder": {
+    "title": "مجلد جديد",
+    "description": "اسم المجلد الجديد",
+    "label": "اسم المجلد",
+    "submit": "إنشاء",
+    "defaultName": "مجلد بلا عنوان",
+    "nested_zero": "لن يُنشأ أي مجلد.",
+    "nested_one": "سيُنشأ مجلد واحد.",
+    "nested_two": "سيُنشأ مجلدان متداخلان.",
+    "nested_few": "ستُنشأ {{count}} مجلدات متداخلة.",
+    "nested_many": "سيُنشأ {{count}} مجلدًا متداخلًا.",
+    "nested_other": "سيُنشأ {{count}} مجلد متداخل."
+  },
+  "conflict": {
+    "keepBoth": "الاحتفاظ بالاثنين",
+    "replace": "استبدال",
+    "legend": "إذا كان الاسم موجودًا:",
+    "fail": "اسألني",
+    "rename": "الاحتفاظ بالاثنين",
+    "overwrite": "استبدال",
+    "skip": "تخطي"
+  },
+  "actions": {
+    "cancel": "إلغاء",
+    "up": "الصعود مستوى واحدًا",
+    "goHome": "العودة إلى ملفاتي",
+    "retry": "إعادة المحاولة"
+  },
+  "delete": {
+    "titleFile": "هل تريد حذف «{{name}}» نهائيًا؟",
+    "titleFolder": "هل تريد حذف المجلد «{{name}}» نهائيًا؟",
+    "titleMany_zero": "هل تريد الحذف نهائيًا؟",
+    "titleMany_one": "هل تريد حذف عنصر واحد نهائيًا؟",
+    "titleMany_two": "هل تريد حذف عنصرين نهائيًا؟",
+    "titleMany_few": "هل تريد حذف {{count}} عناصر نهائيًا؟",
+    "titleMany_many": "هل تريد حذف {{count}} عنصرًا نهائيًا؟",
+    "titleMany_other": "هل تريد حذف {{count}} عنصر نهائيًا؟",
+    "body": "لا يمكن التراجع عن ذلك: لا توجد سلة مهملات بعد.",
+    "bodyFolder_zero": "سيُحذف المحتوى نهائيًا.",
+    "bodyFolder_one": "سيُحذف المجلد وكل محتواه. لا يمكن التراجع عن ذلك.",
+    "bodyFolder_two": "سيُحذف المجلدان وكل محتواهما. لا يمكن التراجع عن ذلك.",
+    "bodyFolder_few": "ستُحذف هذه المجلدات وكل محتواها. لا يمكن التراجع عن ذلك.",
+    "bodyFolder_many": "ستُحذف هذه المجلدات وكل محتواها. لا يمكن التراجع عن ذلك.",
+    "bodyFolder_other": "ستُحذف هذه المجلدات وكل محتواها. لا يمكن التراجع عن ذلك.",
+    "size": "الملفات: {{size}}.",
+    "confirm": "حذف نهائي"
+  },
+  "picker": {
+    "moveTitle_zero": "نقل",
+    "moveTitle_one": "نقل «{{name}}»",
+    "moveTitle_two": "نقل عنصرين",
+    "moveTitle_few": "نقل {{count}} عناصر",
+    "moveTitle_many": "نقل {{count}} عنصرًا",
+    "moveTitle_other": "نقل {{count}} عنصر",
+    "copyTitle_zero": "نسخ",
+    "copyTitle_one": "نسخ «{{name}}»",
+    "copyTitle_two": "نسخ عنصرين",
+    "copyTitle_few": "نسخ {{count}} عناصر",
+    "copyTitle_many": "نسخ {{count}} عنصرًا",
+    "copyTitle_other": "نسخ {{count}} عنصر",
+    "description": "اختر مجلد الوجهة.",
+    "spaces": "المساحات",
+    "up": "المجلد الأعلى",
+    "folders": "المجلدات",
+    "noFolders": "لا توجد مجلدات هنا",
+    "blocked": "لا يمكن وضع مجلد داخل نفسه",
+    "more": "تحميل المزيد",
+    "moveHere": "النقل إلى هنا",
+    "copyHere": "النسخ إلى هنا"
+  },
+  "sort": {
+    "label": "ترتيب",
+    "asc": "تصاعدي",
+    "desc": "تنازلي"
+  },
+  "view": {
+    "label": "العرض",
+    "list": "قائمة",
+    "grid": "شبكة"
+  },
+  "selection": {
+    "toolbar": "إجراءات على التحديد",
+    "clear": "إلغاء التحديد",
+    "count_zero": "لم يُحدَّد أي عنصر",
+    "count_one": "عنصر واحد محدد",
+    "count_two": "عنصران محددان",
+    "count_few": "{{count}} عناصر محددة",
+    "count_many": "{{count}} عنصرًا محددًا",
+    "count_other": "{{count}} عنصر محدد"
+  },
+  "breadcrumbs": {
+    "label": "مسار المجلد",
+    "up": "العودة إلى {{name}}",
+    "more": "إظهار المجلدات المخفية في المسار"
+  },
+  "unnamed": "(بلا اسم)",
+  "states": {
+    "loading": "جارٍ التحميل…",
+    "offlineBanner": "أنت غير متصل. تُعرض آخر نسخة محمّلة.",
+    "malformed": "هذا العنوان ليس رابطًا صالحًا لملف أو مجلد.",
+    "offline": {
+      "title": "أنت غير متصل",
+      "body": "أعد الاتصال لعرض هذا المجلد."
+    },
+    "notFound": {
+      "title": "هذه المساحة غير موجودة أو لم تعد متاحة",
+      "body": "ربما أُزيلت، أو لم يعد لديك وصول إليها."
+    },
+    "denied": {
+      "title": "لا يمكنك فتح هذا المجلد",
+      "body": "لا يمنحك دورك الوصول إلى هذه المساحة."
+    },
+    "error": {
+      "title": "تعذّر تحميل هذا المجلد",
+      "body": "حدث خطأ ما. حاول مرة أخرى."
+    }
+  },
+  "empty": {
+    "title": "أفلت الملفات هنا",
+    "folderTitle": "هذا المجلد فارغ",
+    "dropHere": "أو استخدم زر «جديد».",
+    "readOnly": "لا يوجد شيء هنا بعد."
+  },
+  "errors": {
+    "network": "تعذّر الوصول إلى الخادم. تحقق من اتصالك.",
+    "unauthorized": "انتهت جلستك. سجّل الدخول مرة أخرى.",
+    "forbidden": "هذا الإجراء غير مسموح.",
+    "scope_denied": "لا يسمح دورك بذلك في هذه المساحة.",
+    "access_denied": "رفض التخزين الوصول.",
+    "bucket_not_found": "هذه المساحة لم تعد موجودة.",
+    "key_not_found": "هذا العنصر لم يعد موجودًا أو نُقل.",
+    "already_exists": "يوجد عنصر بهذا الاسم بالفعل.",
+    "validation": "هذا الاسم أو المسار غير صالح.",
+    "quota_exceeded": "مساحة التخزين غير كافية.",
+    "rate_limited": "طلبات كثيرة جدًا. انتظر لحظة ثم حاول مرة أخرى.",
+    "slow_down": "التخزين مشغول. حاول بعد قليل.",
+    "upstream_error": "أعاد التخزين خطأ.",
+    "endpoint_unreachable": "تعذّر الوصول إلى التخزين.",
+    "not_implemented": "هذا الإجراء غير متاح بعد.",
+    "internal": "حدث خطأ في الخادم.",
+    "unknown": "حدث خطأ ما.",
+    "batch_too_large": "يحتوي هذا المجلد على عناصر كثيرة جدًا لعملية واحدة (1000 كحد أقصى).",
+    "folder_exists": "هذا المجلد موجود بالفعل."
+  },
+  "toast": {
+    "moved_zero": "لم يُنقل أي عنصر",
+    "moved_one": "نُقل عنصر واحد",
+    "moved_two": "نُقل عنصران",
+    "moved_few": "نُقلت {{count}} عناصر",
+    "moved_many": "نُقل {{count}} عنصرًا",
+    "moved_other": "نُقل {{count}} عنصر",
+    "copied_zero": "لم يُنسخ أي عنصر",
+    "copied_one": "نُسخ عنصر واحد",
+    "copied_two": "نُسخ عنصران",
+    "copied_few": "نُسخت {{count}} عناصر",
+    "copied_many": "نُسخ {{count}} عنصرًا",
+    "copied_other": "نُسخ {{count}} عنصر",
+    "conflicts_zero": "لا تعارض",
+    "conflicts_one": "عنصر واحد موجود بالفعل في الوجهة",
+    "conflicts_two": "عنصران موجودان بالفعل في الوجهة",
+    "conflicts_few": "{{count}} عناصر موجودة بالفعل في الوجهة",
+    "conflicts_many": "{{count}} عنصرًا موجودًا بالفعل في الوجهة",
+    "conflicts_other": "{{count}} عنصر موجود بالفعل في الوجهة",
+    "conflictsHint": "اختر «الاحتفاظ بالاثنين» أو «استبدال» للمتابعة.",
+    "linkCopied_zero": "نُسخ الرابط",
+    "linkCopied_one": "نُسخ الرابط",
+    "linkCopied_two": "نُسخ رابطان",
+    "linkCopied_few": "نُسخت {{count}} روابط",
+    "linkCopied_many": "نُسخ {{count}} رابطًا",
+    "linkCopied_other": "نُسخ {{count}} رابط",
+    "copyFailed": "تعذّر النسخ إلى الحافظة",
+    "cut_zero": "قُص العنصر",
+    "cut_one": "قُص عنصر واحد: الصقه في مجلد آخر",
+    "cut_two": "قُص عنصران: الصقهما في مجلد آخر",
+    "cut_few": "قُصت {{count}} عناصر: الصقها في مجلد آخر",
+    "cut_many": "قُص {{count}} عنصرًا: الصقها في مجلد آخر",
+    "cut_other": "قُص {{count}} عنصر: الصقها في مجلد آخر",
+    "copiedToClipboard_zero": "نُسخ العنصر",
+    "copiedToClipboard_one": "نُسخ عنصر واحد: الصقه في مجلد",
+    "copiedToClipboard_two": "نُسخ عنصران: الصقهما في مجلد",
+    "copiedToClipboard_few": "نُسخت {{count}} عناصر: الصقها في مجلد",
+    "copiedToClipboard_many": "نُسخ {{count}} عنصرًا: الصقها في مجلد",
+    "copiedToClipboard_other": "نُسخ {{count}} عنصر: الصقها في مجلد",
+    "renamed": "أُعيدت التسمية",
+    "deleted_zero": "لم يُحذف أي عنصر",
+    "deleted_one": "حُذف عنصر واحد",
+    "deleted_two": "حُذف عنصران",
+    "deleted_few": "حُذفت {{count}} عناصر",
+    "deleted_many": "حُذف {{count}} عنصرًا",
+    "deleted_other": "حُذف {{count}} عنصر"
+  },
+  "upload": {
+    "quota": "مساحة ملفاتك ممتلئة",
+    "spaceQuota": "هذه المساحة المشتركة ممتلئة",
+    "remaining": "تبقّى {{size}}. حرّر بعض المساحة أو ارفع ملفات أصغر.",
+    "freeUp": "حرّر بعض المساحة أو ارفع ملفات أصغر."
+  },
+  "drop": {
+    "here": "أفلت للرفع إلى {{folder}}",
+    "denied": "لا يمكنك رفع ملفات إلى هذه المساحة"
+  },
+  "status": {
+    "items_zero": "لا عناصر",
+    "items_one": "عنصر واحد",
+    "items_two": "عنصران",
+    "items_few": "{{count}} عناصر",
+    "items_many": "{{count}} عنصرًا",
+    "items_other": "{{count}} عنصر",
+    "atLeast_zero": "لا عناصر",
+    "atLeast_one": "عنصر واحد على الأقل",
+    "atLeast_two": "عنصران على الأقل",
+    "atLeast_few": "{{count}} عناصر على الأقل",
+    "atLeast_many": "{{count}} عنصرًا على الأقل",
+    "atLeast_other": "{{count}} عنصر على الأقل",
+    "loadingMore": "جارٍ تحميل المزيد…"
+  }
+}

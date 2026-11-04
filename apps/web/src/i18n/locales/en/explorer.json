@@ -1,0 +1,242 @@
+{
+  "permissions": {
+    "denied": "You don't have permission to do this in this space",
+    "readOnly": "Read only"
+  },
+  "menu": {
+    "open": "Open",
+    "preview": "Preview",
+    "openNewTab": "Open in new tab",
+    "download": "Download",
+    "folderDownloadUnavailable": "Folders can’t be downloaded yet",
+    "rename": "Rename",
+    "moveTo": "Move to…",
+    "copyTo": "Copy to…",
+    "copyLink": "Copy link",
+    "copyLinks": "Copy links",
+    "cut": "Cut",
+    "copy": "Copy",
+    "deletePermanently": "Delete permanently",
+    "paste": "Paste here",
+    "selectAll": "Select all",
+    "refresh": "Refresh",
+    "copyFolderLink": "Copy link to this folder",
+    "moreFor": "More actions for {{name}}",
+    "more": "More actions"
+  },
+  "keys": {
+    "enter": "Enter",
+    "delete": "Del"
+  },
+  "new": {
+    "label": "New",
+    "folder": "New folder",
+    "uploadFiles": "Upload files",
+    "uploadFolder": "Upload folder"
+  },
+  "columns": {
+    "name": "Name",
+    "modified": "Modified",
+    "size": "Size",
+    "type": "Type",
+    "actions": "Actions"
+  },
+  "list": {
+    "label": "Files"
+  },
+  "grid": {
+    "label": "Files",
+    "folders": "Folders",
+    "files": "Files"
+  },
+  "types": {
+    "folder": "Folder",
+    "bucket": "Space",
+    "image": "Image",
+    "video": "Video",
+    "audio": "Audio",
+    "pdf": "PDF",
+    "text": "Text",
+    "code": "Code",
+    "sheet": "Spreadsheet",
+    "slides": "Presentation",
+    "doc": "Document",
+    "archive": "Archive",
+    "font": "Font",
+    "3d": "3D model",
+    "exec": "Program",
+    "unknown": "File"
+  },
+  "rename": {
+    "title": "Rename",
+    "description": "Enter a new name.",
+    "descriptionFolder": "Enter a new name for this folder and everything in it.",
+    "label": "New name",
+    "submit": "Rename",
+    "conflict": "“{{name}}” already exists in this folder.",
+    "empty": "Enter a name.",
+    "slash": "Use Move to… to change folders.",
+    "dots": "“.” and “..” are not valid names.",
+    "tooLong_one": "This name is {{count}} byte too long.",
+    "tooLong_other": "This name is {{count}} bytes too long.",
+    "control": "This name contains a control character.",
+    "trailing": "This name starts or ends with a space or ends with a dot.",
+    "bidi": "This name contains invisible characters that can disguise its extension."
+  },
+  "newFolder": {
+    "title": "New folder",
+    "description": "Name of the new folder",
+    "label": "Folder name",
+    "submit": "Create",
+    "defaultName": "Untitled folder",
+    "nested_one": "Creates {{count}} folder.",
+    "nested_other": "Creates {{count}} nested folders."
+  },
+  "conflict": {
+    "keepBoth": "Keep both",
+    "replace": "Replace",
+    "legend": "If a name already exists:",
+    "fail": "Ask me",
+    "rename": "Keep both",
+    "overwrite": "Replace",
+    "skip": "Skip"
+  },
+  "actions": {
+    "cancel": "Cancel",
+    "up": "Go up a level",
+    "goHome": "Back to My Drive",
+    "retry": "Try again"
+  },
+  "delete": {
+    "titleFile": "Delete “{{name}}” permanently?",
+    "titleFolder": "Delete the folder “{{name}}” permanently?",
+    "titleMany_one": "Delete {{count}} item permanently?",
+    "titleMany_other": "Delete {{count}} items permanently?",
+    "body": "This can’t be undone: there is no trash yet.",
+    "bodyFolder_one": "The folder and everything in it will be deleted. This can’t be undone.",
+    "bodyFolder_other": "These folders and everything in them will be deleted. This can’t be undone.",
+    "size": "Files: {{size}}.",
+    "confirm": "Delete permanently"
+  },
+  "picker": {
+    "moveTitle_one": "Move “{{name}}”",
+    "moveTitle_other": "Move {{count}} items",
+    "copyTitle_one": "Copy “{{name}}”",
+    "copyTitle_other": "Copy {{count}} items",
+    "description": "Choose a destination folder.",
+    "spaces": "Spaces",
+    "up": "Parent folder",
+    "folders": "Folders",
+    "noFolders": "No folders here",
+    "blocked": "A folder can’t go inside itself",
+    "more": "Load more",
+    "moveHere": "Move here",
+    "copyHere": "Copy here"
+  },
+  "sort": {
+    "label": "Sort",
+    "asc": "Ascending",
+    "desc": "Descending"
+  },
+  "view": {
+    "label": "Layout",
+    "list": "List",
+    "grid": "Grid"
+  },
+  "selection": {
+    "toolbar": "Actions on selection",
+    "clear": "Clear selection",
+    "count_one": "{{count}} selected",
+    "count_other": "{{count}} selected"
+  },
+  "breadcrumbs": {
+    "label": "Folder path",
+    "up": "Back to {{name}}",
+    "more": "Show hidden folders in path"
+  },
+  "unnamed": "(unnamed)",
+  "states": {
+    "loading": "Loading…",
+    "offlineBanner": "You’re offline. Showing the last loaded version.",
+    "malformed": "This address is not a valid file or folder link.",
+    "offline": {
+      "title": "You’re offline",
+      "body": "Reconnect to see this folder."
+    },
+    "notFound": {
+      "title": "This space doesn’t exist or is no longer available",
+      "body": "It may have been removed, or you may no longer have access."
+    },
+    "denied": {
+      "title": "You can’t open this folder",
+      "body": "Your role doesn’t give you access to this space."
+    },
+    "error": {
+      "title": "This folder couldn’t be loaded",
+      "body": "Something went wrong. Try again."
+    }
+  },
+  "empty": {
+    "title": "Drop files here",
+    "folderTitle": "This folder is empty",
+    "dropHere": "Or use the New button.",
+    "readOnly": "Nothing here yet."
+  },
+  "errors": {
+    "network": "Can’t reach the server. Check your connection.",
+    "unauthorized": "Your session has ended. Sign in again.",
+    "forbidden": "This action isn’t allowed.",
+    "scope_denied": "Your role doesn’t allow this in this space.",
+    "access_denied": "Access denied by the storage.",
+    "bucket_not_found": "This space no longer exists.",
+    "key_not_found": "This item no longer exists or has been moved.",
+    "already_exists": "An item with this name already exists.",
+    "validation": "This name or path isn’t valid.",
+    "quota_exceeded": "Not enough storage space.",
+    "rate_limited": "Too many requests. Wait a moment and try again.",
+    "slow_down": "The storage is busy. Try again shortly.",
+    "upstream_error": "The storage returned an error.",
+    "endpoint_unreachable": "The storage can’t be reached.",
+    "not_implemented": "This action isn’t available yet.",
+    "internal": "Something went wrong on the server.",
+    "unknown": "Something went wrong.",
+    "batch_too_large": "This folder has too many items for one operation (1,000 max).",
+    "folder_exists": "This folder already exists."
+  },
+  "toast": {
+    "moved_one": "Moved {{count}} item",
+    "moved_other": "Moved {{count}} items",
+    "copied_one": "Copied {{count}} item",
+    "copied_other": "Copied {{count}} items",
+    "conflicts_one": "{{count}} item already exists at the destination",
+    "conflicts_other": "{{count}} items already exist at the destination",
+    "conflictsHint": "Choose “Keep both” or “Replace” to continue.",
+    "linkCopied_one": "Link copied",
+    "linkCopied_other": "{{count}} links copied",
+    "copyFailed": "Couldn’t copy to the clipboard",
+    "cut_one": "{{count}} item cut — paste it into another folder",
+    "cut_other": "{{count}} items cut — paste them into another folder",
+    "copiedToClipboard_one": "{{count}} item copied — paste it into a folder",
+    "copiedToClipboard_other": "{{count}} items copied — paste them into a folder",
+    "renamed": "Renamed",
+    "deleted_one": "Deleted {{count}} item",
+    "deleted_other": "Deleted {{count}} items"
+  },
+  "upload": {
+    "quota": "Your drive is full",
+    "spaceQuota": "This shared space is full",
+    "remaining": "{{size}} left. Free up space or upload smaller files.",
+    "freeUp": "Free up space or upload smaller files."
+  },
+  "drop": {
+    "here": "Drop to upload to {{folder}}",
+    "denied": "You can’t upload to this space"
+  },
+  "status": {
+    "items_one": "{{count}} item",
+    "items_other": "{{count}} items",
+    "atLeast_one": "At least {{count}} item",
+    "atLeast_other": "At least {{count}} items",
+    "loadingMore": "Loading more…"
+  }
+}

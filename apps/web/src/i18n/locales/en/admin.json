@@ -1,0 +1,81 @@
+{
+  "title": "Administration",
+  "forbidden": {
+    "title": "Access restricted",
+    "body": "Your role doesn’t allow you to view the administration of this drive."
+  },
+  "users": {
+    "title": "People",
+    "search": "Search by name or email",
+    "caption": "People with access to this drive",
+    "empty": "No one has signed in yet",
+    "emptySearch": "No one matches this search",
+    "never": "Never",
+    "columns": {
+      "name": "Name",
+      "email": "Email",
+      "roles": "Roles",
+      "usage": "Storage used",
+      "lastLogin": "Last sign-in",
+      "status": "Status"
+    }
+  },
+  "status": {
+    "active": "Active",
+    "suspended": "Suspended"
+  },
+  "units": {
+    "MB": "MB",
+    "GB": "GB",
+    "TB": "TB"
+  },
+  "user": {
+    "back": "All people",
+    "notFound": "This person doesn’t exist",
+    "created": "First sign-in",
+    "lastLogin": "Last sign-in",
+    "terms": "Terms of use",
+    "termsAccepted": "Accepted (version {{version}})",
+    "termsNone": "Not accepted yet",
+    "rolesTitle": "Drive roles",
+    "rolesHint": "Roles come from the identity provider and can only be changed there.",
+    "usageTitle": "Storage used",
+    "objects": "Objects: {{count}}",
+    "recount": "Recalculate usage",
+    "recounted": "Usage recalculated",
+    "quotaTitle": "Storage quota",
+    "quotaFromRoles": "The quota comes from this person’s roles.",
+    "quotaCustom": "A custom quota replaces the quota of the roles.",
+    "quotaEffective": "Current quota: {{value}}",
+    "quotaValue": "Custom quota",
+    "quotaUnit": "Unit",
+    "quotaSave": "Save quota",
+    "quotaSaved": "Quota updated",
+    "quotaReset": "Quota of the roles restored",
+    "quotaUseRoles": "Use the roles’ quota",
+    "quotaInvalid": "Enter a number greater than zero.",
+    "unlimited": "Unlimited",
+    "accessTitle": "Access",
+    "suspendHint": "A suspended person is signed out at once and can no longer sign in.",
+    "reactivateHint": "This person is suspended and cannot sign in.",
+    "suspend": "Suspend",
+    "reactivate": "Reactivate",
+    "suspendTitle": "Suspend {{name}}?",
+    "suspendBody": "Their sessions end immediately and they can no longer sign in until reactivated. Their files are kept.",
+    "suspendConfirm": "Suspend",
+    "reactivateTitle": "Reactivate {{name}}?",
+    "reactivateBody": "They will be able to sign in again with their current roles.",
+    "reactivateConfirm": "Reactivate",
+    "suspended": "{{name}} is suspended",
+    "reactivated": "{{name}} is reactivated"
+  },
+  "errors": {
+    "self": "You can’t change your own status.",
+    "superAdmin": "Only a super admin can change a super admin.",
+    "permission": "You don’t have permission for this action.",
+    "notFound": "This person doesn’t exist.",
+    "validation": "This value is not accepted.",
+    "network": "Can’t reach the server. Check your connection.",
+    "generic": "The action failed. Try again."
+  }
+}

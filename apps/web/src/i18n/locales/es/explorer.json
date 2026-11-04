@@ -1,0 +1,242 @@
+{
+  "permissions": {
+    "denied": "Tu rol no permite esta acción en este espacio",
+    "readOnly": "Solo lectura"
+  },
+  "menu": {
+    "open": "Abrir",
+    "preview": "Vista previa",
+    "openNewTab": "Abrir en una pestaña nueva",
+    "download": "Descargar",
+    "folderDownloadUnavailable": "Aún no se pueden descargar carpetas",
+    "rename": "Cambiar nombre",
+    "moveTo": "Mover a…",
+    "copyTo": "Copiar a…",
+    "copyLink": "Copiar enlace",
+    "copyLinks": "Copiar enlaces",
+    "cut": "Cortar",
+    "copy": "Copiar",
+    "deletePermanently": "Eliminar definitivamente",
+    "paste": "Pegar aquí",
+    "selectAll": "Seleccionar todo",
+    "refresh": "Actualizar",
+    "copyFolderLink": "Copiar enlace de esta carpeta",
+    "moreFor": "Más acciones para {{name}}",
+    "more": "Más acciones"
+  },
+  "keys": {
+    "enter": "Intro",
+    "delete": "Supr"
+  },
+  "new": {
+    "label": "Nuevo",
+    "folder": "Carpeta nueva",
+    "uploadFiles": "Subir archivos",
+    "uploadFolder": "Subir carpeta"
+  },
+  "columns": {
+    "name": "Nombre",
+    "modified": "Modificado",
+    "size": "Tamaño",
+    "type": "Tipo",
+    "actions": "Acciones"
+  },
+  "list": {
+    "label": "Archivos"
+  },
+  "grid": {
+    "label": "Archivos",
+    "folders": "Carpetas",
+    "files": "Archivos"
+  },
+  "types": {
+    "folder": "Carpeta",
+    "bucket": "Espacio",
+    "image": "Imagen",
+    "video": "Vídeo",
+    "audio": "Audio",
+    "pdf": "PDF",
+    "text": "Texto",
+    "code": "Código",
+    "sheet": "Hoja de cálculo",
+    "slides": "Presentación",
+    "doc": "Documento",
+    "archive": "Archivo comprimido",
+    "font": "Fuente",
+    "3d": "Modelo 3D",
+    "exec": "Programa",
+    "unknown": "Archivo"
+  },
+  "rename": {
+    "title": "Cambiar nombre",
+    "description": "Escribe un nombre nuevo.",
+    "descriptionFolder": "Escribe un nombre nuevo para esta carpeta y todo su contenido.",
+    "label": "Nombre nuevo",
+    "submit": "Cambiar nombre",
+    "conflict": "«{{name}}» ya existe en esta carpeta.",
+    "empty": "Escribe un nombre.",
+    "slash": "Usa Mover a… para cambiar de carpeta.",
+    "dots": "«.» y «..» no son nombres válidos.",
+    "tooLong_one": "Este nombre tiene {{count}} byte de más.",
+    "tooLong_other": "Este nombre tiene {{count}} bytes de más.",
+    "control": "Este nombre contiene un carácter de control.",
+    "trailing": "Este nombre empieza o termina con un espacio, o termina con un punto.",
+    "bidi": "Este nombre contiene caracteres invisibles que pueden ocultar su extensión."
+  },
+  "newFolder": {
+    "title": "Carpeta nueva",
+    "description": "Nombre de la carpeta nueva",
+    "label": "Nombre de la carpeta",
+    "submit": "Crear",
+    "defaultName": "Carpeta sin título",
+    "nested_one": "Creará {{count}} carpeta.",
+    "nested_other": "Creará {{count}} carpetas anidadas."
+  },
+  "conflict": {
+    "keepBoth": "Conservar ambos",
+    "replace": "Reemplazar",
+    "legend": "Si un nombre ya existe:",
+    "fail": "Preguntarme",
+    "rename": "Conservar ambos",
+    "overwrite": "Reemplazar",
+    "skip": "Omitir"
+  },
+  "actions": {
+    "cancel": "Cancelar",
+    "up": "Subir un nivel",
+    "goHome": "Volver a Mi unidad",
+    "retry": "Reintentar"
+  },
+  "delete": {
+    "titleFile": "¿Eliminar «{{name}}» definitivamente?",
+    "titleFolder": "¿Eliminar definitivamente la carpeta «{{name}}»?",
+    "titleMany_one": "¿Eliminar {{count}} elemento definitivamente?",
+    "titleMany_other": "¿Eliminar {{count}} elementos definitivamente?",
+    "body": "No se puede deshacer: todavía no hay papelera.",
+    "bodyFolder_one": "Se eliminarán la carpeta y todo su contenido. No se puede deshacer.",
+    "bodyFolder_other": "Se eliminarán estas carpetas y todo su contenido. No se puede deshacer.",
+    "size": "Archivos: {{size}}.",
+    "confirm": "Eliminar definitivamente"
+  },
+  "picker": {
+    "moveTitle_one": "Mover «{{name}}»",
+    "moveTitle_other": "Mover {{count}} elementos",
+    "copyTitle_one": "Copiar «{{name}}»",
+    "copyTitle_other": "Copiar {{count}} elementos",
+    "description": "Elige la carpeta de destino.",
+    "spaces": "Espacios",
+    "up": "Carpeta superior",
+    "folders": "Carpetas",
+    "noFolders": "No hay carpetas aquí",
+    "blocked": "Una carpeta no puede ir dentro de sí misma",
+    "more": "Cargar más",
+    "moveHere": "Mover aquí",
+    "copyHere": "Copiar aquí"
+  },
+  "sort": {
+    "label": "Ordenar",
+    "asc": "Ascendente",
+    "desc": "Descendente"
+  },
+  "view": {
+    "label": "Vista",
+    "list": "Lista",
+    "grid": "Cuadrícula"
+  },
+  "selection": {
+    "toolbar": "Acciones sobre la selección",
+    "clear": "Borrar selección",
+    "count_one": "{{count}} seleccionado",
+    "count_other": "{{count}} seleccionados"
+  },
+  "breadcrumbs": {
+    "label": "Ruta de la carpeta",
+    "up": "Volver a {{name}}",
+    "more": "Mostrar carpetas ocultas de la ruta"
+  },
+  "unnamed": "(sin nombre)",
+  "states": {
+    "loading": "Cargando…",
+    "offlineBanner": "Sin conexión. Se muestra la última versión cargada.",
+    "malformed": "Esta dirección no es un enlace válido de archivo o carpeta.",
+    "offline": {
+      "title": "Sin conexión",
+      "body": "Vuelve a conectarte para ver esta carpeta."
+    },
+    "notFound": {
+      "title": "Este espacio no existe o ya no está disponible",
+      "body": "Puede que se haya retirado o que ya no tengas acceso."
+    },
+    "denied": {
+      "title": "No puedes abrir esta carpeta",
+      "body": "Tu rol no da acceso a este espacio."
+    },
+    "error": {
+      "title": "No se pudo cargar esta carpeta",
+      "body": "Algo salió mal. Inténtalo de nuevo."
+    }
+  },
+  "empty": {
+    "title": "Suelta archivos aquí",
+    "folderTitle": "Esta carpeta está vacía",
+    "dropHere": "O usa el botón Nuevo.",
+    "readOnly": "Todavía no hay nada."
+  },
+  "errors": {
+    "network": "No se puede contactar con el servidor. Revisa tu conexión.",
+    "unauthorized": "Tu sesión ha terminado. Vuelve a iniciar sesión.",
+    "forbidden": "Esta acción no está permitida.",
+    "scope_denied": "Tu rol no permite esto en este espacio.",
+    "access_denied": "El almacenamiento ha denegado el acceso.",
+    "bucket_not_found": "Este espacio ya no existe.",
+    "key_not_found": "Este elemento ya no existe o se ha movido.",
+    "already_exists": "Ya existe un elemento con este nombre.",
+    "validation": "Este nombre o ruta no es válido.",
+    "quota_exceeded": "No hay suficiente espacio de almacenamiento.",
+    "rate_limited": "Demasiadas solicitudes. Espera un momento e inténtalo de nuevo.",
+    "slow_down": "El almacenamiento está ocupado. Inténtalo en breve.",
+    "upstream_error": "El almacenamiento devolvió un error.",
+    "endpoint_unreachable": "No se puede contactar con el almacenamiento.",
+    "not_implemented": "Esta acción aún no está disponible.",
+    "internal": "Algo salió mal en el servidor.",
+    "unknown": "Algo salió mal.",
+    "batch_too_large": "Esta carpeta tiene demasiados elementos para una sola operación (1000 como máximo).",
+    "folder_exists": "Esta carpeta ya existe."
+  },
+  "toast": {
+    "moved_one": "{{count}} elemento movido",
+    "moved_other": "{{count}} elementos movidos",
+    "copied_one": "{{count}} elemento copiado",
+    "copied_other": "{{count}} elementos copiados",
+    "conflicts_one": "{{count}} elemento ya existe en el destino",
+    "conflicts_other": "{{count}} elementos ya existen en el destino",
+    "conflictsHint": "Elige «Conservar ambos» o «Reemplazar» para continuar.",
+    "linkCopied_one": "Enlace copiado",
+    "linkCopied_other": "{{count}} enlaces copiados",
+    "copyFailed": "No se pudo copiar al portapapeles",
+    "cut_one": "{{count}} elemento cortado: pégalo en otra carpeta",
+    "cut_other": "{{count}} elementos cortados: pégalos en otra carpeta",
+    "copiedToClipboard_one": "{{count}} elemento copiado: pégalo en una carpeta",
+    "copiedToClipboard_other": "{{count}} elementos copiados: pégalos en una carpeta",
+    "renamed": "Nombre cambiado",
+    "deleted_one": "{{count}} elemento eliminado",
+    "deleted_other": "{{count}} elementos eliminados"
+  },
+  "upload": {
+    "quota": "Tu unidad está llena",
+    "spaceQuota": "Este espacio compartido está lleno",
+    "remaining": "Quedan {{size}}. Libera espacio o sube archivos más pequeños.",
+    "freeUp": "Libera espacio o sube archivos más pequeños."
+  },
+  "drop": {
+    "here": "Suelta para subir a {{folder}}",
+    "denied": "No puedes subir archivos a este espacio"
+  },
+  "status": {
+    "items_one": "{{count}} elemento",
+    "items_other": "{{count}} elementos",
+    "atLeast_one": "Al menos {{count}} elemento",
+    "atLeast_other": "Al menos {{count}} elementos",
+    "loadingMore": "Cargando más…"
+  }
+}

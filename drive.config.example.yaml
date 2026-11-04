@@ -1,0 +1,85 @@
+# Universal Drive — fichier du mode instance. Exemple commenté, sans aucun secret.
+# Chargé au démarrage quand UD_MODE vaut « instance » ou « both » (chemin : UD_CONFIG,
+# défaut <UD_DATA_DIR>/drive.config.yaml). Un fichier invalide empêche le démarrage ; le message
+# donne le chemin YAML fautif, jamais la valeur.
+#
+# Interpolation : ${NOM} ou ${NOM:-défaut}, dans les chaînes seulement ; une variable absente sans
+# défaut est une erreur. secretAccessKey, sessionToken et clientSecret DOIVENT être une référence
+# ${VAR} : une valeur écrite en clair est refusée.
+version: 1
+
+instance:
+  # Id de la connexion de l'instance dans les URL (/d/drive/…) : ^[a-z][a-z0-9-]{1,31}$, ni « me »
+  # ni 10 caractères alphanumériques (forme des ids de connexion personnelle).
+  connection: drive
+  # Nom affiché ; défaut UD_INSTANCE_NAME.
+  name: S3 Drive
+
+auth:
+  # Connexion OpenID Connect standard : code + PKCE (S256), client confidentiel.
+  # Adresse de retour à déclarer chez le fournisseur : <UD_PUBLIC_URL>/api/v1/auth/oidc/callback ;
+  # après déconnexion : <UD_PUBLIC_URL>/login.
+  oidc:
+    issuer: ${UD_OIDC_ISSUER}              # ex. https://iam.example.com/realms/example
+    clientId: ${UD_OIDC_CLIENT_ID}
+    clientSecret: ${UD_OIDC_CLIENT_SECRET}
+    scopes: [openid, profile, email]       # offline_access est refusé
+    # Chemins pointés des rôles dans le jeton d'identité et dans userinfo (tableau ou chaîne).
+    # Défaut : [resource_access.<clientId>.roles, realm_access.roles].
+    roleClaims: [resource_access.drive.roles, realm_access.roles]
+    label: iam.example.com                 # bouton « Se connecter avec … » ; défaut : hôte de l'émetteur
+  # gateway: (P1, pas encore pris en charge) identité posée par une passerelle de confiance.
+
+storages:
+  # Un stockage S3 par slug (^[a-z][a-z0-9-]{1,31}$). Mêmes contrôles anti-SSRF que le reste du
+  # Drive : UD_ALLOWED_ENDPOINTS, et UD_ALLOW_PRIVATE_ENDPOINTS=1 pour une adresse privée.
+  hetzner:
+    endpoint: https://nbg1.your-objectstorage.com
+    region: nbg1
+    addressing: virtual                    # ou path (défaut)
+    accessKeyId: ${UD_S3_ACCESS_KEY_ID}
+    secretAccessKey: ${UD_S3_SECRET_ACCESS_KEY}
+
+spaces:
+  # Un espace se présente comme un bucket de la connexion de l'instance ; les clés y sont relatives.
+  # Deux espaces d'un même bucket ne se recouvrent jamais.
+  home:                                    # réservé et obligatoire : le drive personnel
+    storage: hetzner
+    bucket: my-drive
+    prefix: users/{userId}/                # {userId} = id Drive de la personne, jamais le sub du fournisseur
+  commun:
+    name: { fr: Commun, en: Shared }       # texte ou table par langue (repli : anglais, puis l'id)
+    storage: hetzner
+    bucket: my-drive
+    prefix: commun/                        # vide = bucket entier ; sinon terminé par « / »
+    quota: 50GB                            # facultatif : plafond de l'espace entier
+
+roles:
+  # Rôles Drive : ^[a-z][a-z0-9_]{1,31}$. « from » liste les rôles ou groupes du fournisseur qui les
+  # donnent. Plusieurs rôles : union des permissions, plus grand quota, liens les plus larges.
+  # Quotas en octets ou KB, MB, GB, TB (base 1000), ou unlimited.
+  super_admin:                             # réservé : tout, partout, quel que soit son contenu
+    from: [super-admin]
+    quota: unlimited
+    spaces: { "*": [read, write, delete, share] }
+    links: { public: true, people: true, maxDays: 0 }
+    admin: ["*"]
+  admin:
+    from: [admin]
+    quota: 10GB
+    spaces: { home: [read, write, delete, share], commun: [read, write, delete, share] }
+    links: { public: true, people: true, maxDays: 90 }   # maxDays 0 = expiration libre
+    admin: [users.read, users.manage, reports.manage, audit.read, files.inspect]
+  user:
+    from: [user]
+    quota: 1GB
+    spaces: { home: [read, write, delete, share], commun: [read] }
+    links: { public: false, people: true, maxDays: 30 }
+
+legal:
+  # Conditions d'utilisation : actives si termsVersion est défini et qu'un texte existe
+  # (UD_TERMS_FILE, Markdown servi par le Drive) ou que termsUrl pointe vers une page externe.
+  termsVersion: "2026-11-03"
+  termsUrl: null
+  uploadLogDays: 365                       # journal des envois (décret n° 2021-1362 : 1 an)
+  abuseEmail: ${UD_ABUSE_EMAIL:-}

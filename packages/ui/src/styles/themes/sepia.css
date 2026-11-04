@@ -1,0 +1,151 @@
+/* ==========================================================================
+   Collection « sepia » — Sépia — papier, confort de lecture
+   Reprise d'Universal Email (themes/sepia.css du 2026-11-03), préfixe --ud-.
+   Ajusté : --input = --ud-input-border, --ring = --ud-focus.
+   Clair : [data-theme='sepia']   Sombre : [data-theme='sepia'].dark
+   Contrastes WCAG AA vérifiés (texte principal/secondaire ≥ 4,5:1, texte sur accent ≥ 4,5:1).
+   ========================================================================== */
+
+[data-theme='sepia'] {
+  color-scheme: light;
+
+  /* Accent par défaut de la collection (l’accent du stockage, posé en style inline sur <html>, reste prioritaire) */
+  --ud-accent: #9a4a24;
+  --ud-on-accent: #fffaf2;
+  --ud-accent-soft: color-mix(in oklab, var(--ud-accent) 11%, transparent);
+  --ud-accent-softer: color-mix(in oklab, var(--ud-accent) 6%, transparent);
+  --ud-accent-strong: color-mix(in oklab, var(--ud-accent) 82%, var(--ud-text-1));
+  --ud-accent-ring: color-mix(in oklab, var(--ud-accent) 45%, transparent);
+
+  /* Surfaces */
+  --ud-app: #f3ecdf;
+  --ud-rail: #ebe2d1;
+  --ud-sidebar: #f3ecdf;
+  --ud-panel: #fbf7ee;
+  --ud-row-hover: #f2eadc;
+  --ud-row-selected: color-mix(in oklab, var(--ud-accent) 8%, var(--ud-panel));
+  --ud-row-unread: var(--ud-panel);
+
+  /* Lignes */
+  --ud-line: #e4d9c5;
+  --ud-line-strong: #d3c5ab;
+
+  /* Textes */
+  --ud-text-1: #2f2418;
+  --ud-text-2: #5c4b38;
+  --ud-text-3: #887560;
+
+  /* Ombres et voile */
+  --ud-shadow-float: 0 1px 2px rgb(47 36 24 / 0.06), 0 8px 24px -6px rgb(47 36 24 / 0.14), 0 24px 56px -12px rgb(47 36 24 / 0.16);
+  --ud-shadow-soft: 0 1px 2px rgb(47 36 24 / 0.05), 0 2px 8px -2px rgb(47 36 24 / 0.06);
+  --ud-overlay: rgb(47 36 24 / 0.32);
+
+  /* États */
+  --ud-danger: #a82a1e;
+  --ud-success: #4b6b1f;
+  --ud-warn: #9a5a0c;
+  --ud-flag: #c98a1a;
+
+  /* Boutons : aplat d’accent sobre en clair */
+  --ud-btn-primary-bg: var(--ud-accent);
+  --ud-btn-primary-fg: var(--ud-on-accent);
+  --ud-btn-primary-icon: var(--ud-on-accent);
+  --ud-btn-primary-border: color-mix(in oklab, var(--ud-accent) 82%, var(--ud-text-1));
+  --ud-btn-primary-hover: color-mix(in oklab, var(--ud-accent) 90%, var(--ud-text-1));
+  --ud-btn-secondary-bg: var(--ud-panel);
+  --ud-btn-secondary-fg: var(--ud-text-1);
+  --ud-btn-secondary-border: var(--ud-line-strong);
+  --ud-btn-secondary-hover: var(--ud-row-hover);
+
+  /* shadcn */
+  --background: #fbf7ee;
+  --foreground: #2f2418;
+  --card: #fbf7ee;
+  --card-foreground: #2f2418;
+  --popover: #fdfaf3;
+  --popover-foreground: #2f2418;
+  --primary: #2f2418;
+  --primary-foreground: #fbf7ee;
+  --secondary: #f1e9da;
+  --secondary-foreground: #2f2418;
+  --muted: #f1e9da;
+  --muted-foreground: #5c4b38;
+  --accent: #f2eadc;
+  --accent-foreground: #2f2418;
+  --destructive: #a82a1e;
+  --border: #e4d9c5;
+  --input: var(--ud-input-border);
+  --ring: var(--ud-focus);
+}
+
+[data-theme='sepia'].dark {
+  color-scheme: dark;
+
+  /* Accent par défaut de la collection (l’accent du stockage, posé en style inline sur <html>, reste prioritaire) */
+  --ud-accent: #dc9a62;
+  --ud-on-accent: #1b1611;
+  --ud-accent-soft: color-mix(in oklab, var(--ud-accent) 14%, transparent);
+  --ud-accent-softer: color-mix(in oklab, var(--ud-accent) 8%, transparent);
+  --ud-accent-strong: color-mix(in oklab, var(--ud-accent) 70%, white);
+  --ud-accent-ring: color-mix(in oklab, var(--ud-accent) 55%, transparent);
+
+  /* Surfaces */
+  --ud-app: #1b1611;
+  --ud-rail: #16120e;
+  --ud-sidebar: #1b1611;
+  --ud-panel: #231d17;
+  --ud-row-hover: #2b241d;
+  --ud-row-selected: color-mix(in oklab, var(--ud-accent) 14%, var(--ud-panel));
+  --ud-row-unread: var(--ud-panel);
+
+  /* Lignes */
+  --ud-line: #3a3128;
+  --ud-line-strong: #4b3f33;
+
+  /* Textes */
+  --ud-text-1: #ede3d1;
+  --ud-text-2: #c3b49c;
+  --ud-text-3: #988870;
+
+  /* Ombres et voile */
+  --ud-shadow-float: 0 0 0 1px rgb(255 255 255 / 0.02), 0 1px 2px rgb(0 0 0 / 0.4), 0 10px 28px -6px rgb(0 0 0 / 0.55), 0 28px 64px -12px rgb(0 0 0 / 0.5);
+  --ud-shadow-soft: 0 1px 2px rgb(0 0 0 / 0.35), 0 2px 8px -2px rgb(0 0 0 / 0.35);
+  --ud-overlay: rgb(0 0 0 / 0.55);
+
+  /* États */
+  --ud-danger: #f08a78;
+  --ud-success: #a9c47a;
+  --ud-warn: #e8b456;
+  --ud-flag: #e8b456;
+
+  /* Boutons : surface teintée par l’accent + bordure fine (jamais d’aplat clair éblouissant) */
+  --ud-btn-primary-bg: color-mix(in oklab, var(--ud-accent) 16%, var(--ud-panel));
+  --ud-btn-primary-fg: var(--ud-text-1);
+  --ud-btn-primary-icon: var(--ud-accent-strong);
+  --ud-btn-primary-border: color-mix(in oklab, var(--ud-accent) 40%, var(--ud-line-strong));
+  --ud-btn-primary-hover: color-mix(in oklab, var(--ud-accent) 24%, var(--ud-panel));
+  --ud-btn-secondary-bg: color-mix(in oklab, var(--ud-text-1) 5%, var(--ud-panel));
+  --ud-btn-secondary-fg: var(--ud-text-1);
+  --ud-btn-secondary-border: var(--ud-line-strong);
+  --ud-btn-secondary-hover: color-mix(in oklab, var(--ud-text-1) 9%, var(--ud-panel));
+
+  /* shadcn */
+  --background: #231d17;
+  --foreground: #ede3d1;
+  --card: #251f19;
+  --card-foreground: #ede3d1;
+  --popover: #29221b;
+  --popover-foreground: #ede3d1;
+  --primary: color-mix(in oklab, var(--ud-accent) 24%, var(--ud-panel));
+  --primary-foreground: #ede3d1;
+  --secondary: #2e271f;
+  --secondary-foreground: #ede3d1;
+  --muted: #2e271f;
+  --muted-foreground: #c3b49c;
+  --accent: #2b241d;
+  --accent-foreground: #ede3d1;
+  --destructive: #f08a78;
+  --border: #3a3128;
+  --input: var(--ud-input-border);
+  --ring: var(--ud-focus);
+}

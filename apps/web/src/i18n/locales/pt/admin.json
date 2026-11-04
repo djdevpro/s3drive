@@ -1,0 +1,81 @@
+{
+  "title": "Administração",
+  "forbidden": {
+    "title": "Acesso restrito",
+    "body": "Sua função não permite consultar a administração deste Drive."
+  },
+  "users": {
+    "title": "Pessoas",
+    "search": "Pesquisar por nome ou e-mail",
+    "caption": "Pessoas com acesso a este Drive",
+    "empty": "Ninguém entrou ainda",
+    "emptySearch": "Ninguém corresponde a esta pesquisa",
+    "never": "Nunca",
+    "columns": {
+      "name": "Nome",
+      "email": "E-mail",
+      "roles": "Funções",
+      "usage": "Armazenamento usado",
+      "lastLogin": "Último acesso",
+      "status": "Estado"
+    }
+  },
+  "status": {
+    "active": "Ativa",
+    "suspended": "Suspensa"
+  },
+  "units": {
+    "MB": "MB",
+    "GB": "GB",
+    "TB": "TB"
+  },
+  "user": {
+    "back": "Todas as pessoas",
+    "notFound": "Esta pessoa não existe",
+    "created": "Primeiro acesso",
+    "lastLogin": "Último acesso",
+    "terms": "Termos de uso",
+    "termsAccepted": "Aceitos (versão {{version}})",
+    "termsNone": "Ainda não aceitos",
+    "rolesTitle": "Funções do Drive",
+    "rolesHint": "As funções vêm do provedor de identidade e só podem ser alteradas lá.",
+    "usageTitle": "Armazenamento usado",
+    "objects": "Objetos: {{count}}",
+    "recount": "Recalcular o uso",
+    "recounted": "Uso recalculado",
+    "quotaTitle": "Cota de armazenamento",
+    "quotaFromRoles": "A cota vem das funções desta pessoa.",
+    "quotaCustom": "Uma cota personalizada substitui a das funções.",
+    "quotaEffective": "Cota atual: {{value}}",
+    "quotaValue": "Cota personalizada",
+    "quotaUnit": "Unidade",
+    "quotaSave": "Salvar a cota",
+    "quotaSaved": "Cota atualizada",
+    "quotaReset": "Cota das funções restaurada",
+    "quotaUseRoles": "Usar a cota das funções",
+    "quotaInvalid": "Digite um número maior que zero.",
+    "unlimited": "Ilimitada",
+    "accessTitle": "Acesso",
+    "suspendHint": "Uma pessoa suspensa é desconectada na hora e não pode mais entrar.",
+    "reactivateHint": "Esta pessoa está suspensa e não pode entrar.",
+    "suspend": "Suspender",
+    "reactivate": "Reativar",
+    "suspendTitle": "Suspender {{name}}?",
+    "suspendBody": "As sessões terminam imediatamente e não será possível entrar até a reativação. Os arquivos são mantidos.",
+    "suspendConfirm": "Suspender",
+    "reactivateTitle": "Reativar {{name}}?",
+    "reactivateBody": "A pessoa poderá entrar novamente com as funções atuais.",
+    "reactivateConfirm": "Reativar",
+    "suspended": "Acesso de {{name}} suspenso",
+    "reactivated": "Acesso de {{name}} reativado"
+  },
+  "errors": {
+    "self": "Você não pode alterar o seu próprio estado.",
+    "superAdmin": "Só um superadministrador pode alterar um superadministrador.",
+    "permission": "Você não tem permissão para esta ação.",
+    "notFound": "Esta pessoa não existe.",
+    "validation": "Este valor não é aceito.",
+    "network": "Não foi possível acessar o servidor. Verifique sua conexão.",
+    "generic": "A ação falhou. Tente novamente."
+  }
+}

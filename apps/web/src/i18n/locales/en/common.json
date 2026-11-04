@@ -1,0 +1,94 @@
+{
+  "app": {
+    "name": "Universal Drive",
+    "tagline": "Your files, on any S3 storage."
+  },
+  "placeholder": {
+    "params": "Parameters",
+    "views": {
+      "index": "Home redirect",
+      "connect": "Connect a storage",
+      "connectDevice": "Connect this device",
+      "accounts": "Choose a storage",
+      "home": "Storage home",
+      "explorer": {
+        "root": "Bucket root",
+        "folder": "Folder",
+        "file": "File"
+      },
+      "recent": "Recent",
+      "starred": "Starred",
+      "shared": "Shared",
+      "trash": "Trash",
+      "storage": "Storage",
+      "search": "Search",
+      "admin": "Bucket administration",
+      "access": "Access",
+      "jobs": "Operations",
+      "oauthConsent": "Application consent",
+      "shareTarget": "Shared files",
+      "receive": "Received files",
+      "receiveOpen": "Open with Universal Drive",
+      "shortLink": "Short link",
+      "malformed": "Malformed address",
+      "notFound": "Page not found"
+    }
+  },
+  "actions": {
+    "retry": "Try again",
+    "cancel": "Cancel",
+    "continue": "Continue",
+    "reconnect": "Sign in again",
+    "loadMore": "Load more",
+    "copyLink": "Copy link",
+    "linkCopied": "Link copied"
+  },
+  "states": {
+    "loading": "Loading…",
+    "errorTitle": "Something went wrong"
+  },
+  "errors": {
+    "generic": "An unexpected error occurred. Try again in a moment.",
+    "clipboard": "The link could not be copied.",
+    "local": {
+      "gate_expired": "Your session has expired",
+      "network": "Can’t reach the server. Check your connection.",
+      "invalid_response": "The server sent an unexpected response."
+    },
+    "api": {
+      "unauthorized": "Your session has ended. Sign in again.",
+      "forbidden": "You don’t have access to this page.",
+      "not_found": "This page doesn’t exist.",
+      "rate_limited": "Too many requests. Wait a moment and try again.",
+      "internal": "The server ran into a problem.",
+      "upstream_error": "The storage did not respond as expected.",
+      "validation": "The request was not valid.",
+      "conflict": "The data changed in the meantime. Reload and try again."
+    }
+  },
+  "shell": {
+    "skipToContent": "Skip to content",
+    "navigation": "Navigation",
+    "openMenu": "Open the menu",
+    "closeMenu": "Close the menu",
+    "collapseSidebar": "Collapse the sidebar",
+    "expandSidebar": "Expand the sidebar"
+  },
+  "appearance": {
+    "title": "Theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "language": {
+    "title": "Language",
+    "choose": "Language: {{language}}"
+  },
+  "rail": {
+    "label": "Storages",
+    "add": "Add a storage",
+    "settings": "Settings",
+    "lightTheme": "Switch to light theme",
+    "darkTheme": "Switch to dark theme"
+  }
+}

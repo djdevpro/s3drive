@@ -1,0 +1,242 @@
+{
+  "permissions": {
+    "denied": "O seu papel não permite esta ação neste espaço",
+    "readOnly": "Só de leitura"
+  },
+  "menu": {
+    "open": "Abrir",
+    "preview": "Pré-visualizar",
+    "openNewTab": "Abrir num novo separador",
+    "download": "Transferir",
+    "folderDownloadUnavailable": "Ainda não é possível transferir pastas",
+    "rename": "Mudar o nome",
+    "moveTo": "Mover para…",
+    "copyTo": "Copiar para…",
+    "copyLink": "Copiar link",
+    "copyLinks": "Copiar links",
+    "cut": "Cortar",
+    "copy": "Copiar",
+    "deletePermanently": "Eliminar definitivamente",
+    "paste": "Colar aqui",
+    "selectAll": "Selecionar tudo",
+    "refresh": "Atualizar",
+    "copyFolderLink": "Copiar o link desta pasta",
+    "moreFor": "Mais ações para {{name}}",
+    "more": "Mais ações"
+  },
+  "keys": {
+    "enter": "Enter",
+    "delete": "Del"
+  },
+  "new": {
+    "label": "Novo",
+    "folder": "Nova pasta",
+    "uploadFiles": "Carregar ficheiros",
+    "uploadFolder": "Carregar pasta"
+  },
+  "columns": {
+    "name": "Nome",
+    "modified": "Modificado",
+    "size": "Tamanho",
+    "type": "Tipo",
+    "actions": "Ações"
+  },
+  "list": {
+    "label": "Ficheiros"
+  },
+  "grid": {
+    "label": "Ficheiros",
+    "folders": "Pastas",
+    "files": "Ficheiros"
+  },
+  "types": {
+    "folder": "Pasta",
+    "bucket": "Espaço",
+    "image": "Imagem",
+    "video": "Vídeo",
+    "audio": "Áudio",
+    "pdf": "PDF",
+    "text": "Texto",
+    "code": "Código",
+    "sheet": "Folha de cálculo",
+    "slides": "Apresentação",
+    "doc": "Documento",
+    "archive": "Arquivo",
+    "font": "Tipo de letra",
+    "3d": "Modelo 3D",
+    "exec": "Programa",
+    "unknown": "Ficheiro"
+  },
+  "rename": {
+    "title": "Mudar o nome",
+    "description": "Introduza um novo nome.",
+    "descriptionFolder": "Introduza um novo nome para esta pasta e todo o seu conteúdo.",
+    "label": "Novo nome",
+    "submit": "Mudar o nome",
+    "conflict": "«{{name}}» já existe nesta pasta.",
+    "empty": "Introduza um nome.",
+    "slash": "Use Mover para… para mudar de pasta.",
+    "dots": "«.» e «..» não são nomes válidos.",
+    "tooLong_one": "Este nome tem {{count}} byte a mais.",
+    "tooLong_other": "Este nome tem {{count}} bytes a mais.",
+    "control": "Este nome contém um carácter de controlo.",
+    "trailing": "Este nome começa ou termina com um espaço, ou termina com um ponto.",
+    "bidi": "Este nome contém carateres invisíveis que podem disfarçar a extensão."
+  },
+  "newFolder": {
+    "title": "Nova pasta",
+    "description": "Nome da nova pasta",
+    "label": "Nome da pasta",
+    "submit": "Criar",
+    "defaultName": "Pasta sem título",
+    "nested_one": "Vai criar {{count}} pasta.",
+    "nested_other": "Vai criar {{count}} pastas encaixadas."
+  },
+  "conflict": {
+    "keepBoth": "Manter ambos",
+    "replace": "Substituir",
+    "legend": "Se um nome já existir:",
+    "fail": "Perguntar",
+    "rename": "Manter ambos",
+    "overwrite": "Substituir",
+    "skip": "Ignorar"
+  },
+  "actions": {
+    "cancel": "Cancelar",
+    "up": "Subir um nível",
+    "goHome": "Voltar a O meu drive",
+    "retry": "Tentar novamente"
+  },
+  "delete": {
+    "titleFile": "Eliminar «{{name}}» definitivamente?",
+    "titleFolder": "Eliminar definitivamente a pasta «{{name}}»?",
+    "titleMany_one": "Eliminar {{count}} item definitivamente?",
+    "titleMany_other": "Eliminar {{count}} itens definitivamente?",
+    "body": "Não é possível anular: ainda não existe reciclagem.",
+    "bodyFolder_one": "A pasta e todo o seu conteúdo serão eliminados. Não é possível anular.",
+    "bodyFolder_other": "Estas pastas e todo o seu conteúdo serão eliminados. Não é possível anular.",
+    "size": "Ficheiros: {{size}}.",
+    "confirm": "Eliminar definitivamente"
+  },
+  "picker": {
+    "moveTitle_one": "Mover «{{name}}»",
+    "moveTitle_other": "Mover {{count}} itens",
+    "copyTitle_one": "Copiar «{{name}}»",
+    "copyTitle_other": "Copiar {{count}} itens",
+    "description": "Escolha a pasta de destino.",
+    "spaces": "Espaços",
+    "up": "Pasta superior",
+    "folders": "Pastas",
+    "noFolders": "Não há pastas aqui",
+    "blocked": "Uma pasta não pode ir para dentro de si própria",
+    "more": "Carregar mais",
+    "moveHere": "Mover para aqui",
+    "copyHere": "Copiar para aqui"
+  },
+  "sort": {
+    "label": "Ordenar",
+    "asc": "Crescente",
+    "desc": "Decrescente"
+  },
+  "view": {
+    "label": "Vista",
+    "list": "Lista",
+    "grid": "Grelha"
+  },
+  "selection": {
+    "toolbar": "Ações sobre a seleção",
+    "clear": "Limpar seleção",
+    "count_one": "{{count}} selecionado",
+    "count_other": "{{count}} selecionados"
+  },
+  "breadcrumbs": {
+    "label": "Caminho da pasta",
+    "up": "Voltar a {{name}}",
+    "more": "Mostrar as pastas ocultas do caminho"
+  },
+  "unnamed": "(sem nome)",
+  "states": {
+    "loading": "A carregar…",
+    "offlineBanner": "Está offline. É mostrada a última versão carregada.",
+    "malformed": "Este endereço não é um link válido para um ficheiro ou pasta.",
+    "offline": {
+      "title": "Está offline",
+      "body": "Volte a ligar-se para ver esta pasta."
+    },
+    "notFound": {
+      "title": "Este espaço não existe ou já não está disponível",
+      "body": "Pode ter sido removido ou pode já não ter acesso."
+    },
+    "denied": {
+      "title": "Não pode abrir esta pasta",
+      "body": "O seu papel não dá acesso a este espaço."
+    },
+    "error": {
+      "title": "Não foi possível carregar esta pasta",
+      "body": "Algo correu mal. Tente novamente."
+    }
+  },
+  "empty": {
+    "title": "Largue ficheiros aqui",
+    "folderTitle": "Esta pasta está vazia",
+    "dropHere": "Ou use o botão Novo.",
+    "readOnly": "Ainda não há nada aqui."
+  },
+  "errors": {
+    "network": "Não é possível contactar o servidor. Verifique a ligação.",
+    "unauthorized": "A sessão terminou. Inicie sessão novamente.",
+    "forbidden": "Esta ação não é permitida.",
+    "scope_denied": "O seu papel não permite isto neste espaço.",
+    "access_denied": "O armazenamento recusou o acesso.",
+    "bucket_not_found": "Este espaço já não existe.",
+    "key_not_found": "Este item já não existe ou foi movido.",
+    "already_exists": "Já existe um item com este nome.",
+    "validation": "Este nome ou caminho não é válido.",
+    "quota_exceeded": "Espaço de armazenamento insuficiente.",
+    "rate_limited": "Demasiados pedidos. Aguarde um momento e tente novamente.",
+    "slow_down": "O armazenamento está ocupado. Tente daqui a pouco.",
+    "upstream_error": "O armazenamento devolveu um erro.",
+    "endpoint_unreachable": "Não é possível contactar o armazenamento.",
+    "not_implemented": "Esta ação ainda não está disponível.",
+    "internal": "Ocorreu um erro no servidor.",
+    "unknown": "Algo correu mal.",
+    "batch_too_large": "Esta pasta tem demasiados itens para uma única operação (máximo 1000).",
+    "folder_exists": "Esta pasta já existe."
+  },
+  "toast": {
+    "moved_one": "{{count}} item movido",
+    "moved_other": "{{count}} itens movidos",
+    "copied_one": "{{count}} item copiado",
+    "copied_other": "{{count}} itens copiados",
+    "conflicts_one": "{{count}} item já existe no destino",
+    "conflicts_other": "{{count}} itens já existem no destino",
+    "conflictsHint": "Escolha «Manter ambos» ou «Substituir» para continuar.",
+    "linkCopied_one": "Link copiado",
+    "linkCopied_other": "{{count}} links copiados",
+    "copyFailed": "Não foi possível copiar para a área de transferência",
+    "cut_one": "{{count}} item cortado: cole-o noutra pasta",
+    "cut_other": "{{count}} itens cortados: cole-os noutra pasta",
+    "copiedToClipboard_one": "{{count}} item copiado: cole-o numa pasta",
+    "copiedToClipboard_other": "{{count}} itens copiados: cole-os numa pasta",
+    "renamed": "Nome alterado",
+    "deleted_one": "{{count}} item eliminado",
+    "deleted_other": "{{count}} itens eliminados"
+  },
+  "upload": {
+    "quota": "O seu drive está cheio",
+    "spaceQuota": "Este espaço partilhado está cheio",
+    "remaining": "Restam {{size}}. Liberte espaço ou carregue ficheiros mais pequenos.",
+    "freeUp": "Liberte espaço ou carregue ficheiros mais pequenos."
+  },
+  "drop": {
+    "here": "Largue para carregar em {{folder}}",
+    "denied": "Não pode carregar ficheiros neste espaço"
+  },
+  "status": {
+    "items_one": "{{count}} item",
+    "items_other": "{{count}} itens",
+    "atLeast_one": "Pelo menos {{count}} item",
+    "atLeast_other": "Pelo menos {{count}} itens",
+    "loadingMore": "A carregar mais…"
+  }
+}

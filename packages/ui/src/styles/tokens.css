@@ -1,0 +1,525 @@
+/* ==========================================================================
+   @ud/ui — jetons de design
+   Repris d'Universal Email (tokens.css du 2026-11-03, 14 h 01), préfixe --ud-,
+   puis ajustements acceptés et jetons propres au Drive.
+
+   Couleurs de collection : ./themes/<id>.css ([data-theme='<id>'] en clair,
+   [data-theme='<id>'].dark en sombre ; sans data-theme, « porcelain »). Ce
+   fichier n'importe pas les collections : ../index.css le fait pour le Drive,
+   ./bridges/universal-email.css les remplace par les --ue-* d'UE.
+   Ici : jetons hors couleur, jetons dérivés communs (clair : :root, sombre :
+   .dark), jetons Drive dérivés, correspondance shadcn, bloc @theme inline.
+
+   Ajustements : --ud-float-border = --ud-line-strong en sombre ;
+   --ud-input-border (≥ 3:1) ; --ud-focus opaque (= --ud-accent-strong) ;
+   --ud-text-3 réservé au non informatif ; --ud-btn-primary-active
+   sombre à 20 % ; --ud-btn-danger-fg sombre = --ud-text-1, icône --ud-danger.
+   Écart avec UE : aucun jeton d'UE nouveau ou modifié au 2026-11-03.
+   ========================================================================== */
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  /* Mouvement */
+  --ud-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ud-dur-fast: 120ms;
+  --ud-dur: 160ms;
+  --ud-dur-slow: 220ms;
+  --ud-dur-progress: 240ms;
+
+  /* Rayons */
+  --radius: 0.625rem;
+  --ud-radius-xs: 4px;
+  --ud-radius-full: 9999px;
+
+  /* Z-index */
+  --ud-z-base: 0;
+  --ud-z-sticky: 10;
+  --ud-z-panel: 20;
+  --ud-z-drop: 30;
+  --ud-z-viewer: 40;
+  --ud-z-overlay: 50;
+  --ud-z-dialog: 51;
+  --ud-z-popover: 60;
+  --ud-z-toast: 70;
+  --ud-z-tooltip: 80;
+  --ud-z-drag: 90;
+  --ud-z-skip: 100;
+
+  /* Densité normale */
+  --ud-row-h: 40px;
+  --ud-icon-row: 20px;
+  --ud-menu-item-h: 32px;
+  --ud-cell-px: 12px;
+  --ud-tile-min: 184px;
+
+  /* Dimensions et cibles */
+  --ud-rail-w: 64px;
+  --ud-sidebar-w: 256px;
+  --ud-details-w: 360px;
+  --ud-transfers-w: 400px;
+  --ud-header-h: 56px;
+  --ud-target-min: 24px;
+  --ud-target-coarse: 44px;
+
+  /* Damier et visionneuse : identiques dans les deux modes sauf le damier */
+  --ud-checker-a: #ffffff;
+  --ud-checker-b: #e9e9e9;
+  --ud-checker-size: 8px;
+  --ud-viewer-scrim: rgb(12 12 14 / 0.92);
+  --ud-viewer-chrome: rgb(24 24 27 / 0.88);
+  --ud-viewer-fg: #f2f2f2;
+  --ud-viewer-fg-2: #b8b8b8;
+  --ud-viewer-line: rgb(255 255 255 / 0.16);
+  --ud-viewer-btn-hover: rgb(255 255 255 / 0.1);
+  --ud-viewer-focus: #f2f2f2;
+
+  --ud-cut-opacity: 0.5;
+}
+
+[data-density='compact'] {
+  --ud-row-h: 32px;
+  --ud-icon-row: 16px;
+  --ud-menu-item-h: 28px;
+  --ud-cell-px: 8px;
+  --ud-tile-min: 148px;
+}
+[data-density='comfortable'] {
+  --ud-row-h: 48px;
+  --ud-icon-row: 24px;
+  --ud-menu-item-h: 44px;
+  --ud-cell-px: 16px;
+  --ud-tile-min: 220px;
+}
+/* Pointeur grossier : densité confortable imposée, tuiles de 156 px (2 colonnes à 375 px) */
+@media (pointer: coarse) {
+  :root,
+  [data-density] {
+    --ud-row-h: 48px;
+    --ud-icon-row: 24px;
+    --ud-menu-item-h: 44px;
+    --ud-cell-px: 16px;
+    --ud-tile-min: 156px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Jetons dérivés, communs à toutes les collections (repris d'UE) et
+   jetons Drive. Ils ne référencent que des jetons de la variante
+   active : ils suivent l'accent du stockage et le mode.
+   -------------------------------------------------------------------------- */
+:root {
+  /* Flottants, survols, infobulles */
+  --ud-float-border: var(--ud-line);
+  --ud-float-highlight: inset 0 0 0 0 transparent;
+  --ud-float-shadow: var(--ud-float-highlight), var(--ud-shadow-float);
+  --ud-menu-hover: color-mix(in oklab, var(--ud-text-1) 6%, transparent);
+  --ud-tooltip-bg: var(--ud-text-1);
+  --ud-tooltip-fg: var(--ud-panel);
+  --ud-tooltip-border: transparent;
+
+  /* Boutons (états) */
+  --ud-btn-primary-highlight: inset 0 1px 0 rgb(255 255 255 / 0.16);
+  --ud-btn-primary-active: color-mix(in oklab, var(--ud-btn-primary-hover) 88%, var(--ud-text-1));
+  --ud-btn-disabled-bg: color-mix(in oklab, var(--ud-text-1) 5%, var(--ud-panel));
+  --ud-btn-disabled-fg: var(--ud-text-3);
+  --ud-btn-disabled-border: var(--ud-line);
+  --ud-btn-danger-bg: var(--ud-danger);
+  --ud-btn-danger-fg: #fff;
+  --ud-btn-danger-icon: #fff;
+  --ud-btn-danger-border: color-mix(in oklab, var(--ud-danger) 80%, var(--ud-text-1));
+  --ud-btn-danger-hover: color-mix(in oklab, var(--ud-danger) 90%, var(--ud-text-1));
+  --ud-btn-tonal-bg: color-mix(in oklab, var(--ud-accent) 11%, var(--ud-panel));
+  --ud-btn-tonal-fg: var(--ud-text-1);
+  --ud-btn-tonal-icon: var(--ud-accent-strong);
+  --ud-btn-tonal-border: color-mix(in oklab, var(--ud-accent) 26%, var(--ud-line));
+  --ud-btn-tonal-hover: color-mix(in oklab, var(--ud-accent) 17%, var(--ud-panel));
+  --ud-btn-tonal-active: color-mix(in oklab, var(--ud-accent) 23%, var(--ud-panel));
+
+  /* Bordures et focus */
+  --ud-focus: var(--ud-accent-strong);
+  --ud-input-border: color-mix(in oklab, var(--ud-text-3) 70%, var(--ud-text-2));
+  --ud-pane-border: var(--ud-line-strong);
+  --ud-danger-text: color-mix(in oklab, var(--ud-danger) 80%, var(--ud-text-1));
+
+  /* Sélection */
+  --ud-tile-selected-bg: var(--ud-row-selected);
+  --ud-tile-selected-ring: var(--ud-focus);
+  --ud-check-bg: var(--ud-accent);
+  --ud-check-fg: var(--ud-on-accent);
+  --ud-check-border: var(--ud-accent);
+  --ud-lasso-bg: color-mix(in oklab, var(--ud-accent) 10%, transparent);
+  --ud-lasso-border: var(--ud-accent);
+
+  /* Dépôt */
+  --ud-drop-bg: color-mix(in oklab, var(--ud-accent) 6%, transparent);
+  --ud-drop-border: var(--ud-accent);
+  --ud-drop-target-bg: var(--ud-accent-soft);
+  --ud-drop-target-border: var(--ud-accent);
+  --ud-drop-denied: var(--ud-danger);
+
+  /* Progression et jauge */
+  --ud-progress-track: color-mix(in oklab, var(--ud-text-1) 8%, transparent);
+  --ud-progress-fill: var(--ud-accent-strong);
+  --ud-progress-paused: var(--ud-text-2);
+  --ud-progress-done: var(--ud-success);
+  --ud-progress-error: var(--ud-danger);
+  --ud-meter-fill: var(--ud-accent-strong);
+  --ud-meter-warn: var(--ud-warn);
+  --ud-meter-full: var(--ud-danger);
+
+  /* Vignettes */
+  --ud-thumb-bg: color-mix(in oklab, var(--ud-text-1) 4%, transparent);
+  --ud-thumb-edge: color-mix(in oklab, var(--ud-text-1) 8%, transparent);
+
+  /* Tons */
+  --ud-tone-neutral-bg: color-mix(in oklab, var(--ud-text-1) 6%, transparent);
+  --ud-tone-neutral-icon: var(--ud-text-2);
+  --ud-tone-neutral-border: var(--ud-line-strong);
+  --ud-tone-accent-bg: var(--ud-accent-soft);
+  --ud-tone-accent-icon: var(--ud-accent-strong);
+  --ud-tone-accent-border: color-mix(in oklab, var(--ud-accent) 30%, transparent);
+  --ud-tone-success-bg: color-mix(in oklab, var(--ud-success) 12%, transparent);
+  --ud-tone-success-icon: var(--ud-success);
+  --ud-tone-success-border: color-mix(in oklab, var(--ud-success) 35%, transparent);
+  --ud-tone-warning-bg: color-mix(in oklab, var(--ud-warn) 12%, transparent);
+  --ud-tone-warning-icon: var(--ud-warn);
+  --ud-tone-warning-border: color-mix(in oklab, var(--ud-warn) 35%, transparent);
+  --ud-tone-danger-bg: color-mix(in oklab, var(--ud-danger) 12%, transparent);
+  --ud-tone-danger-icon: var(--ud-danger);
+  --ud-tone-danger-border: color-mix(in oklab, var(--ud-danger) 35%, transparent);
+
+  /* Étoile */
+  --ud-star-fill: var(--ud-flag);
+  --ud-star-stroke: color-mix(in oklab, var(--ud-flag) 50%, var(--ud-text-1));
+  --ud-star-empty: var(--ud-text-2);
+
+  /* Syntaxe et éditeur */
+  --ud-syn-keyword: color-mix(in oklab, var(--ud-accent) 80%, var(--ud-text-1));
+  --ud-syn-string: color-mix(in oklab, var(--ud-success) 70%, var(--ud-text-1));
+  --ud-syn-number: color-mix(in oklab, var(--ud-warn) 60%, var(--ud-text-1));
+  --ud-syn-literal: color-mix(in oklab, var(--ud-danger) 75%, var(--ud-text-1));
+  --ud-syn-comment: var(--ud-text-2);
+  --ud-syn-property: var(--ud-text-1);
+  --ud-syn-punct: var(--ud-text-2);
+  --ud-syn-tag: var(--ud-syn-keyword);
+  --ud-syn-attr: var(--ud-syn-number);
+  --ud-syn-invalid: var(--ud-danger);
+  --ud-editor-active-line: color-mix(in oklab, var(--ud-text-1) 4%, transparent);
+  --ud-editor-selection: color-mix(in oklab, var(--ud-accent) 12%, transparent);
+  --ud-editor-match: color-mix(in oklab, var(--ud-warn) 20%, transparent);
+  --ud-editor-cursor: var(--ud-accent);
+  --ud-editor-gutter: var(--ud-text-2);
+
+  /* Illustrations */
+  --ud-illu-stroke: var(--ud-text-3);
+  --ud-illu-fill: var(--ud-accent-softer);
+  --ud-illu-accent: var(--ud-accent);
+  --ud-illu-paper: var(--ud-panel);
+
+  /* Graphiques */
+  --ud-chart-1: #2a78d6;
+  --ud-chart-2: #eb6834;
+  --ud-chart-3: #1baf7a;
+  --ud-chart-4: #eda100;
+  --ud-chart-5: #e87ba4;
+  --ud-chart-6: #008300;
+  --ud-chart-7: #6250d6;
+  --ud-chart-8: #e34948;
+  --ud-chart-grid: var(--ud-line);
+  --ud-chart-axis: var(--ud-text-2);
+  --ud-chart-gap: var(--ud-panel);
+
+  /* Types de fichiers et couleurs de dossiers */
+  --ud-ft-folder: color-mix(in oklab, var(--ud-text-2) 85%, var(--ud-accent));
+  --ud-ft-bucket: var(--ud-text-2);
+  --ud-ft-image: #7c3aed;
+  --ud-ft-video: #c2410c;
+  --ud-ft-audio: #a21caf;
+  --ud-ft-pdf: #c81e1e;
+  --ud-ft-text: var(--ud-text-2);
+  --ud-ft-code: #0f766e;
+  --ud-ft-sheet: #15803d;
+  --ud-ft-slides: #a16207;
+  --ud-ft-doc: #1d4ed8;
+  --ud-ft-archive: #854d0e;
+  --ud-ft-font: #475569;
+  --ud-ft-3d: #4338ca;
+  --ud-ft-exec: #9f1239;
+  --ud-ft-unknown: color-mix(in oklab, var(--ud-text-3) 70%, var(--ud-text-2));
+  /* Pastille d'extension : texte blanc sur l'aplat en clair */
+  --ud-ft-badge-fg: #ffffff;
+  --ud-folder-neutral: var(--ud-ft-folder);
+  --ud-folder-red: #dc2626;
+  --ud-folder-orange: #c2410c;
+  --ud-folder-yellow: #a16207;
+  --ud-folder-green: #15803d;
+  --ud-folder-teal: #0f766e;
+  --ud-folder-blue: #2563eb;
+  --ud-folder-indigo: #4f46e5;
+  --ud-folder-purple: #9333ea;
+  --ud-folder-pink: #db2777;
+}
+
+.dark {
+  --ud-btn-tonal-bg: var(--ud-btn-primary-bg);
+  --ud-btn-tonal-fg: var(--ud-btn-primary-fg);
+  --ud-btn-tonal-icon: var(--ud-btn-primary-icon);
+  --ud-btn-tonal-border: var(--ud-btn-primary-border);
+  --ud-btn-tonal-hover: var(--ud-btn-primary-hover);
+  --ud-btn-tonal-active: var(--ud-btn-primary-active);
+  --ud-float-border: var(--ud-line-strong);
+  --ud-float-highlight: inset 0 1px 0 0 rgb(255 255 255 / 0.045);
+  --ud-menu-hover: color-mix(in oklab, var(--ud-text-1) 8%, transparent);
+  --ud-tooltip-bg: color-mix(in oklab, var(--ud-text-1) 12%, var(--ud-panel));
+  --ud-tooltip-fg: var(--ud-text-1);
+  --ud-tooltip-border: var(--ud-line-strong);
+  --ud-btn-primary-highlight: inset 0 1px 0 rgb(255 255 255 / 0.04);
+  /* Ajusté : UE 30 % (luminance 0,138 mesurée) */
+  --ud-btn-primary-active: color-mix(in oklab, var(--ud-accent) 20%, var(--ud-panel));
+  --ud-btn-disabled-bg: color-mix(in oklab, var(--ud-text-1) 4%, var(--ud-panel));
+  --ud-btn-danger-bg: color-mix(in oklab, var(--ud-danger) 16%, var(--ud-panel));
+  /* Ajusté : le texte teinté d'UE mesurait 3,96:1 au survol */
+  --ud-btn-danger-fg: var(--ud-text-1);
+  --ud-btn-danger-icon: var(--ud-danger);
+  --ud-btn-danger-border: color-mix(in oklab, var(--ud-danger) 42%, var(--ud-line-strong));
+  --ud-btn-danger-hover: color-mix(in oklab, var(--ud-danger) 24%, var(--ud-panel));
+
+  --ud-danger-text: color-mix(in oklab, var(--ud-danger) 65%, var(--ud-text-1));
+  --ud-check-bg: color-mix(in oklab, var(--ud-accent) 24%, var(--ud-panel));
+  --ud-check-fg: var(--ud-text-1);
+  --ud-check-border: var(--ud-accent-strong);
+  --ud-lasso-bg: color-mix(in oklab, var(--ud-accent) 14%, transparent);
+  --ud-drop-bg: color-mix(in oklab, var(--ud-accent) 10%, transparent);
+  --ud-thumb-edge: color-mix(in oklab, var(--ud-text-1) 10%, transparent);
+  --ud-checker-a: #2b2b2b;
+  --ud-checker-b: #222222;
+  --ud-star-stroke: var(--ud-flag);
+  --ud-syn-keyword: color-mix(in oklab, var(--ud-accent) 70%, white);
+  --ud-syn-string: color-mix(in oklab, var(--ud-success) 80%, var(--ud-text-1));
+  --ud-syn-number: color-mix(in oklab, var(--ud-warn) 80%, var(--ud-text-1));
+  --ud-syn-literal: color-mix(in oklab, var(--ud-danger) 80%, var(--ud-text-1));
+  --ud-editor-selection: color-mix(in oklab, var(--ud-accent) 18%, transparent);
+
+  --ud-chart-1: #3987e5;
+  --ud-chart-2: #d95926;
+  --ud-chart-3: #199e70;
+  --ud-chart-4: #c98500;
+  --ud-chart-5: #d55181;
+  --ud-chart-6: #008300;
+  --ud-chart-7: #9085e9;
+  --ud-chart-8: #e66767;
+
+  --ud-ft-image: #b29cfe;
+  --ud-ft-video: #fb923c;
+  --ud-ft-audio: #ed7efe;
+  --ud-ft-pdf: #fd8987;
+  --ud-ft-code: #2dd4bf;
+  --ud-ft-sheet: #4ade80;
+  --ud-ft-slides: #facc15;
+  --ud-ft-doc: #6badfe;
+  --ud-ft-archive: #d6a35c;
+  --ud-ft-font: #9dacc1;
+  --ud-ft-3d: #97a3fe;
+  --ud-ft-exec: #fda4af;
+  --ud-ft-badge-fg: var(--ud-text-1);
+  --ud-folder-red: #fd8987;
+  --ud-folder-orange: #fb923c;
+  --ud-folder-yellow: #facc15;
+  --ud-folder-green: #4ade80;
+  --ud-folder-teal: #2dd4bf;
+  --ud-folder-blue: #6badfe;
+  --ud-folder-indigo: #97a3fe;
+  --ud-folder-purple: #c893ff;
+  --ud-folder-pink: #fe7fc0;
+}
+
+/* --------------------------------------------------------------------------
+   Exposition à Tailwind : bg-panel, border-pane-border,
+   outline-focus, hover:bg-menu-hover, text-danger-text…
+   -------------------------------------------------------------------------- */
+@theme inline {
+  --font-sans:
+    'Inter Variable', 'UD Arabic', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Noto Color Emoji', sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, monospace;
+  --ease-ud: var(--ud-ease);
+
+  /* Échelle typographique (corps à 14 px) */
+  --text-2xs: 0.6875rem;
+  --text-2xs--line-height: 1rem;
+  --text-2xs--font-weight: 500;
+  --text-row: 0.8125rem;
+  --text-row--line-height: 1.25rem;
+  --text-md: 0.9375rem;
+  --text-md--line-height: 1.375rem;
+  --text-md--font-weight: 500;
+  --text-lg: 1rem;
+  --text-lg--line-height: 1.5rem;
+  --text-lg--font-weight: 600;
+  --text-xl: 1.125rem;
+  --text-xl--line-height: 1.625rem;
+  --text-xl--font-weight: 600;
+  --text-2xl: 1.375rem;
+  --text-2xl--line-height: 1.75rem;
+  --text-2xl--font-weight: 600;
+  --text-3xl: 1.75rem;
+  --text-3xl--line-height: 2.125rem;
+  --text-3xl--font-weight: 600;
+
+  /* shadcn */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Repris d'UE */
+  --color-app: var(--ud-app);
+  --color-rail: var(--ud-rail);
+  --color-sidebar: var(--ud-sidebar);
+  --color-panel: var(--ud-panel);
+  --color-line: var(--ud-line);
+  --color-line-strong: var(--ud-line-strong);
+  --color-row-hover: var(--ud-row-hover);
+  --color-row-selected: var(--ud-row-selected);
+  --color-text-1: var(--ud-text-1);
+  --color-text-2: var(--ud-text-2);
+  --color-text-3: var(--ud-text-3);
+  --color-ud-accent: var(--ud-accent);
+  --color-ud-accent-soft: var(--ud-accent-soft);
+  --color-ud-accent-softer: var(--ud-accent-softer);
+  --color-ud-accent-strong: var(--ud-accent-strong);
+  --color-on-accent: var(--ud-on-accent);
+  --color-danger: var(--ud-danger);
+  --color-success: var(--ud-success);
+  --color-warn: var(--ud-warn);
+  --color-flag: var(--ud-flag);
+  --color-btn-primary: var(--ud-btn-primary-bg);
+  --color-btn-primary-fg: var(--ud-btn-primary-fg);
+  --color-btn-primary-border: var(--ud-btn-primary-border);
+  --color-btn-secondary: var(--ud-btn-secondary-bg);
+  --color-btn-secondary-fg: var(--ud-btn-secondary-fg);
+  --color-btn-secondary-border: var(--ud-btn-secondary-border);
+
+  /* Dérivés repris */
+  --color-menu-hover: var(--ud-menu-hover);
+  --color-float-border: var(--ud-float-border);
+  --color-tooltip: var(--ud-tooltip-bg);
+  --color-tooltip-fg: var(--ud-tooltip-fg);
+  --color-tooltip-border: var(--ud-tooltip-border);
+  --color-btn-tonal: var(--ud-btn-tonal-bg);
+  --color-btn-tonal-fg: var(--ud-btn-tonal-fg);
+  --color-btn-tonal-border: var(--ud-btn-tonal-border);
+  --color-btn-danger: var(--ud-btn-danger-bg);
+  --color-btn-danger-fg: var(--ud-btn-danger-fg);
+  --color-btn-danger-border: var(--ud-btn-danger-border);
+
+  /* Drive */
+  --color-focus: var(--ud-focus);
+  --color-input-border: var(--ud-input-border);
+  --color-pane-border: var(--ud-pane-border);
+  --color-danger-text: var(--ud-danger-text);
+  --color-check: var(--ud-check-bg);
+  --color-check-fg: var(--ud-check-fg);
+  --color-check-border: var(--ud-check-border);
+  --color-tile-selected: var(--ud-tile-selected-bg);
+  --color-lasso: var(--ud-lasso-bg);
+  --color-lasso-border: var(--ud-lasso-border);
+  --color-drop: var(--ud-drop-bg);
+  --color-drop-border: var(--ud-drop-border);
+  --color-drop-target: var(--ud-drop-target-bg);
+  --color-drop-target-border: var(--ud-drop-target-border);
+  --color-progress-track: var(--ud-progress-track);
+  --color-progress-fill: var(--ud-progress-fill);
+  --color-thumb: var(--ud-thumb-bg);
+  --color-thumb-edge: var(--ud-thumb-edge);
+  --color-tone-neutral-bg: var(--ud-tone-neutral-bg);
+  --color-tone-neutral-icon: var(--ud-tone-neutral-icon);
+  --color-tone-neutral-border: var(--ud-tone-neutral-border);
+  --color-tone-accent-bg: var(--ud-tone-accent-bg);
+  --color-tone-accent-icon: var(--ud-tone-accent-icon);
+  --color-tone-accent-border: var(--ud-tone-accent-border);
+  --color-tone-success-bg: var(--ud-tone-success-bg);
+  --color-tone-success-icon: var(--ud-tone-success-icon);
+  --color-tone-success-border: var(--ud-tone-success-border);
+  --color-tone-warning-bg: var(--ud-tone-warning-bg);
+  --color-tone-warning-icon: var(--ud-tone-warning-icon);
+  --color-tone-warning-border: var(--ud-tone-warning-border);
+  --color-tone-danger-bg: var(--ud-tone-danger-bg);
+  --color-tone-danger-icon: var(--ud-tone-danger-icon);
+  --color-tone-danger-border: var(--ud-tone-danger-border);
+  --color-star-fill: var(--ud-star-fill);
+  --color-star-stroke: var(--ud-star-stroke);
+  --color-star-empty: var(--ud-star-empty);
+  --color-viewer-scrim: var(--ud-viewer-scrim);
+  --color-viewer-chrome: var(--ud-viewer-chrome);
+  --color-viewer-fg: var(--ud-viewer-fg);
+  --color-viewer-fg-2: var(--ud-viewer-fg-2);
+  --color-viewer-line: var(--ud-viewer-line);
+  --color-viewer-btn-hover: var(--ud-viewer-btn-hover);
+  --color-viewer-focus: var(--ud-viewer-focus);
+  --color-chart-1: var(--ud-chart-1);
+  --color-chart-2: var(--ud-chart-2);
+  --color-chart-3: var(--ud-chart-3);
+  --color-chart-4: var(--ud-chart-4);
+  --color-chart-5: var(--ud-chart-5);
+  --color-chart-6: var(--ud-chart-6);
+  --color-chart-7: var(--ud-chart-7);
+  --color-chart-8: var(--ud-chart-8);
+  --color-progress-paused: var(--ud-progress-paused);
+  --color-progress-done: var(--ud-progress-done);
+  --color-progress-error: var(--ud-progress-error);
+  --color-meter-fill: var(--ud-meter-fill);
+  --color-meter-warn: var(--ud-meter-warn);
+  --color-meter-full: var(--ud-meter-full);
+  --color-ft-folder: var(--ud-ft-folder);
+  --color-ft-bucket: var(--ud-ft-bucket);
+  --color-ft-image: var(--ud-ft-image);
+  --color-ft-video: var(--ud-ft-video);
+  --color-ft-audio: var(--ud-ft-audio);
+  --color-ft-pdf: var(--ud-ft-pdf);
+  --color-ft-text: var(--ud-ft-text);
+  --color-ft-code: var(--ud-ft-code);
+  --color-ft-sheet: var(--ud-ft-sheet);
+  --color-ft-slides: var(--ud-ft-slides);
+  --color-ft-doc: var(--ud-ft-doc);
+  --color-ft-archive: var(--ud-ft-archive);
+  --color-ft-font: var(--ud-ft-font);
+  --color-ft-3d: var(--ud-ft-3d);
+  --color-ft-exec: var(--ud-ft-exec);
+  --color-ft-unknown: var(--ud-ft-unknown);
+  --color-folder-neutral: var(--ud-folder-neutral);
+  --color-folder-red: var(--ud-folder-red);
+  --color-folder-orange: var(--ud-folder-orange);
+  --color-folder-yellow: var(--ud-folder-yellow);
+  --color-folder-green: var(--ud-folder-green);
+  --color-folder-teal: var(--ud-folder-teal);
+  --color-folder-blue: var(--ud-folder-blue);
+  --color-folder-indigo: var(--ud-folder-indigo);
+  --color-folder-purple: var(--ud-folder-purple);
+  --color-folder-pink: var(--ud-folder-pink);
+
+  --radius-xs: var(--ud-radius-xs);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  /* Ajusté : shadow-float porte aussi le liseré clair du mode sombre */
+  --shadow-float: var(--ud-float-shadow);
+  --shadow-soft: var(--ud-shadow-soft);
+}

@@ -1,0 +1,81 @@
+{
+  "title": "Administración",
+  "forbidden": {
+    "title": "Acceso restringido",
+    "body": "Tu rol no permite consultar la administración de esta unidad."
+  },
+  "users": {
+    "title": "Personas",
+    "search": "Buscar por nombre o correo",
+    "caption": "Personas con acceso a esta unidad",
+    "empty": "Nadie ha iniciado sesión todavía",
+    "emptySearch": "Nadie coincide con esta búsqueda",
+    "never": "Nunca",
+    "columns": {
+      "name": "Nombre",
+      "email": "Correo",
+      "roles": "Roles",
+      "usage": "Almacenamiento usado",
+      "lastLogin": "Último inicio de sesión",
+      "status": "Estado"
+    }
+  },
+  "status": {
+    "active": "Activa",
+    "suspended": "Suspendida"
+  },
+  "units": {
+    "MB": "MB",
+    "GB": "GB",
+    "TB": "TB"
+  },
+  "user": {
+    "back": "Todas las personas",
+    "notFound": "Esta persona no existe",
+    "created": "Primer inicio de sesión",
+    "lastLogin": "Último inicio de sesión",
+    "terms": "Condiciones de uso",
+    "termsAccepted": "Aceptadas (versión {{version}})",
+    "termsNone": "Aún no aceptadas",
+    "rolesTitle": "Roles de Drive",
+    "rolesHint": "Los roles vienen del proveedor de identidad y solo se cambian allí.",
+    "usageTitle": "Almacenamiento usado",
+    "objects": "Objetos: {{count}}",
+    "recount": "Recalcular el uso",
+    "recounted": "Uso recalculado",
+    "quotaTitle": "Cuota de almacenamiento",
+    "quotaFromRoles": "La cuota viene de los roles de esta persona.",
+    "quotaCustom": "Una cuota personalizada sustituye a la de los roles.",
+    "quotaEffective": "Cuota actual: {{value}}",
+    "quotaValue": "Cuota personalizada",
+    "quotaUnit": "Unidad",
+    "quotaSave": "Guardar la cuota",
+    "quotaSaved": "Cuota actualizada",
+    "quotaReset": "Cuota de los roles restablecida",
+    "quotaUseRoles": "Usar la cuota de los roles",
+    "quotaInvalid": "Introduce un número mayor que cero.",
+    "unlimited": "Ilimitado",
+    "accessTitle": "Acceso",
+    "suspendHint": "Una persona suspendida cierra sesión al instante y ya no puede iniciarla.",
+    "reactivateHint": "Esta persona está suspendida y no puede iniciar sesión.",
+    "suspend": "Suspender",
+    "reactivate": "Reactivar",
+    "suspendTitle": "¿Suspender a {{name}}?",
+    "suspendBody": "Sus sesiones terminan de inmediato y no podrá iniciar sesión hasta que se reactive. Sus archivos se conservan.",
+    "suspendConfirm": "Suspender",
+    "reactivateTitle": "¿Reactivar a {{name}}?",
+    "reactivateBody": "Podrá volver a iniciar sesión con sus roles actuales.",
+    "reactivateConfirm": "Reactivar",
+    "suspended": "Acceso de {{name}} suspendido",
+    "reactivated": "Acceso de {{name}} reactivado"
+  },
+  "errors": {
+    "self": "No puedes cambiar tu propio estado.",
+    "superAdmin": "Solo un superadministrador puede modificar a otro superadministrador.",
+    "permission": "No tienes permiso para esta acción.",
+    "notFound": "Esta persona no existe.",
+    "validation": "Este valor no se acepta.",
+    "network": "No se puede contactar con el servidor. Comprueba tu conexión.",
+    "generic": "La acción falló. Vuelve a intentarlo."
+  }
+}

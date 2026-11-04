@@ -1,0 +1,71 @@
+{
+  "title": "Ajustes",
+  "description": "Ajustes de la aplicación",
+  "sections": "Secciones",
+  "close": "Cerrar",
+  "tabs": {
+    "appearance": "Apariencia",
+    "language": "Idioma",
+    "account": "Cuenta",
+    "shortcuts": "Atajos"
+  },
+  "language": {
+    "title": "Idioma",
+    "description": "Idioma de la interfaz, las fechas y los números. Tu elección se guarda en este dispositivo."
+  },
+  "account": {
+    "profile": "Perfil",
+    "profileDescription": "Tu nombre y tu correo vienen del inicio de sesión de tu organización.",
+    "noEmail": "Sin dirección de correo",
+    "roles": "Roles",
+    "rolesDescription": "Tus roles en este drive, asignados por un administrador.",
+    "noRoles": "Ningún rol",
+    "storage": "Almacenamiento",
+    "storageDescription": "Las versiones y la papelera cuentan en tu almacenamiento.",
+    "myDrive": "Mi unidad",
+    "sharedSpaces": "Espacios compartidos",
+    "spaceUsage": "{{used}} usados",
+    "signOut": "Cerrar sesión",
+    "signOutDescription": "Cierra tu sesión en este dispositivo."
+  },
+  "shortcuts": {
+    "hint": "Estos atajos funcionan en la lista de archivos cuando tiene el foco.",
+    "groups": {
+      "navigation": "Navegación",
+      "selection": "Selección",
+      "actions": "Acciones",
+      "preview": "Vista previa"
+    },
+    "items": {
+      "move": "Pasar de un elemento a otro",
+      "firstLast": "Primer o último elemento",
+      "page": "Página anterior o siguiente",
+      "open": "Abrir",
+      "openNewTab": "Abrir en una pestaña nueva",
+      "toggle": "Seleccionar una carpeta o abrir un archivo",
+      "extend": "Ampliar la selección",
+      "selectAll": "Seleccionar todo",
+      "clear": "Vaciar la selección",
+      "rename": "Cambiar nombre",
+      "delete": "Eliminar",
+      "copy": "Copiar",
+      "cut": "Cortar",
+      "paste": "Pegar",
+      "menu": "Abrir el menú contextual",
+      "previewNav": "Archivo anterior o siguiente",
+      "previewClose": "Cerrar la vista previa"
+    },
+    "keys": {
+      "space": "Espacio",
+      "enter": "Intro",
+      "esc": "Esc",
+      "home": "Inicio",
+      "end": "Fin",
+      "pageUp": "RePág",
+      "pageDown": "AvPág",
+      "delete": "Supr",
+      "menu": "Menú",
+      "shift": "Mayús"
+    }
+  }
+}

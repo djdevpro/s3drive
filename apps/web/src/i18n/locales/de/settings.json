@@ -1,0 +1,71 @@
+{
+  "title": "Einstellungen",
+  "description": "Einstellungen der App",
+  "sections": "Bereiche",
+  "close": "Schließen",
+  "tabs": {
+    "appearance": "Darstellung",
+    "language": "Sprache",
+    "account": "Konto",
+    "shortcuts": "Tastenkürzel"
+  },
+  "language": {
+    "title": "Sprache",
+    "description": "Sprache der Oberfläche, der Datums- und Zahlenangaben. Die Wahl wird auf diesem Gerät gespeichert."
+  },
+  "account": {
+    "profile": "Profil",
+    "profileDescription": "Name und E-Mail stammen aus der Anmeldung deiner Organisation.",
+    "noEmail": "Keine E-Mail-Adresse",
+    "roles": "Rollen",
+    "rolesDescription": "Deine Rollen in diesem Drive, von einer Administratorin oder einem Administrator vergeben.",
+    "noRoles": "Keine Rolle",
+    "storage": "Speicher",
+    "storageDescription": "Versionen und Papierkorb zählen zu deinem Speicher.",
+    "myDrive": "Meine Ablage",
+    "sharedSpaces": "Geteilte Bereiche",
+    "spaceUsage": "{{used}} belegt",
+    "signOut": "Abmelden",
+    "signOutDescription": "Beendet deine Sitzung auf diesem Gerät."
+  },
+  "shortcuts": {
+    "hint": "Diese Tastenkürzel wirken in der Dateiliste, wenn sie den Fokus hat.",
+    "groups": {
+      "navigation": "Navigation",
+      "selection": "Auswahl",
+      "actions": "Aktionen",
+      "preview": "Vorschau"
+    },
+    "items": {
+      "move": "Zwischen Elementen wechseln",
+      "firstLast": "Erstes oder letztes Element",
+      "page": "Seite nach oben oder unten",
+      "open": "Öffnen",
+      "openNewTab": "In neuem Tab öffnen",
+      "toggle": "Ordner auswählen oder Datei öffnen",
+      "extend": "Auswahl erweitern",
+      "selectAll": "Alles auswählen",
+      "clear": "Auswahl aufheben",
+      "rename": "Umbenennen",
+      "delete": "Löschen",
+      "copy": "Kopieren",
+      "cut": "Ausschneiden",
+      "paste": "Einfügen",
+      "menu": "Kontextmenü öffnen",
+      "previewNav": "Vorherige oder nächste Datei",
+      "previewClose": "Vorschau schließen"
+    },
+    "keys": {
+      "space": "Leertaste",
+      "enter": "Eingabe",
+      "esc": "Esc",
+      "home": "Pos1",
+      "end": "Ende",
+      "pageUp": "Bild ↑",
+      "pageDown": "Bild ↓",
+      "delete": "Entf",
+      "menu": "Menü",
+      "shift": "Umschalt"
+    }
+  }
+}

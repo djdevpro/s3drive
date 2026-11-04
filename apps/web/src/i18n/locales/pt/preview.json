@@ -1,0 +1,18 @@
+{
+  "label": "Pré-visualização de {{name}}",
+  "close": "Fechar",
+  "copyLink": "Copiar link",
+  "download": "Transferir",
+  "previous": "Ficheiro anterior",
+  "next": "Ficheiro seguinte",
+  "notFound": {
+    "title": "Este ficheiro já não existe ou foi movido",
+    "body": "Pode ter mudado de nome, sido movido ou eliminado."
+  },
+  "tooLarge": "Este ficheiro é demasiado grande para pré-visualizar",
+  "unavailable": "Pré-visualização indisponível",
+  "unavailableBody": "Transfira o ficheiro para o abrir no seu dispositivo.",
+  "loadError": "Não foi possível carregar o ficheiro para pré-visualizar.",
+  "loading": "A carregar a pré-visualização…",
+  "position": "{{index}} de {{total}}"
+}

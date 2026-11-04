@@ -1,0 +1,71 @@
+{
+  "title": "Impostazioni",
+  "description": "Impostazioni dell’app",
+  "sections": "Sezioni",
+  "close": "Chiudi",
+  "tabs": {
+    "appearance": "Aspetto",
+    "language": "Lingua",
+    "account": "Account",
+    "shortcuts": "Scorciatoie"
+  },
+  "language": {
+    "title": "Lingua",
+    "description": "Lingua dell’interfaccia, delle date e dei numeri. La scelta resta su questo dispositivo."
+  },
+  "account": {
+    "profile": "Profilo",
+    "profileDescription": "Nome ed e-mail provengono dall’accesso della tua organizzazione.",
+    "noEmail": "Nessun indirizzo e-mail",
+    "roles": "Ruoli",
+    "rolesDescription": "I tuoi ruoli su questo drive, assegnati da un amministratore.",
+    "noRoles": "Nessun ruolo",
+    "storage": "Spazio",
+    "storageDescription": "Le versioni e il cestino contano nel tuo spazio.",
+    "myDrive": "Il mio drive",
+    "sharedSpaces": "Spazi condivisi",
+    "spaceUsage": "{{used}} usati",
+    "signOut": "Esci",
+    "signOutDescription": "Chiude la sessione su questo dispositivo."
+  },
+  "shortcuts": {
+    "hint": "Queste scorciatoie funzionano nell’elenco dei file quando ha il focus.",
+    "groups": {
+      "navigation": "Navigazione",
+      "selection": "Selezione",
+      "actions": "Azioni",
+      "preview": "Anteprima"
+    },
+    "items": {
+      "move": "Passare da un elemento all’altro",
+      "firstLast": "Primo o ultimo elemento",
+      "page": "Pagina su o giù",
+      "open": "Apri",
+      "openNewTab": "Apri in una nuova scheda",
+      "toggle": "Seleziona una cartella o apri un file",
+      "extend": "Estendi la selezione",
+      "selectAll": "Seleziona tutto",
+      "clear": "Annulla la selezione",
+      "rename": "Rinomina",
+      "delete": "Elimina",
+      "copy": "Copia",
+      "cut": "Taglia",
+      "paste": "Incolla",
+      "menu": "Apri il menu contestuale",
+      "previewNav": "File precedente o successivo",
+      "previewClose": "Chiudi l’anteprima"
+    },
+    "keys": {
+      "space": "Spazio",
+      "enter": "Invio",
+      "esc": "Esc",
+      "home": "Inizio",
+      "end": "Fine",
+      "pageUp": "Pag ↑",
+      "pageDown": "Pag ↓",
+      "delete": "Canc",
+      "menu": "Menu",
+      "shift": "Maiusc"
+    }
+  }
+}

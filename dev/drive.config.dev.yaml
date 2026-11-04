@@ -1,0 +1,54 @@
+# Configuration de développement du mode instance : RustFS de compose.dev.yaml et Keycloak local de test.
+# Démarrage :
+#   docker compose -f compose.dev.yaml up -d
+#   UD_MODE=instance UD_CONFIG=dev/drive.config.dev.yaml UD_ALLOW_PRIVATE_ENDPOINTS=1 npm run dev -w @ud/server
+# Le Keycloak local (realm ud-dev, client confidentiel « drive ») n'est pas nécessaire au démarrage :
+# la découverte OIDC est faite à la première connexion et réessayée.
+version: 1
+instance:
+  connection: drive
+  name: ${UD_INSTANCE_NAME:-Universal Drive (dev)}
+auth:
+  oidc:
+    issuer: ${UD_OIDC_ISSUER:-http://localhost:8180/realms/ud-dev}
+    clientId: ${UD_OIDC_CLIENT_ID:-drive}
+    clientSecret: ${UD_OIDC_CLIENT_SECRET}
+    roleClaims: [resource_access.drive.roles, realm_access.roles]
+    label: Keycloak (dev)
+storages:
+  local:
+    endpoint: http://127.0.0.1:9000
+    region: us-east-1
+    addressing: path
+    accessKeyId: ${UD_DEV_S3_ACCESS_KEY:-udadmin}
+    secretAccessKey: ${UD_DEV_S3_SECRET_KEY}
+spaces:
+  home:
+    storage: local
+    bucket: ud-dev-drive
+    prefix: users/{userId}/
+  commun:
+    name: { fr: Commun, en: Shared }
+    storage: local
+    bucket: ud-dev-drive
+    prefix: commun/
+    quota: 5GB
+roles:
+  super_admin:
+    from: [super-admin]
+    quota: unlimited
+  admin:
+    from: [admin]
+    quota: 10GB
+    spaces: { home: [read, write, delete, share], commun: [read, write, delete, share] }
+    links: { public: true, people: true, maxDays: 90 }
+    admin: [users.read, users.manage, reports.manage, audit.read, files.inspect]
+  user:
+    from: [user]
+    quota: 1GB
+    spaces: { home: [read, write, delete, share], commun: [read] }
+    links: { public: false, people: true, maxDays: 30 }
+legal:
+  termsVersion: "dev-1"
+  termsUrl: null
+  uploadLogDays: 365

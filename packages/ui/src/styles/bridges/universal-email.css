@@ -1,0 +1,93 @@
+/* ==========================================================================
+   Passerelle de thème Universal Email → @ud/ui
+   À importer dans la feuille d'Universal Email, après ses propres jetons et
+   après @import 'tailwindcss' :
+     @import '@ud/ui/styles/bridges/universal-email.css';
+   Chaque jeton de collection --ud-* suit le --ue-* correspondant (thème, mode
+   .dark et accent de la boîte active d'UE) ; la valeur de repli est celle de
+   « porcelain ». Les jetons dérivés et propres au Drive (--ud-focus,
+   --ud-input-border, --ud-pane-border…) sont ensuite calculés par
+   ../tokens.css à partir de ces jetons. Les variables shadcn (--background…)
+   portent déjà le même nom des deux côtés : UE les fournit.
+   Les collections du Drive (themes/*.css) ne sont pas importées ici : elles
+   écraseraient l'accent de la boîte active.
+   Fichier généré depuis themes/porcelain.css d'UE (liste des jetons de
+   collection) ; à régénérer si UE ajoute un jeton de collection.
+   ========================================================================== */
+
+@import '../tokens.css';
+@import '../utilities.css';
+
+:root {
+  --ud-accent: var(--ue-accent, #5b5bd6);
+  --ud-on-accent: var(--ue-on-accent, #ffffff);
+  --ud-accent-soft: var(--ue-accent-soft, color-mix(in oklab, var(--ud-accent) 11%, transparent));
+  --ud-accent-softer: var(--ue-accent-softer, color-mix(in oklab, var(--ud-accent) 6%, transparent));
+  --ud-accent-strong: var(--ue-accent-strong, color-mix(in oklab, var(--ud-accent) 82%, var(--ud-text-1)));
+  --ud-accent-ring: var(--ue-accent-ring, color-mix(in oklab, var(--ud-accent) 45%, transparent));
+  --ud-app: var(--ue-app, #f6f5f3);
+  --ud-rail: var(--ue-rail, #efedea);
+  --ud-sidebar: var(--ue-sidebar, #f6f5f3);
+  --ud-panel: var(--ue-panel, #ffffff);
+  --ud-row-hover: var(--ue-row-hover, #f4f2ef);
+  --ud-row-selected: var(--ue-row-selected, color-mix(in oklab, var(--ud-accent) 8%, var(--ud-panel)));
+  --ud-row-unread: var(--ue-row-unread, var(--ud-panel));
+  --ud-line: var(--ue-line, #e6e2dd);
+  --ud-line-strong: var(--ue-line-strong, #d5d0ca);
+  --ud-text-1: var(--ue-text-1, #1c1917);
+  --ud-text-2: var(--ue-text-2, #57534e);
+  --ud-text-3: var(--ue-text-3, #857f78);
+  --ud-shadow-float: var(--ue-shadow-float, 0 1px 2px rgb(28 25 23 / 0.06), 0 8px 24px -6px rgb(28 25 23 / 0.14), 0 24px 56px -12px rgb(28 25 23 / 0.16));
+  --ud-shadow-soft: var(--ue-shadow-soft, 0 1px 2px rgb(28 25 23 / 0.05), 0 2px 8px -2px rgb(28 25 23 / 0.06));
+  --ud-overlay: var(--ue-overlay, rgb(28 25 23 / 0.32));
+  --ud-danger: var(--ue-danger, #c81e1e);
+  --ud-success: var(--ue-success, #15803d);
+  --ud-warn: var(--ue-warn, #b45309);
+  --ud-flag: var(--ue-flag, #d99a0b);
+  --ud-btn-primary-bg: var(--ue-btn-primary-bg, var(--ud-accent));
+  --ud-btn-primary-fg: var(--ue-btn-primary-fg, var(--ud-on-accent));
+  --ud-btn-primary-icon: var(--ue-btn-primary-icon, var(--ud-on-accent));
+  --ud-btn-primary-border: var(--ue-btn-primary-border, color-mix(in oklab, var(--ud-accent) 82%, var(--ud-text-1)));
+  --ud-btn-primary-hover: var(--ue-btn-primary-hover, color-mix(in oklab, var(--ud-accent) 90%, var(--ud-text-1)));
+  --ud-btn-secondary-bg: var(--ue-btn-secondary-bg, var(--ud-panel));
+  --ud-btn-secondary-fg: var(--ue-btn-secondary-fg, var(--ud-text-1));
+  --ud-btn-secondary-border: var(--ue-btn-secondary-border, var(--ud-line-strong));
+  --ud-btn-secondary-hover: var(--ue-btn-secondary-hover, var(--ud-row-hover));
+}
+
+.dark {
+  --ud-accent: var(--ue-accent, #8b8ef5);
+  --ud-on-accent: var(--ue-on-accent, #14131f);
+  --ud-accent-soft: var(--ue-accent-soft, color-mix(in oklab, var(--ud-accent) 14%, transparent));
+  --ud-accent-softer: var(--ue-accent-softer, color-mix(in oklab, var(--ud-accent) 8%, transparent));
+  --ud-accent-strong: var(--ue-accent-strong, color-mix(in oklab, var(--ud-accent) 70%, white));
+  --ud-accent-ring: var(--ue-accent-ring, color-mix(in oklab, var(--ud-accent) 55%, transparent));
+  --ud-app: var(--ue-app, #121110);
+  --ud-rail: var(--ue-rail, #0e0d0c);
+  --ud-sidebar: var(--ue-sidebar, #121110);
+  --ud-panel: var(--ue-panel, #1a1918);
+  --ud-row-hover: var(--ue-row-hover, #221f1d);
+  --ud-row-selected: var(--ue-row-selected, color-mix(in oklab, var(--ud-accent) 14%, var(--ud-panel)));
+  --ud-row-unread: var(--ue-row-unread, var(--ud-panel));
+  --ud-line: var(--ue-line, #302d2a);
+  --ud-line-strong: var(--ue-line-strong, #403c38);
+  --ud-text-1: var(--ue-text-1, #edebe8);
+  --ud-text-2: var(--ue-text-2, #b3ada6);
+  --ud-text-3: var(--ue-text-3, #8c867f);
+  --ud-shadow-float: var(--ue-shadow-float, 0 0 0 1px rgb(255 255 255 / 0.02), 0 1px 2px rgb(0 0 0 / 0.4), 0 10px 28px -6px rgb(0 0 0 / 0.55), 0 28px 64px -12px rgb(0 0 0 / 0.5));
+  --ud-shadow-soft: var(--ue-shadow-soft, 0 1px 2px rgb(0 0 0 / 0.35), 0 2px 8px -2px rgb(0 0 0 / 0.35));
+  --ud-overlay: var(--ue-overlay, rgb(0 0 0 / 0.55));
+  --ud-danger: var(--ue-danger, #f87171);
+  --ud-success: var(--ue-success, #4ade80);
+  --ud-warn: var(--ue-warn, #fbbf24);
+  --ud-flag: var(--ue-flag, #f0b429);
+  --ud-btn-primary-bg: var(--ue-btn-primary-bg, color-mix(in oklab, var(--ud-accent) 16%, var(--ud-panel)));
+  --ud-btn-primary-fg: var(--ue-btn-primary-fg, var(--ud-text-1));
+  --ud-btn-primary-icon: var(--ue-btn-primary-icon, var(--ud-accent-strong));
+  --ud-btn-primary-border: var(--ue-btn-primary-border, color-mix(in oklab, var(--ud-accent) 40%, var(--ud-line-strong)));
+  --ud-btn-primary-hover: var(--ue-btn-primary-hover, color-mix(in oklab, var(--ud-accent) 24%, var(--ud-panel)));
+  --ud-btn-secondary-bg: var(--ue-btn-secondary-bg, color-mix(in oklab, var(--ud-text-1) 5%, var(--ud-panel)));
+  --ud-btn-secondary-fg: var(--ue-btn-secondary-fg, var(--ud-text-1));
+  --ud-btn-secondary-border: var(--ue-btn-secondary-border, var(--ud-line-strong));
+  --ud-btn-secondary-hover: var(--ue-btn-secondary-hover, color-mix(in oklab, var(--ud-text-1) 9%, var(--ud-panel)));
+}

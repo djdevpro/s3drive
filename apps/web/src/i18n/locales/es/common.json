@@ -1,0 +1,94 @@
+{
+  "app": {
+    "name": "Universal Drive",
+    "tagline": "Tus archivos, en cualquier almacenamiento S3."
+  },
+  "placeholder": {
+    "params": "Parámetros",
+    "views": {
+      "index": "Redirección de inicio",
+      "connect": "Conectar un almacenamiento",
+      "connectDevice": "Conectar este dispositivo",
+      "accounts": "Elegir un almacenamiento",
+      "home": "Inicio del almacenamiento",
+      "explorer": {
+        "root": "Raíz del bucket",
+        "folder": "Carpeta",
+        "file": "Archivo"
+      },
+      "recent": "Recientes",
+      "starred": "Destacados",
+      "shared": "Compartidos",
+      "trash": "Papelera",
+      "storage": "Almacenamiento",
+      "search": "Búsqueda",
+      "admin": "Administración del bucket",
+      "access": "Acceso",
+      "jobs": "Operaciones",
+      "oauthConsent": "Consentimiento de una aplicación",
+      "shareTarget": "Archivos compartidos",
+      "receive": "Archivos recibidos",
+      "receiveOpen": "Abrir con Universal Drive",
+      "shortLink": "Enlace corto",
+      "malformed": "Dirección mal formada",
+      "notFound": "Página no encontrada"
+    }
+  },
+  "actions": {
+    "retry": "Reintentar",
+    "cancel": "Cancelar",
+    "continue": "Continuar",
+    "reconnect": "Volver a iniciar sesión",
+    "loadMore": "Mostrar más",
+    "copyLink": "Copiar enlace",
+    "linkCopied": "Enlace copiado"
+  },
+  "states": {
+    "loading": "Cargando…",
+    "errorTitle": "Algo salió mal"
+  },
+  "errors": {
+    "generic": "Se produjo un error inesperado. Vuelve a intentarlo en un momento.",
+    "clipboard": "No se pudo copiar el enlace.",
+    "local": {
+      "gate_expired": "Tu sesión ha caducado",
+      "network": "No se puede contactar con el servidor. Comprueba tu conexión.",
+      "invalid_response": "El servidor envió una respuesta inesperada."
+    },
+    "api": {
+      "unauthorized": "Tu sesión ha terminado. Vuelve a iniciar sesión.",
+      "forbidden": "No tienes acceso a esta página.",
+      "not_found": "Esta página no existe.",
+      "rate_limited": "Demasiadas solicitudes. Espera un momento y vuelve a intentarlo.",
+      "internal": "El servidor tuvo un problema.",
+      "upstream_error": "El almacenamiento no respondió como se esperaba.",
+      "validation": "La solicitud no es válida.",
+      "conflict": "Los datos cambiaron mientras tanto. Recarga y vuelve a intentarlo."
+    }
+  },
+  "shell": {
+    "skipToContent": "Ir al contenido",
+    "navigation": "Navegación",
+    "openMenu": "Abrir el menú",
+    "closeMenu": "Cerrar el menú",
+    "collapseSidebar": "Contraer la barra lateral",
+    "expandSidebar": "Expandir la barra lateral"
+  },
+  "appearance": {
+    "title": "Tema",
+    "light": "Claro",
+    "dark": "Oscuro",
+    "system": "Sistema"
+  },
+  "language": {
+    "title": "Idioma",
+    "choose": "Idioma: {{language}}"
+  },
+  "rail": {
+    "label": "Almacenamientos",
+    "add": "Añadir un almacenamiento",
+    "settings": "Ajustes",
+    "lightTheme": "Cambiar al tema claro",
+    "darkTheme": "Cambiar al tema oscuro"
+  }
+}

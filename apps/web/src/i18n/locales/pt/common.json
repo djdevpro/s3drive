@@ -1,0 +1,94 @@
+{
+  "app": {
+    "name": "Universal Drive",
+    "tagline": "Seus arquivos, em qualquer armazenamento S3."
+  },
+  "placeholder": {
+    "params": "Parâmetros",
+    "views": {
+      "index": "Redirecionamento inicial",
+      "connect": "Conectar um armazenamento",
+      "connectDevice": "Conectar este dispositivo",
+      "accounts": "Escolher um armazenamento",
+      "home": "Início do armazenamento",
+      "explorer": {
+        "root": "Raiz do bucket",
+        "folder": "Pasta",
+        "file": "Arquivo"
+      },
+      "recent": "Recentes",
+      "starred": "Com estrela",
+      "shared": "Compartilhados",
+      "trash": "Lixeira",
+      "storage": "Armazenamento",
+      "search": "Pesquisa",
+      "admin": "Administração do bucket",
+      "access": "Acesso",
+      "jobs": "Operações",
+      "oauthConsent": "Consentimento de um aplicativo",
+      "shareTarget": "Arquivos compartilhados",
+      "receive": "Arquivos recebidos",
+      "receiveOpen": "Abrir com o Universal Drive",
+      "shortLink": "Link curto",
+      "malformed": "Endereço inválido",
+      "notFound": "Página não encontrada"
+    }
+  },
+  "actions": {
+    "retry": "Tentar novamente",
+    "cancel": "Cancelar",
+    "continue": "Continuar",
+    "reconnect": "Entrar novamente",
+    "loadMore": "Mostrar mais",
+    "copyLink": "Copiar link",
+    "linkCopied": "Link copiado"
+  },
+  "states": {
+    "loading": "Carregando…",
+    "errorTitle": "Algo deu errado"
+  },
+  "errors": {
+    "generic": "Ocorreu um erro inesperado. Tente novamente em instantes.",
+    "clipboard": "Não foi possível copiar o link.",
+    "local": {
+      "gate_expired": "Sua sessão expirou",
+      "network": "Não foi possível acessar o servidor. Verifique sua conexão.",
+      "invalid_response": "O servidor enviou uma resposta inesperada."
+    },
+    "api": {
+      "unauthorized": "Sua sessão terminou. Entre novamente.",
+      "forbidden": "Você não tem acesso a esta página.",
+      "not_found": "Esta página não existe.",
+      "rate_limited": "Solicitações demais. Aguarde um instante e tente novamente.",
+      "internal": "O servidor encontrou um problema.",
+      "upstream_error": "O armazenamento não respondeu como esperado.",
+      "validation": "A solicitação não é válida.",
+      "conflict": "Os dados mudaram nesse meio-tempo. Recarregue e tente novamente."
+    }
+  },
+  "shell": {
+    "skipToContent": "Ir para o conteúdo",
+    "navigation": "Navegação",
+    "openMenu": "Abrir o menu",
+    "closeMenu": "Fechar o menu",
+    "collapseSidebar": "Recolher a barra lateral",
+    "expandSidebar": "Expandir a barra lateral"
+  },
+  "appearance": {
+    "title": "Tema",
+    "light": "Claro",
+    "dark": "Escuro",
+    "system": "Sistema"
+  },
+  "language": {
+    "title": "Idioma",
+    "choose": "Idioma: {{language}}"
+  },
+  "rail": {
+    "label": "Armazenamentos",
+    "add": "Adicionar um armazenamento",
+    "settings": "Definições",
+    "lightTheme": "Mudar para o tema claro",
+    "darkTheme": "Mudar para o tema escuro"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "roles": {
+    "super_admin": "Superadministrador",
+    "admin": "Administrador",
+    "user": "Usuario"
+  },
+  "nav": {
+    "myDrive": "Mi unidad",
+    "sharedSpaces": "Espacios compartidos",
+    "administration": "Administración",
+    "readOnly": "solo lectura"
+  },
+  "quota": {
+    "title": "Almacenamiento",
+    "help": "Las versiones y la papelera cuentan en tu almacenamiento.",
+    "exceeded": "Almacenamiento insuficiente: quedan {{remaining}}. Libera espacio o pide más a un administrador.",
+    "exceededNoValue": "Almacenamiento insuficiente. Libera espacio o pide más a un administrador.",
+    "spaceExceeded": "Este espacio compartido está lleno: quedan {{remaining}}. Pide más espacio a un administrador.",
+    "spaceExceededNoValue": "Este espacio compartido está lleno. Pide más espacio a un administrador."
+  },
+  "account": {
+    "signOutFailed": "No se pudo cerrar la sesión",
+    "settings": "Ajustes"
+  },
+  "login": {
+    "description": "Inicia sesión para acceder a tus archivos.",
+    "signInWith": "Iniciar sesión con {{label}}",
+    "personal": "Usar mis propias credenciales S3",
+    "noProvider": {
+      "title": "Inicio de sesión no disponible",
+      "body": "No hay ningún proveedor de identidad configurado en esta instancia. Contacta con su administrador."
+    },
+    "errors": {
+      "no_role": {
+        "title": "Sin acceso a esta unidad",
+        "body": "Tu cuenta no tiene ningún rol en esta unidad. Pide acceso a un administrador."
+      },
+      "suspended": {
+        "title": "Cuenta suspendida",
+        "body": "Tu cuenta ha sido suspendida. Contacta con un administrador."
+      },
+      "session_ended": {
+        "title": "Tu sesión ha terminado",
+        "body": "Tus accesos han cambiado o tu sesión se cerró. Vuelve a iniciar sesión para continuar."
+      },
+      "idp_unreachable": {
+        "title": "Servicio de inicio de sesión no disponible",
+        "body": "No se puede contactar con el proveedor de identidad en este momento. Vuelve a intentarlo en unos minutos."
+      },
+      "oidc_error": {
+        "title": "Error al iniciar sesión",
+        "body": "No se pudo completar el inicio de sesión. Vuelve a intentarlo."
+      }
+    }
+  },
+  "terms": {
+    "title": "Condiciones de uso",
+    "description": "Versión {{version}} · Lee y acepta las condiciones para continuar.",
+    "textLabel": "Texto de las condiciones de uso",
+    "openExternal": "Leer las condiciones de uso",
+    "accept": "He leído y acepto las condiciones de uso",
+    "acceptFailed": "No se pudo guardar tu aceptación",
+    "versionChanged": "Las condiciones acaban de cambiar. Lee la nueva versión y acéptala."
+  }
+}

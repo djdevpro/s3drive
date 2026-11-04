@@ -1,0 +1,65 @@
+{
+  "roles": {
+    "super_admin": "Super admin",
+    "admin": "Administrateur",
+    "user": "Utilisateur"
+  },
+  "nav": {
+    "myDrive": "Mon drive",
+    "sharedSpaces": "Espaces partagés",
+    "administration": "Administration",
+    "readOnly": "lecture seule"
+  },
+  "quota": {
+    "title": "Stockage",
+    "help": "Les versions et la corbeille comptent dans votre stockage.",
+    "exceeded": "Stockage insuffisant : il reste {{remaining}}. Libérez de l’espace ou demandez-en davantage à un administrateur.",
+    "exceededNoValue": "Stockage insuffisant. Libérez de l’espace ou demandez-en davantage à un administrateur.",
+    "spaceExceeded": "Cet espace partagé est plein : il reste {{remaining}}. Demandez davantage d’espace à un administrateur.",
+    "spaceExceededNoValue": "Cet espace partagé est plein. Demandez davantage d’espace à un administrateur."
+  },
+  "account": {
+    "signOutFailed": "La déconnexion a échoué",
+    "settings": "Paramètres"
+  },
+  "login": {
+    "description": "Connectez-vous pour accéder à vos fichiers.",
+    "signInWith": "Se connecter avec {{label}}",
+    "personal": "Utiliser mes propres identifiants S3",
+    "noProvider": {
+      "title": "Connexion indisponible",
+      "body": "Aucun fournisseur d’identité n’est configuré sur cette instance. Contactez son administrateur."
+    },
+    "errors": {
+      "no_role": {
+        "title": "Aucun accès à ce drive",
+        "body": "Votre compte n’a aucun rôle sur ce drive. Demandez l’accès à un administrateur."
+      },
+      "suspended": {
+        "title": "Compte suspendu",
+        "body": "Votre compte a été suspendu. Contactez un administrateur."
+      },
+      "session_ended": {
+        "title": "Votre session a pris fin",
+        "body": "Vos accès ont changé ou votre session a été fermée. Reconnectez-vous pour continuer."
+      },
+      "idp_unreachable": {
+        "title": "Service de connexion indisponible",
+        "body": "Le fournisseur d’identité est injoignable pour le moment. Réessayez dans quelques minutes."
+      },
+      "oidc_error": {
+        "title": "La connexion a échoué",
+        "body": "La connexion n’a pas pu aboutir. Réessayez."
+      }
+    }
+  },
+  "terms": {
+    "title": "Conditions d’utilisation",
+    "description": "Version {{version}} · Lisez et acceptez les conditions pour continuer.",
+    "textLabel": "Texte des conditions d’utilisation",
+    "openExternal": "Lire les conditions d’utilisation",
+    "accept": "J’ai lu et j’accepte les conditions d’utilisation",
+    "acceptFailed": "Votre acceptation n’a pas pu être enregistrée",
+    "versionChanged": "Les conditions viennent de changer. Lisez la nouvelle version, puis acceptez-la."
+  }
+}

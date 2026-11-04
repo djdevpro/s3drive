@@ -1,0 +1,65 @@
+{
+  "roles": {
+    "super_admin": "Super admin",
+    "admin": "Administrator",
+    "user": "User"
+  },
+  "nav": {
+    "myDrive": "My Drive",
+    "sharedSpaces": "Shared spaces",
+    "administration": "Administration",
+    "readOnly": "read only"
+  },
+  "quota": {
+    "title": "Storage",
+    "help": "Versions and trash count toward your storage.",
+    "exceeded": "Not enough storage: {{remaining}} left. Free up space or ask an administrator for more.",
+    "exceededNoValue": "Not enough storage. Free up space or ask an administrator for more.",
+    "spaceExceeded": "This shared space is full: {{remaining}} left. Ask an administrator for more space.",
+    "spaceExceededNoValue": "This shared space is full. Ask an administrator for more space."
+  },
+  "account": {
+    "signOutFailed": "Sign-out failed",
+    "settings": "Settings"
+  },
+  "login": {
+    "description": "Sign in to access your files.",
+    "signInWith": "Sign in with {{label}}",
+    "personal": "Use my own S3 credentials",
+    "noProvider": {
+      "title": "Sign-in is not available",
+      "body": "No identity provider is configured on this instance. Contact its administrator."
+    },
+    "errors": {
+      "no_role": {
+        "title": "No access to this drive",
+        "body": "Your account has no role on this drive. Ask an administrator to give you access."
+      },
+      "suspended": {
+        "title": "Account suspended",
+        "body": "Your account has been suspended. Contact an administrator."
+      },
+      "session_ended": {
+        "title": "Your session has ended",
+        "body": "Your access has changed or your session was closed. Sign in again to continue."
+      },
+      "idp_unreachable": {
+        "title": "Sign-in service unavailable",
+        "body": "The identity provider can’t be reached right now. Try again in a few minutes."
+      },
+      "oidc_error": {
+        "title": "Sign-in failed",
+        "body": "Sign-in could not be completed. Try again."
+      }
+    }
+  },
+  "terms": {
+    "title": "Terms of use",
+    "description": "Version {{version}} · Read and accept the terms to continue.",
+    "textLabel": "Text of the terms of use",
+    "openExternal": "Read the terms of use",
+    "accept": "I have read and accept the terms of use",
+    "acceptFailed": "Your acceptance could not be saved",
+    "versionChanged": "The terms have just changed. Read the new version, then accept it."
+  }
+}

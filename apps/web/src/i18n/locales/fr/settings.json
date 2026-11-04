@@ -1,0 +1,71 @@
+{
+  "title": "Paramètres",
+  "description": "Réglages de l’application",
+  "sections": "Sections",
+  "close": "Fermer",
+  "tabs": {
+    "appearance": "Apparence",
+    "language": "Langue",
+    "account": "Compte",
+    "shortcuts": "Raccourcis"
+  },
+  "language": {
+    "title": "Langue",
+    "description": "Langue de l’interface, des dates et des nombres. Votre choix est gardé sur cet appareil."
+  },
+  "account": {
+    "profile": "Profil",
+    "profileDescription": "Votre nom et votre e-mail viennent de la connexion de votre organisation.",
+    "noEmail": "Aucune adresse e-mail",
+    "roles": "Rôles",
+    "rolesDescription": "Vos rôles sur ce drive, attribués par un administrateur.",
+    "noRoles": "Aucun rôle",
+    "storage": "Stockage",
+    "storageDescription": "Les versions et la corbeille comptent dans votre stockage.",
+    "myDrive": "Mon drive",
+    "sharedSpaces": "Espaces partagés",
+    "spaceUsage": "{{used}} utilisés",
+    "signOut": "Se déconnecter",
+    "signOutDescription": "Met fin à votre session sur cet appareil."
+  },
+  "shortcuts": {
+    "hint": "Ces raccourcis fonctionnent dans la liste des fichiers quand elle a le focus.",
+    "groups": {
+      "navigation": "Navigation",
+      "selection": "Sélection",
+      "actions": "Actions",
+      "preview": "Aperçu"
+    },
+    "items": {
+      "move": "Passer d’un élément à l’autre",
+      "firstLast": "Premier ou dernier élément",
+      "page": "Page précédente ou suivante",
+      "open": "Ouvrir",
+      "openNewTab": "Ouvrir dans un nouvel onglet",
+      "toggle": "Sélectionner un dossier ou ouvrir un fichier",
+      "extend": "Étendre la sélection",
+      "selectAll": "Tout sélectionner",
+      "clear": "Vider la sélection",
+      "rename": "Renommer",
+      "delete": "Supprimer",
+      "copy": "Copier",
+      "cut": "Couper",
+      "paste": "Coller",
+      "menu": "Ouvrir le menu contextuel",
+      "previewNav": "Fichier précédent ou suivant",
+      "previewClose": "Fermer l’aperçu"
+    },
+    "keys": {
+      "space": "Espace",
+      "enter": "Entrée",
+      "esc": "Échap",
+      "home": "Début",
+      "end": "Fin",
+      "pageUp": "Page préc.",
+      "pageDown": "Page suiv.",
+      "delete": "Suppr",
+      "menu": "Menu",
+      "shift": "Maj"
+    }
+  }
+}

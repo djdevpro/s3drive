@@ -1,0 +1,94 @@
+{
+  "app": {
+    "name": "Universal Drive",
+    "tagline": "Vos fichiers, sur n’importe quel stockage S3."
+  },
+  "placeholder": {
+    "params": "Paramètres",
+    "views": {
+      "index": "Redirection d’accueil",
+      "connect": "Connecter un stockage",
+      "connectDevice": "Connecter cet appareil",
+      "accounts": "Choisir un stockage",
+      "home": "Accueil du stockage",
+      "explorer": {
+        "root": "Racine du bucket",
+        "folder": "Dossier",
+        "file": "Fichier"
+      },
+      "recent": "Récents",
+      "starred": "Favoris",
+      "shared": "Partagés",
+      "trash": "Corbeille",
+      "storage": "Stockage",
+      "search": "Recherche",
+      "admin": "Administration du bucket",
+      "access": "Accès",
+      "jobs": "Opérations",
+      "oauthConsent": "Consentement d’une application",
+      "shareTarget": "Fichiers partagés",
+      "receive": "Fichiers reçus",
+      "receiveOpen": "Ouvrir avec Universal Drive",
+      "shortLink": "Lien court",
+      "malformed": "Adresse mal formée",
+      "notFound": "Page introuvable"
+    }
+  },
+  "actions": {
+    "retry": "Réessayer",
+    "cancel": "Annuler",
+    "continue": "Continuer",
+    "reconnect": "Se reconnecter",
+    "loadMore": "Afficher plus",
+    "copyLink": "Copier le lien",
+    "linkCopied": "Lien copié"
+  },
+  "states": {
+    "loading": "Chargement…",
+    "errorTitle": "Un problème est survenu"
+  },
+  "errors": {
+    "generic": "Une erreur inattendue s’est produite. Réessayez dans un instant.",
+    "clipboard": "Le lien n’a pas pu être copié.",
+    "local": {
+      "gate_expired": "Votre session a expiré",
+      "network": "Serveur injoignable. Vérifiez votre connexion.",
+      "invalid_response": "Le serveur a envoyé une réponse inattendue."
+    },
+    "api": {
+      "unauthorized": "Votre session a pris fin. Reconnectez-vous.",
+      "forbidden": "Vous n’avez pas accès à cette page.",
+      "not_found": "Cette page n’existe pas.",
+      "rate_limited": "Trop de requêtes. Patientez un instant puis réessayez.",
+      "internal": "Le serveur a rencontré un problème.",
+      "upstream_error": "Le stockage n’a pas répondu comme prévu.",
+      "validation": "La requête n’est pas valide.",
+      "conflict": "Les données ont changé entre-temps. Rechargez puis réessayez."
+    }
+  },
+  "shell": {
+    "skipToContent": "Aller au contenu",
+    "navigation": "Navigation",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "collapseSidebar": "Réduire la barre latérale",
+    "expandSidebar": "Déplier la barre latérale"
+  },
+  "appearance": {
+    "title": "Thème",
+    "light": "Clair",
+    "dark": "Sombre",
+    "system": "Système"
+  },
+  "language": {
+    "title": "Langue",
+    "choose": "Langue : {{language}}"
+  },
+  "rail": {
+    "label": "Stockages",
+    "add": "Ajouter un stockage",
+    "settings": "Paramètres",
+    "lightTheme": "Passer au thème clair",
+    "darkTheme": "Passer au thème sombre"
+  }
+}

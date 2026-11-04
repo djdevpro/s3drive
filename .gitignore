@@ -1,0 +1,19 @@
+node_modules/
+dist/
+data/
+.env
+.env.*
+!.env.example
+*.sqlite
+*.sqlite-*
+secret.key
+.DS_Store
+*.log
+*.tsbuildinfo
+coverage/
+.vite/
+
+# Notes internes (gardées hors du dépôt)
+specs/
+CLAUDE.md
+.claude/

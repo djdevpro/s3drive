@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Universal Drive</title>
+    <script>
+      // Collection et mode mémorisés posés avant le premier rendu (aucun flash) ; initAppearance() prend le relais.
+      (function () {
+        var root = document.documentElement;
+        var ids = ['porcelain', 'graphite', 'nord', 'rose-pine', 'catppuccin', 'solarized', 'sepia', 'forest', 'ocean', 'midnight'];
+        var theme = null;
+        var mode = null;
+        var lang = null;
+        try {
+          theme = localStorage.getItem('ud.theme');
+          mode = localStorage.getItem('ud.mode');
+          lang = localStorage.getItem('ud.lang');
+        } catch (e) {}
+        root.dataset.theme = ids.indexOf(theme) >= 0 ? theme : 'porcelain';
+        var dark = mode === 'dark' || (mode !== 'light' && window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches);
+        if (dark) root.classList.add('dark');
+        if (lang === 'ar') root.dir = 'rtl';
+        if (lang) root.lang = lang;
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

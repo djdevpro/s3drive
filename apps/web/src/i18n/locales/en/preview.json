@@ -1,0 +1,18 @@
+{
+  "label": "Preview of {{name}}",
+  "close": "Close",
+  "copyLink": "Copy link",
+  "download": "Download",
+  "previous": "Previous file",
+  "next": "Next file",
+  "notFound": {
+    "title": "This file no longer exists or has been moved",
+    "body": "It may have been renamed, moved or deleted."
+  },
+  "tooLarge": "This file is too large to preview",
+  "unavailable": "Preview not available",
+  "unavailableBody": "Download the file to open it on your device.",
+  "loadError": "The file couldn’t be loaded for preview.",
+  "loading": "Loading preview…",
+  "position": "{{index}} of {{total}}"
+}

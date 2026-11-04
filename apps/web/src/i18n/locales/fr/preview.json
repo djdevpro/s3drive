@@ -1,0 +1,18 @@
+{
+  "label": "Aperçu de {{name}}",
+  "close": "Fermer",
+  "copyLink": "Copier le lien",
+  "download": "Télécharger",
+  "previous": "Fichier précédent",
+  "next": "Fichier suivant",
+  "notFound": {
+    "title": "Ce fichier n’existe plus ou a été déplacé",
+    "body": "Il a peut-être été renommé, déplacé ou supprimé."
+  },
+  "tooLarge": "Ce fichier est trop volumineux pour l’aperçu",
+  "unavailable": "Aperçu indisponible",
+  "unavailableBody": "Téléchargez le fichier pour l’ouvrir sur votre appareil.",
+  "loadError": "Impossible de charger le fichier pour l’aperçu.",
+  "loading": "Chargement de l’aperçu…",
+  "position": "{{index}} sur {{total}}"
+}

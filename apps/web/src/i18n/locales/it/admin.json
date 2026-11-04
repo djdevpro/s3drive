@@ -1,0 +1,81 @@
+{
+  "title": "Amministrazione",
+  "forbidden": {
+    "title": "Accesso limitato",
+    "body": "Il tuo ruolo non consente di consultare l’amministrazione di questo Drive."
+  },
+  "users": {
+    "title": "Persone",
+    "search": "Cerca per nome o email",
+    "caption": "Persone con accesso a questo Drive",
+    "empty": "Nessuno ha ancora effettuato l’accesso",
+    "emptySearch": "Nessuno corrisponde a questa ricerca",
+    "never": "Mai",
+    "columns": {
+      "name": "Nome",
+      "email": "Email",
+      "roles": "Ruoli",
+      "usage": "Spazio utilizzato",
+      "lastLogin": "Ultimo accesso",
+      "status": "Stato"
+    }
+  },
+  "status": {
+    "active": "Attiva",
+    "suspended": "Sospesa"
+  },
+  "units": {
+    "MB": "MB",
+    "GB": "GB",
+    "TB": "TB"
+  },
+  "user": {
+    "back": "Tutte le persone",
+    "notFound": "Questa persona non esiste",
+    "created": "Primo accesso",
+    "lastLogin": "Ultimo accesso",
+    "terms": "Condizioni d’uso",
+    "termsAccepted": "Accettate (versione {{version}})",
+    "termsNone": "Non ancora accettate",
+    "rolesTitle": "Ruoli Drive",
+    "rolesHint": "I ruoli provengono dal provider di identità e si modificano solo lì.",
+    "usageTitle": "Spazio utilizzato",
+    "objects": "Oggetti: {{count}}",
+    "recount": "Ricalcola l’utilizzo",
+    "recounted": "Utilizzo ricalcolato",
+    "quotaTitle": "Quota di archiviazione",
+    "quotaFromRoles": "La quota deriva dai ruoli di questa persona.",
+    "quotaCustom": "Una quota personalizzata sostituisce quella dei ruoli.",
+    "quotaEffective": "Quota attuale: {{value}}",
+    "quotaValue": "Quota personalizzata",
+    "quotaUnit": "Unità",
+    "quotaSave": "Salva la quota",
+    "quotaSaved": "Quota aggiornata",
+    "quotaReset": "Quota dei ruoli ripristinata",
+    "quotaUseRoles": "Usa la quota dei ruoli",
+    "quotaInvalid": "Inserisci un numero maggiore di zero.",
+    "unlimited": "Illimitata",
+    "accessTitle": "Accesso",
+    "suspendHint": "Una persona sospesa viene disconnessa subito e non può più accedere.",
+    "reactivateHint": "Questa persona è sospesa e non può accedere.",
+    "suspend": "Sospendi",
+    "reactivate": "Riattiva",
+    "suspendTitle": "Sospendere {{name}}?",
+    "suspendBody": "Le sue sessioni terminano subito e non potrà accedere fino alla riattivazione. I suoi file vengono conservati.",
+    "suspendConfirm": "Sospendi",
+    "reactivateTitle": "Riattivare {{name}}?",
+    "reactivateBody": "Potrà accedere di nuovo con i suoi ruoli attuali.",
+    "reactivateConfirm": "Riattiva",
+    "suspended": "Accesso di {{name}} sospeso",
+    "reactivated": "Accesso di {{name}} riattivato"
+  },
+  "errors": {
+    "self": "Non puoi cambiare il tuo stato.",
+    "superAdmin": "Solo un super amministratore può modificare un super amministratore.",
+    "permission": "Non hai l’autorizzazione per questa azione.",
+    "notFound": "Questa persona non esiste.",
+    "validation": "Questo valore non è accettato.",
+    "network": "Server non raggiungibile. Controlla la connessione.",
+    "generic": "L’azione non è riuscita. Riprova."
+  }
+}

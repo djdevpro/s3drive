@@ -1,0 +1,65 @@
+{
+  "roles": {
+    "super_admin": "Superadministrador",
+    "admin": "Administrador",
+    "user": "Usuário"
+  },
+  "nav": {
+    "myDrive": "Meu Drive",
+    "sharedSpaces": "Espaços compartilhados",
+    "administration": "Administração",
+    "readOnly": "somente leitura"
+  },
+  "quota": {
+    "title": "Armazenamento",
+    "help": "As versões e a lixeira contam no seu armazenamento.",
+    "exceeded": "Armazenamento insuficiente: restam {{remaining}}. Libere espaço ou peça mais a um administrador.",
+    "exceededNoValue": "Armazenamento insuficiente. Libere espaço ou peça mais a um administrador.",
+    "spaceExceeded": "Este espaço compartilhado está cheio: restam {{remaining}}. Peça mais espaço a um administrador.",
+    "spaceExceededNoValue": "Este espaço compartilhado está cheio. Peça mais espaço a um administrador."
+  },
+  "account": {
+    "signOutFailed": "Não foi possível sair",
+    "settings": "Definições"
+  },
+  "login": {
+    "description": "Entre para acessar seus arquivos.",
+    "signInWith": "Entrar com {{label}}",
+    "personal": "Usar minhas próprias credenciais S3",
+    "noProvider": {
+      "title": "Login indisponível",
+      "body": "Nenhum provedor de identidade está configurado nesta instância. Fale com o administrador."
+    },
+    "errors": {
+      "no_role": {
+        "title": "Sem acesso a este Drive",
+        "body": "Sua conta não tem nenhuma função neste Drive. Peça acesso a um administrador."
+      },
+      "suspended": {
+        "title": "Conta suspensa",
+        "body": "Sua conta foi suspensa. Fale com um administrador."
+      },
+      "session_ended": {
+        "title": "Sua sessão terminou",
+        "body": "Seus acessos mudaram ou sua sessão foi encerrada. Entre novamente para continuar."
+      },
+      "idp_unreachable": {
+        "title": "Serviço de login indisponível",
+        "body": "Não é possível acessar o provedor de identidade no momento. Tente novamente em alguns minutos."
+      },
+      "oidc_error": {
+        "title": "Falha no login",
+        "body": "Não foi possível concluir o login. Tente novamente."
+      }
+    }
+  },
+  "terms": {
+    "title": "Termos de uso",
+    "description": "Versão {{version}} · Leia e aceite os termos para continuar.",
+    "textLabel": "Texto dos termos de uso",
+    "openExternal": "Ler os termos de uso",
+    "accept": "Li e aceito os termos de uso",
+    "acceptFailed": "Não foi possível salvar sua aceitação",
+    "versionChanged": "Os termos acabaram de mudar. Leia a nova versão e aceite-a."
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "app": {
+    "name": "Universal Drive",
+    "tagline": "Deine Dateien, auf jedem S3-Speicher."
+  },
+  "placeholder": {
+    "params": "Parameter",
+    "views": {
+      "index": "Startweiterleitung",
+      "connect": "Speicher verbinden",
+      "connectDevice": "Dieses Gerät verbinden",
+      "accounts": "Speicher auswählen",
+      "home": "Speicherstartseite",
+      "explorer": {
+        "root": "Bucket-Stammverzeichnis",
+        "folder": "Ordner",
+        "file": "Datei"
+      },
+      "recent": "Zuletzt verwendet",
+      "starred": "Markiert",
+      "shared": "Geteilt",
+      "trash": "Papierkorb",
+      "storage": "Speicher",
+      "search": "Suche",
+      "admin": "Bucket-Verwaltung",
+      "access": "Zugriff",
+      "jobs": "Vorgänge",
+      "oauthConsent": "Zustimmung für eine Anwendung",
+      "shareTarget": "Geteilte Dateien",
+      "receive": "Empfangene Dateien",
+      "receiveOpen": "Mit Universal Drive öffnen",
+      "shortLink": "Kurzlink",
+      "malformed": "Ungültige Adresse",
+      "notFound": "Seite nicht gefunden"
+    }
+  },
+  "actions": {
+    "retry": "Erneut versuchen",
+    "cancel": "Abbrechen",
+    "continue": "Weiter",
+    "reconnect": "Erneut anmelden",
+    "loadMore": "Mehr anzeigen",
+    "copyLink": "Link kopieren",
+    "linkCopied": "Link kopiert"
+  },
+  "states": {
+    "loading": "Wird geladen…",
+    "errorTitle": "Etwas ist schiefgelaufen"
+  },
+  "errors": {
+    "generic": "Ein unerwarteter Fehler ist aufgetreten. Versuche es gleich noch einmal.",
+    "clipboard": "Der Link konnte nicht kopiert werden.",
+    "local": {
+      "gate_expired": "Deine Sitzung ist abgelaufen",
+      "network": "Server nicht erreichbar. Prüfe deine Verbindung.",
+      "invalid_response": "Der Server hat eine unerwartete Antwort gesendet."
+    },
+    "api": {
+      "unauthorized": "Deine Sitzung ist beendet. Melde dich erneut an.",
+      "forbidden": "Du hast keinen Zugriff auf diese Seite.",
+      "not_found": "Diese Seite existiert nicht.",
+      "rate_limited": "Zu viele Anfragen. Warte kurz und versuche es erneut.",
+      "internal": "Auf dem Server ist ein Problem aufgetreten.",
+      "upstream_error": "Der Speicher hat nicht wie erwartet geantwortet.",
+      "validation": "Die Anfrage ist ungültig.",
+      "conflict": "Die Daten haben sich inzwischen geändert. Lade neu und versuche es erneut."
+    }
+  },
+  "shell": {
+    "skipToContent": "Zum Inhalt springen",
+    "navigation": "Navigation",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
+    "collapseSidebar": "Seitenleiste einklappen",
+    "expandSidebar": "Seitenleiste ausklappen"
+  },
+  "appearance": {
+    "title": "Design",
+    "light": "Hell",
+    "dark": "Dunkel",
+    "system": "System"
+  },
+  "language": {
+    "title": "Sprache",
+    "choose": "Sprache: {{language}}"
+  },
+  "rail": {
+    "label": "Speicher",
+    "add": "Speicher hinzufügen",
+    "settings": "Einstellungen",
+    "lightTheme": "Zum hellen Design wechseln",
+    "darkTheme": "Zum dunklen Design wechseln"
+  }
+}

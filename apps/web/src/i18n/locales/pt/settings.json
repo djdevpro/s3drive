@@ -1,0 +1,71 @@
+{
+  "title": "Definições",
+  "description": "Definições da aplicação",
+  "sections": "Secções",
+  "close": "Fechar",
+  "tabs": {
+    "appearance": "Aspeto",
+    "language": "Idioma",
+    "account": "Conta",
+    "shortcuts": "Atalhos"
+  },
+  "language": {
+    "title": "Idioma",
+    "description": "Idioma da interface, das datas e dos números. A escolha fica guardada neste dispositivo."
+  },
+  "account": {
+    "profile": "Perfil",
+    "profileDescription": "O nome e o e-mail vêm do início de sessão da sua organização.",
+    "noEmail": "Sem endereço de e-mail",
+    "roles": "Funções",
+    "rolesDescription": "As suas funções neste drive, atribuídas por um administrador.",
+    "noRoles": "Nenhuma função",
+    "storage": "Armazenamento",
+    "storageDescription": "As versões e o lixo contam para o seu armazenamento.",
+    "myDrive": "O meu drive",
+    "sharedSpaces": "Espaços partilhados",
+    "spaceUsage": "{{used}} usados",
+    "signOut": "Terminar sessão",
+    "signOutDescription": "Termina a sua sessão neste dispositivo."
+  },
+  "shortcuts": {
+    "hint": "Estes atalhos funcionam na lista de ficheiros quando tem o foco.",
+    "groups": {
+      "navigation": "Navegação",
+      "selection": "Seleção",
+      "actions": "Ações",
+      "preview": "Pré-visualização"
+    },
+    "items": {
+      "move": "Passar de um elemento para outro",
+      "firstLast": "Primeiro ou último elemento",
+      "page": "Página acima ou abaixo",
+      "open": "Abrir",
+      "openNewTab": "Abrir num novo separador",
+      "toggle": "Selecionar uma pasta ou abrir um ficheiro",
+      "extend": "Alargar a seleção",
+      "selectAll": "Selecionar tudo",
+      "clear": "Limpar a seleção",
+      "rename": "Mudar o nome",
+      "delete": "Eliminar",
+      "copy": "Copiar",
+      "cut": "Cortar",
+      "paste": "Colar",
+      "menu": "Abrir o menu de contexto",
+      "previewNav": "Ficheiro anterior ou seguinte",
+      "previewClose": "Fechar a pré-visualização"
+    },
+    "keys": {
+      "space": "Espaço",
+      "enter": "Enter",
+      "esc": "Esc",
+      "home": "Home",
+      "end": "End",
+      "pageUp": "Page Up",
+      "pageDown": "Page Down",
+      "delete": "Delete",
+      "menu": "Menu",
+      "shift": "Shift"
+    }
+  }
+}

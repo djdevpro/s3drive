@@ -1,0 +1,314 @@
+/* ==========================================================================
+   @ud/ui — couche de base et habillages, repris d'Universal
+   Email (tokens.css du 2026-11-03), préfixe ud-. Importé par index.css pour le
+   Drive seulement : la passerelle d'UE ne le reprend pas (UE a sa propre base).
+   Non repris : .ue-plain, .ue-quote, .ue-sig (propres au courrier).
+   Ajusté : focus = anneau opaque --ud-focus.
+   ========================================================================== */
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    @apply bg-app text-text-1 font-sans antialiased;
+    font-size: 14px;
+    line-height: 1.5;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    overscroll-behavior: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  ::selection {
+    background: color-mix(in oklab, var(--ud-accent) 24%, transparent);
+  }
+  :focus-visible {
+    outline: 2px solid var(--ud-focus);
+    outline-offset: 2px;
+  }
+  button,
+  [role='button'] {
+    cursor: default;
+  }
+  /* Barres de défilement discrètes */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: color-mix(in oklab, var(--ud-text-3) 35%, transparent) transparent;
+  }
+}
+
+/* Transitions shadcn/Radix alignées sur la courbe maison */
+[data-slot$='-content'],
+[data-slot='dialog-overlay'],
+[data-slot='alert-dialog-overlay'] {
+  --tw-ease: var(--ud-ease);
+  --tw-duration: 160ms;
+  --tw-animation-duration: 160ms;
+  --tw-enter-scale: 0.97;
+  --tw-exit-scale: 0.97;
+}
+[data-slot='dialog-overlay'],
+[data-slot='alert-dialog-overlay'] {
+  background: var(--ud-overlay) !important;
+  backdrop-filter: blur(2px);
+}
+
+/* Rendu Markdown (06) */
+.ud-prose {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ud-text-1);
+  outline: none;
+}
+.ud-prose p {
+  margin: 0 0 0.5em;
+}
+.ud-prose p:last-child {
+  margin-bottom: 0;
+}
+.ud-prose ul,
+.ud-prose ol {
+  padding-left: 1.4em;
+  margin: 0.25em 0 0.6em;
+}
+.ud-prose ul {
+  list-style: disc;
+}
+.ud-prose ol {
+  list-style: decimal;
+}
+.ud-prose blockquote {
+  border-left: 2px solid var(--ud-line-strong);
+  padding-left: 0.9em;
+  color: var(--ud-text-2);
+  margin: 0.4em 0;
+}
+.ud-prose code {
+  font-family: var(--font-mono);
+  font-size: 0.88em;
+  background: var(--muted);
+  border-radius: 4px;
+  padding: 0.1em 0.3em;
+}
+.ud-prose pre {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  background: var(--muted);
+  border-radius: 8px;
+  padding: 0.7em 0.9em;
+  overflow-x: auto;
+}
+.ud-prose a {
+  color: var(--ud-accent-strong);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.ud-prose img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+.ud-prose h1,
+.ud-prose h2,
+.ud-prose h3 {
+  font-weight: 600;
+  margin: 0.6em 0 0.3em;
+}
+.ud-prose p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  color: var(--ud-text-3);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+.ud-prose hr {
+  border: none;
+  border-top: 1px solid var(--ud-line);
+  margin: 1em 0;
+}
+
+/* Sonner */
+[data-sonner-toaster] {
+  --normal-bg: var(--popover);
+  --normal-border: var(--ud-float-border);
+  --normal-text: var(--ud-text-1);
+  font-family: var(--font-sans) !important;
+}
+[data-sonner-toast] {
+  box-shadow: var(--ud-float-shadow) !important;
+  border-radius: 12px !important;
+  font-size: 13.5px !important;
+}
+/* Toasts : même courbe et mêmes durées que le reste de l'appli (sonner anime en 400 ms par défaut) */
+[data-sonner-toast] {
+  transition:
+    transform var(--ud-dur-slow) var(--ud-ease),
+    opacity var(--ud-dur-slow) var(--ud-ease),
+    height var(--ud-dur-slow) var(--ud-ease),
+    box-shadow var(--ud-dur) var(--ud-ease) !important;
+}
+[data-sonner-toast][data-swiping='true'] {
+  transition: none !important;
+}
+[data-sonner-toast] [data-button] {
+  background: var(--ud-btn-primary-bg) !important;
+  color: var(--ud-btn-primary-fg) !important;
+  border: 1px solid var(--ud-btn-primary-border) !important;
+  border-radius: 7px !important;
+  font-weight: 500 !important;
+  transition: background-color var(--ud-dur) var(--ud-ease) !important;
+}
+[data-sonner-toast] [data-button]:hover {
+  background: var(--ud-btn-primary-hover) !important;
+}
+
+/* Mouvement réduit : préférence système ou réglage de l'appli
+   (data-motion="reduce" sur <html>). .ud-fade-safe garde un fondu de 120 ms. */
+@media (prefers-reduced-motion: reduce) {
+  *:not(.ud-fade-safe),
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .ud-skeleton {
+    animation: none;
+  }
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}
+[data-motion='reduce'] *:not(.ud-fade-safe),
+[data-motion='reduce'] *::before,
+[data-motion='reduce'] *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+  scroll-behavior: auto !important;
+}
+[data-motion='reduce'] .ud-skeleton {
+  animation: none;
+}
+[data-motion='reduce']::view-transition-group(*),
+[data-motion='reduce']::view-transition-old(*),
+[data-motion='reduce']::view-transition-new(*) {
+  animation: none !important;
+}
+/* Spinner ralenti plutôt qu'arrêté en mouvement réduit */
+@media (prefers-reduced-motion: reduce) {
+  .ud-spinner.ud-spinner {
+    animation-duration: 1.5s !important;
+    animation-iteration-count: infinite !important;
+  }
+}
+[data-motion='reduce'] .ud-spinner.ud-spinner {
+  animation-duration: 1.5s !important;
+  animation-iteration-count: infinite !important;
+}
+.ud-fade-safe {
+  transition-property: opacity;
+  transition-duration: var(--ud-dur-fast);
+  transition-timing-function: var(--ud-ease);
+}
+
+/* Voile sans flou si la transparence doit être réduite */
+@media (prefers-reduced-transparency: reduce) {
+  [data-slot='dialog-overlay'],
+  [data-slot='alert-dialog-overlay'] {
+    backdrop-filter: none;
+  }
+}
+
+.ud-theme-switching,
+.ud-theme-switching * {
+  transition: none !important;
+}
+
+/* --------------------------------------------------------------------------
+   Changement de collection de thèmes (setThemeId et setColorMode, lib/themes.ts)
+   - View Transitions API : fondu croisé de toute la page (220 ms).
+   - Repli sans View Transitions : la classe .ud-theme-fade, posée ~220 ms sur
+     <html>, fait glisser les couleurs en 180 ms.
+   Mouvement réduit (système ou data-motion="reduce") : application immédiate.
+   -------------------------------------------------------------------------- */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 220ms;
+  animation-timing-function: var(--ud-ease);
+}
+.ud-theme-fade,
+.ud-theme-fade * {
+  transition-property: background-color, border-color, color, fill, stroke, box-shadow !important;
+  transition-duration: 180ms !important;
+  transition-timing-function: var(--ud-ease) !important;
+}
+
+/* --------------------------------------------------------------------------
+   Monogramme (.ud-logo)
+   -------------------------------------------------------------------------- */
+.ud-logo {
+  --logo-tile: var(--ud-text-1);
+  --logo-edge: var(--ud-text-1);
+  --logo-ink: var(--ud-app);
+}
+.dark .ud-logo {
+  --logo-tile: color-mix(in oklab, var(--ud-text-1) 10%, var(--ud-panel));
+  --logo-edge: var(--ud-line-strong);
+  --logo-ink: var(--ud-text-1);
+}
+.ud-logo-tile {
+  fill: var(--logo-tile);
+  stroke: var(--logo-edge);
+  stroke-width: 1;
+}
+.ud-logo-ink {
+  fill: none;
+  stroke: var(--logo-ink);
+}
+.ud-logo-dot {
+  fill: var(--ud-accent);
+  stroke: var(--logo-tile);
+}
+
+/* --------------------------------------------------------------------------
+   Écran de connexion / choix du compte
+   - fond : lueur d'accent venue du haut + trame de points estompée vers les bords ;
+   - carte : surface panneau, bordure 1 px, ombre douce (+ liseré clair en sombre).
+   -------------------------------------------------------------------------- */
+.ud-auth-backdrop {
+  background:
+    radial-gradient(60% 46% at 50% -6%, color-mix(in oklab, var(--ud-accent) 13%, transparent), transparent 72%),
+    radial-gradient(color-mix(in oklab, var(--ud-text-1) 9%, transparent) 1px, transparent 1.2px) 0 0 / 22px 22px;
+  -webkit-mask-image: radial-gradient(70% 60% at 50% 34%, #000 30%, transparent 100%);
+  mask-image: radial-gradient(70% 60% at 50% 34%, #000 30%, transparent 100%);
+}
+.dark .ud-auth-backdrop {
+  background:
+    radial-gradient(60% 46% at 50% -6%, color-mix(in oklab, var(--ud-accent) 16%, transparent), transparent 72%),
+    radial-gradient(color-mix(in oklab, var(--ud-text-1) 7%, transparent) 1px, transparent 1.2px) 0 0 / 22px 22px;
+}
+.ud-auth-card {
+  background: var(--ud-panel);
+  border-color: var(--ud-line);
+  box-shadow:
+    0 1px 2px rgb(0 0 0 / 0.04),
+    0 12px 32px -12px rgb(0 0 0 / 0.1);
+}
+.dark .ud-auth-card {
+  border-color: var(--ud-line-strong);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.04),
+    0 1px 2px rgb(0 0 0 / 0.4),
+    0 16px 40px -14px rgb(0 0 0 / 0.6);
+}

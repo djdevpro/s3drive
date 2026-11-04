@@ -1,0 +1,184 @@
+/* ==========================================================================
+   @ud/ui — utilitaires Tailwind, repris d'Universal Email,
+   préfixe ud-. Importé par index.css et par la passerelle d'UE.
+   Boutons sobres : ud-btn-primary (action principale), ud-btn-tonal
+   (« Nouveau »), ud-btn-secondary, ud-btn-danger ; couleurs, bordure 1 px,
+   survol, appui, désactivé. Taille, rayon et espacement restent ceux du
+   composant. Ajusté : focus = --ud-focus ; icône du bouton danger
+   = --ud-btn-danger-icon.
+   ========================================================================== */
+
+@utility tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+@utility ud-transition {
+  transition-duration: var(--ud-dur);
+  transition-timing-function: var(--ud-ease);
+  transition-property: color, background-color, border-color, opacity, box-shadow, transform;
+}
+
+@utility ud-btn-primary {
+  background-color: var(--ud-btn-primary-bg);
+  color: var(--ud-btn-primary-fg);
+  border: 1px solid var(--ud-btn-primary-border);
+  box-shadow: var(--ud-btn-primary-highlight), var(--ud-shadow-soft);
+  transition-property: color, background-color, border-color, box-shadow, transform;
+  transition-duration: var(--ud-dur);
+  transition-timing-function: var(--ud-ease);
+  & svg {
+    color: var(--ud-btn-primary-icon);
+    transition: color var(--ud-dur) var(--ud-ease);
+  }
+  &:hover:not(:disabled, [aria-disabled='true']) {
+    background-color: var(--ud-btn-primary-hover);
+  }
+  &:active:not(:disabled, [aria-disabled='true']) {
+    background-color: var(--ud-btn-primary-active);
+    box-shadow: none;
+    transform: translateY(0.5px);
+    transition-duration: var(--ud-dur-fast);
+  }
+  &:focus-visible {
+    outline: 2px solid var(--ud-focus);
+    outline-offset: 2px;
+  }
+  &:disabled,
+  &[aria-disabled='true'] {
+    background-color: var(--ud-btn-disabled-bg);
+    border-color: var(--ud-btn-disabled-border);
+    color: var(--ud-btn-disabled-fg);
+    box-shadow: none;
+    cursor: not-allowed;
+  }
+  &:disabled svg,
+  &[aria-disabled='true'] svg {
+    color: var(--ud-btn-disabled-fg);
+  }
+}
+
+@utility ud-btn-tonal {
+  background-color: var(--ud-btn-tonal-bg);
+  color: var(--ud-btn-tonal-fg);
+  border: 1px solid var(--ud-btn-tonal-border);
+  box-shadow: var(--ud-btn-primary-highlight), var(--ud-shadow-soft);
+  transition-property: color, background-color, border-color, box-shadow, transform;
+  transition-duration: var(--ud-dur);
+  transition-timing-function: var(--ud-ease);
+  & svg {
+    color: var(--ud-btn-tonal-icon);
+  }
+  &:hover:not(:disabled, [aria-disabled='true']) {
+    background-color: var(--ud-btn-tonal-hover);
+  }
+  &:active:not(:disabled, [aria-disabled='true']) {
+    background-color: var(--ud-btn-tonal-active);
+    box-shadow: none;
+    transform: translateY(0.5px);
+    transition-duration: var(--ud-dur-fast);
+  }
+  &:focus-visible {
+    outline: 2px solid var(--ud-focus);
+    outline-offset: 2px;
+  }
+}
+
+@utility ud-btn-secondary {
+  background-color: var(--ud-btn-secondary-bg);
+  color: var(--ud-btn-secondary-fg);
+  border: 1px solid var(--ud-btn-secondary-border);
+  box-shadow: 0 1px 1px rgb(0 0 0 / 0.03);
+  transition-property: color, background-color, border-color, box-shadow, transform;
+  transition-duration: var(--ud-dur);
+  transition-timing-function: var(--ud-ease);
+  & svg {
+    color: var(--ud-text-2);
+  }
+  &:hover:not(:disabled, [aria-disabled='true']) {
+    background-color: var(--ud-btn-secondary-hover);
+  }
+  &:active:not(:disabled, [aria-disabled='true']) {
+    transform: translateY(0.5px);
+    box-shadow: none;
+    transition-duration: var(--ud-dur-fast);
+  }
+  &:focus-visible {
+    outline: 2px solid var(--ud-focus);
+    outline-offset: 2px;
+  }
+  &:disabled,
+  &[aria-disabled='true'] {
+    color: var(--ud-btn-disabled-fg);
+    border-color: var(--ud-btn-disabled-border);
+    box-shadow: none;
+    cursor: not-allowed;
+  }
+}
+
+@utility ud-btn-danger {
+  background-color: var(--ud-btn-danger-bg);
+  color: var(--ud-btn-danger-fg);
+  border: 1px solid var(--ud-btn-danger-border);
+  box-shadow: var(--ud-btn-primary-highlight), var(--ud-shadow-soft);
+  transition-property: color, background-color, border-color, box-shadow, transform;
+  transition-duration: var(--ud-dur);
+  transition-timing-function: var(--ud-ease);
+  & svg {
+    color: var(--ud-btn-danger-icon);
+  }
+  &:hover:not(:disabled, [aria-disabled='true']) {
+    background-color: var(--ud-btn-danger-hover);
+  }
+  &:active:not(:disabled, [aria-disabled='true']) {
+    transform: translateY(0.5px);
+    box-shadow: none;
+  }
+  &:focus-visible {
+    outline: 2px solid var(--ud-focus);
+    outline-offset: 2px;
+  }
+  &:disabled {
+    background-color: var(--ud-btn-disabled-bg);
+    border-color: var(--ud-btn-disabled-border);
+    color: var(--ud-btn-disabled-fg);
+    box-shadow: none;
+  }
+}
+
+/* Squelettes : balayage doux (1,4 s) */
+@keyframes ud-shimmer {
+  0% {
+    background-position: -240px 0;
+  }
+  100% {
+    background-position: 240px 0;
+  }
+}
+
+.ud-skeleton {
+  background: linear-gradient(90deg, var(--ud-line) 0%, color-mix(in oklab, var(--ud-line) 45%, transparent) 50%, var(--ud-line) 100%);
+  background-size: 480px 100%;
+  animation: ud-shimmer 1.4s linear infinite;
+  border-radius: 6px;
+}
+
+/* Spinner : 0,8 s par tour ; 1,5 s en mouvement réduit (base.css) */
+@keyframes ud-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.ud-spinner {
+  animation: ud-spin 0.8s linear infinite;
+}
+
+/* Pastille d'extension de FileIcon : --ft = couleur de la catégorie.
+   Clair : aplat + texte blanc ; sombre : surface teintée + bordure, jamais d'aplat clair. */
+.ud-ft-badge {
+  background-color: var(--ft);
+  color: var(--ud-ft-badge-fg);
+  border: 1px solid var(--ft);
+}
+.dark .ud-ft-badge {
+  background-color: color-mix(in oklab, var(--ft) 22%, var(--ud-panel));
+}

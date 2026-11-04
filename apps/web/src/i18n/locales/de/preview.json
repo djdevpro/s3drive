@@ -1,0 +1,18 @@
+{
+  "label": "Vorschau von {{name}}",
+  "close": "Schließen",
+  "copyLink": "Link kopieren",
+  "download": "Herunterladen",
+  "previous": "Vorherige Datei",
+  "next": "Nächste Datei",
+  "notFound": {
+    "title": "Diese Datei existiert nicht mehr oder wurde verschoben",
+    "body": "Sie wurde möglicherweise umbenannt, verschoben oder gelöscht."
+  },
+  "tooLarge": "Diese Datei ist für die Vorschau zu groß",
+  "unavailable": "Keine Vorschau verfügbar",
+  "unavailableBody": "Laden Sie die Datei herunter, um sie auf Ihrem Gerät zu öffnen.",
+  "loadError": "Die Datei konnte für die Vorschau nicht geladen werden.",
+  "loading": "Vorschau wird geladen…",
+  "position": "{{index}} von {{total}}"
+}
